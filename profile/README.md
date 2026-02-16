@@ -22,9 +22,9 @@ We are a group of engineers who build at 3:30 AM.
 
 | Project | Description |
 |---------|-------------|
-| [**BurstPick**](https://github.com/open330/burstpick) | AI-powered burst photo culling for photographers |
-| [**ConText**](https://github.com/open330/ConText) | AI-powered personal knowledge assistant — chat-style memo service |
-| [**MaC**](https://github.com/open330/mind-as-context) | Mind as Context |
+| **BurstPick** | AI-powered burst photo culling for photographers |
+| **ConText** | AI-powered personal knowledge assistant — chat-style memo service |
+| **MaC** | Mind as Context |
 
 ### Team
 

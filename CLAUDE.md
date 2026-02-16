@@ -7,7 +7,7 @@ This document defines shared conventions for all repositories in the open330 org
 - **Agent-first development**: Every project should be designed so that AI agents (Claude, Codex, etc.) can effectively contribute — clear structure, typed interfaces, good test coverage.
 - **Ship over perfection**: We bias toward working software. Get it running, then iterate.
 - **Keep it simple**: Avoid premature abstraction. Three similar lines are better than a premature helper function.
-- **Open by default**: Public repos should be the norm. Only use private repos for pre-launch projects or those with sensitive data.
+- **Private by default**: Repos are private unless there is a specific reason to make them public.
 
 ## Language & Stack Preferences
 
