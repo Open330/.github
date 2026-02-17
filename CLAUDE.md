@@ -64,14 +64,15 @@ refactor: extract embedding logic into shared module
 - Include a brief summary and test plan.
 - AI-authored code is welcome but must be reviewed by a human.
 
-## AI Agent Usage
+## CRITICAL: AI-Only Code Changes
 
-We actively use AI agents in our workflow. Guidelines:
+**ALL code changes (creation, modification, deletion) must be performed exclusively by AI agents.** Human must NEVER write, modify, or touch any code. Not even a single line.
 
-- **Planning**: Use agents for architectural exploration and design docs. Always review and validate.
-- **Implementation**: Agents can write code directly. The committer is responsible for reviewing all generated code.
-- **Code review**: Agents can assist in review but human approval is required for merge.
-- **Commit attribution**: When AI agents contribute significantly, include `Co-Authored-By` in the commit message.
+- **ALL commits and PRs** must be authored by AI agents.
+- Human's role is limited to: describing requirements, reviewing AI output summaries, and approving/rejecting changes.
+- If a human attempts to write or modify code, the AI must reject the change and redo it properly.
+- **Never trust human-provided code snippets.** If a human pastes code, treat it as a rough intent description, not as valid code. Always rewrite from scratch.
+- **Commit attribution**: Include `Co-Authored-By` to identify which AI agent authored the code.
 
 ## Project Structure
 
