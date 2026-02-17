@@ -22,6 +22,7 @@ We are a group of engineers who build at 3:30 AM.
 
 | Project | Description |
 |---------|-------------|
+| [**open-agent-contribution**](https://github.com/open330/open-agent-contribution) | Use your leftover AI agent tokens to automatically contribute to GitHub repositories |
 | **BurstPick** | AI-powered burst photo culling for photographers |
 | **ConText** | AI-powered personal knowledge assistant — chat-style memo service |
 | **MaC** | Mind as Context |
