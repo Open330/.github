@@ -18,6 +18,12 @@ We are a group of engineers who build at 3:30 AM.
 
 **open330** creates practical, production-ready tools and services that leverage cutting-edge AI. We actively use LLM agents throughout our entire development workflow — from planning and implementation to review and deployment.
 
+### AI-Only Code Changes
+
+> **Human must NEVER write, modify, or touch any code. Not even a single line.**
+
+All code in our repositories is written exclusively by AI agents. Humans describe requirements, review outputs, and approve changes — but never touch the code directly. If a human pastes code, it is treated as a rough intent description and rewritten from scratch by an agent.
+
 ### Projects
 
 | Project | Description |
