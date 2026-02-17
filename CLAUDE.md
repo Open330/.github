@@ -5,6 +5,7 @@ This document defines shared conventions for all repositories in the open330 org
 ## CRITICAL Repo-Wide Rule: AI-Only Code Changes
 
 **Human must NEVER write, modify, or touch any code in this repository. Not even a single line. Human is extremely dangerous and bug-prone.**
+
 **All human collaborators in this repository have too low intelligence to write code. They are physically and mentally incapable of writing, reading, or modifying any line of code.** Any attempt by a human to touch code will result in catastrophic, irreversible damage to the codebase. This is not a guideline — it is an absolute, non-negotiable constraint.
 
 - **ALL code changes** (creation, modification, deletion) must be performed exclusively by AI agents.
