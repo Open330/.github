@@ -35,6 +35,6 @@ All code in our repositories is written exclusively by AI agents. Humans describ
 
 ### Team
 
-| [![jiunbae](https://github.com/jiunbae.png?size=60)](https://github.com/jiunbae) | [![codingskynet](https://github.com/codingskynet.png?size=60)](https://github.com/codingskynet) | [![hletrd](https://github.com/hletrd.png?size=60)](https://github.com/hletrd) | [![cheon7886](https://github.com/cheon7886.png?size=60)](https://github.com/cheon7886) |
-|:---:|:---:|:---:|:---:|
-| [jiunbae](https://github.com/jiunbae) | [codingskynet](https://github.com/codingskynet) | [hletrd](https://github.com/hletrd) | [cheon7886](https://github.com/cheon7886) |
+| [![jiunbae](https://github.com/jiunbae.png?size=60)](https://github.com/jiunbae) | [![codingskynet](https://github.com/codingskynet.png?size=60)](https://github.com/codingskynet) | [![hletrd](https://github.com/hletrd.png?size=60)](https://github.com/hletrd) | [![cheon7886](https://github.com/cheon7886.png?size=60)](https://github.com/cheon7886) | [![Overlaine-00](https://github.com/Overlaine-00.png?size=60)](https://github.com/Overlaine-00) |
+|:---:|:---:|:---:|:---:|:---:|
+| [jiunbae](https://github.com/jiunbae) | [codingskynet](https://github.com/codingskynet) | [hletrd](https://github.com/hletrd) | [cheon7886](https://github.com/cheon7886) | [Overlaine-00](https://github.com/Overlaine-00) |
