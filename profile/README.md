@@ -32,7 +32,38 @@
 
 ---
 
+### 🧑‍💻 About
+
 **open330** is a team of engineers who ship production-ready tools and services powered by cutting-edge AI. We leverage LLM agents across our entire development lifecycle — from planning and implementation to review and deployment.
+
+### 🏗️ Featured Projects
+
+| Project | Stack | Description |
+|:--------|:------|:------------|
+| 🤖 [**open-agent-contribution**](https://github.com/open330/open-agent-contribution) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) | Use leftover AI agent tokens to auto-contribute to GitHub repos |
+| 🗺️ [**travelback**](https://github.com/open330/travelback) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square) | Animate GPX, KML, and Google Location History into travel videos |
+| 📸 **BurstPick** | ![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) ![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square) | AI-powered burst photo culling for photographers |
+| 🌐 [**BurstPick-web**](https://github.com/open330/BurstPick-web) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) | Official website for BurstPick |
+| 📦 [**BurstPick-releases**](https://github.com/open330/BurstPick-releases) | | DMG downloads, Sparkle appcast, and update artifacts for macOS |
+| 🧰 [**agt**](https://github.com/open330/agt) | ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) | A modular toolkit for extending AI coding agents |
+| 🧠 **ConText** | | AI-powered personal knowledge assistant — chat-style memo service |
+| 💡 **MaC** | | Mind as Context |
+
+### 💻 Tech stack
+
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun">
+  <img src="https://img.shields.io/badge/MapLibre-396CB2?style=for-the-badge&logo=maplibre&logoColor=white" alt="MapLibre">
+  <img src="https://img.shields.io/badge/CoreML-34AADC?style=for-the-badge" alt="CoreML">
+</p>
+
+---
 
 ### 🤖 AI-only code changes
 
