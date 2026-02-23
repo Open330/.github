@@ -46,20 +46,29 @@ if TOKEN:
 
 # ── API helpers ───────────────────────────────────────────────────────────────
 
-def api_get(path, retries=5, delay=3):
+def api_get(path, retries=5, delay=3, accept_202=False):
+    """Fetch a GitHub API endpoint with retry logic.
+
+    By default, 202 responses are retried (stats endpoints use 202 to signal
+    computation in progress).  Set *accept_202* to True when calling an
+    endpoint where 202 is a valid final response.
+    """
     url = path if path.startswith("http") else f"{API_BASE}{path}"
     for attempt in range(retries):
         req = urllib.request.Request(url, headers=HEADERS)
         try:
             with urllib.request.urlopen(req) as resp:
-                if resp.status == 202 and attempt < retries - 1:
+                if resp.status == 202 and not accept_202 and attempt < retries - 1:
                     time.sleep(delay * (attempt + 1))
                     continue
                 return json.loads(resp.read())
         except urllib.error.HTTPError as e:
-            if e.code == 202 and attempt < retries - 1:
+            if e.code == 202 and not accept_202 and attempt < retries - 1:
                 time.sleep(delay * (attempt + 1))
                 continue
+            if e.code in (409, 204):
+                # 409 = empty repo, 204 = no content
+                return None
             print(f"  ⚠ {e.code} for {url}", file=sys.stderr)
             return None
     return None
@@ -96,30 +105,80 @@ def fetch_repos(repo_type="all"):
     return repos
 
 
+def _count_commits_via_listing(name):
+    """Count commits per author using the commits listing API (paginated)."""
+    counts = defaultdict(int)
+    commits = api_get_pages(f"/repos/{ORG}/{name}/commits")
+    for cm in commits:
+        author = cm.get("author")
+        if author and author.get("login"):
+            counts[author["login"]] += 1
+    return counts
+
+
 def fetch_contributors(repos):
     """Fetch contributor commit counts across all repos.
 
-    First tries the stats/contributors API (accurate but returns 202 while
-    computing).  Falls back to paginated commit listing for repos where the
-    stats endpoint fails.
+    Uses a two-phase approach:
+    1. Warm up: fire stats/contributors for every repo, wait, then fetch.
+    2. For any repo where stats still returns 202 or empty, fall back to the
+       paginated commit listing API which always works.
+
+    The stats API is preferred because it returns exact totals without needing
+    to paginate through every commit, but it is notoriously unreliable (returns
+    202 while data is being computed and often never finishes within CI).
     """
     totals = defaultdict(int)
+    failed_repos = []
+
     for r in repos:
         name = r["name"]
-        # Try stats API first (gives accurate totals)
         data = api_get(f"/repos/{ORG}/{name}/stats/contributors")
-        if data and isinstance(data, list):
+        if data and isinstance(data, list) and len(data) > 0:
+            repo_total = 0
             for c in data:
                 login = c["author"]["login"]
                 totals[login] += c["total"]
+                repo_total += c["total"]
+            print(f"    {name}: {repo_total} commits (stats API)")
             continue
-        # Fallback: count commits via listing API
-        print(f"  ⚠ stats API unavailable for {name}, using commit listing", file=sys.stderr)
-        commits = api_get_pages(f"/repos/{ORG}/{name}/commits?sha=")
-        for cm in commits:
-            author = cm.get("author")
-            if author and author.get("login"):
-                totals[author["login"]] += 1
+        failed_repos.append(r)
+
+    # Second pass: retry failed repos once more after a pause
+    if failed_repos:
+        print(f"  ⚠ stats API failed for {len(failed_repos)} repos, retrying after 15s...",
+              file=sys.stderr)
+        # Re-trigger stats computation
+        for r in failed_repos:
+            api_get(f"/repos/{ORG}/{r['name']}/stats/contributors", retries=1, accept_202=True)
+        time.sleep(15)
+
+        still_failed = []
+        for r in failed_repos:
+            name = r["name"]
+            data = api_get(f"/repos/{ORG}/{name}/stats/contributors")
+            if data and isinstance(data, list) and len(data) > 0:
+                repo_total = 0
+                for c in data:
+                    login = c["author"]["login"]
+                    totals[login] += c["total"]
+                    repo_total += c["total"]
+                print(f"    {name}: {repo_total} commits (stats API, retry)")
+                continue
+            still_failed.append(r)
+
+        # Final fallback: commit listing API (always works, just slower)
+        for r in still_failed:
+            name = r["name"]
+            print(f"  ⚠ stats API unavailable for {name}, using commit listing",
+                  file=sys.stderr)
+            counts = _count_commits_via_listing(name)
+            repo_total = 0
+            for login, n in counts.items():
+                totals[login] += n
+                repo_total += n
+            print(f"    {name}: {repo_total} commits (listing API)")
+
     return dict(sorted(totals.items(), key=lambda x: -x[1]))
 
 
@@ -418,11 +477,17 @@ def main():
     print(f"  {len(all_repos)} total repos ({len(public_repos)} public, "
           f"{len(all_repos) - len(public_repos)} private)")
 
-    # Warm up stats API so GitHub starts computing before we fetch
-    print("Warming up stats API...")
+    # Warm up stats API so GitHub starts computing before we fetch.
+    # Two rounds with a longer pause — the stats endpoints are notoriously
+    # slow to compute on first access.
+    print("Warming up stats API (round 1)...")
     warm_stats(all_repos)
-    print("  Waiting 10s for GitHub to compute stats...")
-    time.sleep(10)
+    print("  Waiting 15s for GitHub to compute stats...")
+    time.sleep(15)
+    print("Warming up stats API (round 2)...")
+    warm_stats(all_repos)
+    print("  Waiting 15s...")
+    time.sleep(15)
 
     # Statistics use ALL repos (public + private)
     print("Fetching contributors (all repos)...")
