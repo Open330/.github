@@ -46,7 +46,7 @@ if TOKEN:
 
 # ── API helpers ───────────────────────────────────────────────────────────────
 
-def api_get(path, retries=3, delay=2):
+def api_get(path, retries=5, delay=3):
     url = path if path.startswith("http") else f"{API_BASE}{path}"
     for attempt in range(retries):
         req = urllib.request.Request(url, headers=HEADERS)
@@ -63,6 +63,21 @@ def api_get(path, retries=3, delay=2):
             print(f"  ⚠ {e.code} for {url}", file=sys.stderr)
             return None
     return None
+
+
+def api_get_pages(path, per_page=100):
+    """Fetch all pages of a paginated GitHub API endpoint."""
+    items, page = [], 1
+    sep = "&" if "?" in path else "?"
+    while True:
+        data = api_get(f"{path}{sep}per_page={per_page}&page={page}")
+        if not data or not isinstance(data, list):
+            break
+        items.extend(data)
+        if len(data) < per_page:
+            break
+        page += 1
+    return items
 
 
 # ── Data fetchers ─────────────────────────────────────────────────────────────
@@ -82,13 +97,29 @@ def fetch_repos(repo_type="all"):
 
 
 def fetch_contributors(repos):
+    """Fetch contributor commit counts across all repos.
+
+    First tries the stats/contributors API (accurate but returns 202 while
+    computing).  Falls back to paginated commit listing for repos where the
+    stats endpoint fails.
+    """
     totals = defaultdict(int)
     for r in repos:
-        data = api_get(f"/repos/{ORG}/{r['name']}/stats/contributors")
-        if not data or not isinstance(data, list):
+        name = r["name"]
+        # Try stats API first (gives accurate totals)
+        data = api_get(f"/repos/{ORG}/{name}/stats/contributors")
+        if data and isinstance(data, list):
+            for c in data:
+                login = c["author"]["login"]
+                totals[login] += c["total"]
             continue
-        for c in data:
-            totals[c["author"]["login"]] += c["total"]
+        # Fallback: count commits via listing API
+        print(f"  ⚠ stats API unavailable for {name}, using commit listing", file=sys.stderr)
+        commits = api_get_pages(f"/repos/{ORG}/{name}/commits?sha=")
+        for cm in commits:
+            author = cm.get("author")
+            if author and author.get("login"):
+                totals[author["login"]] += 1
     return dict(sorted(totals.items(), key=lambda x: -x[1]))
 
 
@@ -114,23 +145,40 @@ def fetch_languages(repos):
 
 
 def fetch_members():
+    """Fetch org members.  Falls back to TEAM list when the API returns fewer
+    members than the known team (requires admin:org scope to list all)."""
     data = api_get(f"/orgs/{ORG}/members?per_page=100")
-    return [m["login"] for m in data] if data else TEAM
+    if data and len(data) >= len(TEAM):
+        return [m["login"] for m in data]
+    # API returned partial results (missing scope) — use hardcoded list
+    print("  ⚠ members API returned partial results, using TEAM list", file=sys.stderr)
+    return list(TEAM)
 
 
 def compute_loc(repos):
     loc = defaultdict(lambda: {"files": 0, "code": 0, "comments": 0, "blanks": 0})
+    # Configure git credential helper for token auth (works for all clones)
+    env = os.environ.copy()
+    if TOKEN:
+        env["GIT_ASKPASS"] = "/bin/echo"
+        env["GIT_TERMINAL_PROMPT"] = "0"
     with tempfile.TemporaryDirectory() as tmp:
         for r in repos:
             name = r["name"]
+            is_private = r.get("private", False)
             # Use token-authenticated URL for private repos
             url = r["clone_url"]
-            if TOKEN and r.get("private"):
+            if TOKEN and is_private:
                 url = url.replace("https://", f"https://x-access-token:{TOKEN}@")
             dest = os.path.join(tmp, name)
             try:
-                subprocess.run(["git", "clone", "--depth=1", "-q", url, dest],
-                               capture_output=True, timeout=120)
+                result = subprocess.run(
+                    ["git", "clone", "--depth=1", "-q", url, dest],
+                    capture_output=True, text=True, timeout=120, env=env)
+                if result.returncode != 0:
+                    tag = " (private)" if is_private else ""
+                    print(f"  ⚠ clone {name}{tag}: {result.stderr.strip()}", file=sys.stderr)
+                    continue
             except Exception as e:
                 print(f"  ⚠ clone {name}: {e}", file=sys.stderr)
                 continue
@@ -345,12 +393,36 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def warm_stats(repos):
+    """Fire off stats requests for all repos so GitHub starts computing.
+
+    The stats/contributors and stats/punch_card endpoints return 202 on first
+    call while data is being generated.  By hitting them all up-front and then
+    waiting, subsequent fetches are much more likely to succeed.
+    """
+    for r in repos:
+        name = r["name"]
+        for endpoint in ("stats/contributors", "stats/punch_card"):
+            url = f"{API_BASE}/repos/{ORG}/{name}/{endpoint}"
+            req = urllib.request.Request(url, headers=HEADERS)
+            try:
+                urllib.request.urlopen(req)
+            except Exception:
+                pass  # 202 or error — we just want to trigger computation
+
+
 def main():
     print("Fetching all repos (public + private)...")
     all_repos = fetch_repos("all")
     public_repos = [r for r in all_repos if not r.get("private", False)]
     print(f"  {len(all_repos)} total repos ({len(public_repos)} public, "
           f"{len(all_repos) - len(public_repos)} private)")
+
+    # Warm up stats API so GitHub starts computing before we fetch
+    print("Warming up stats API...")
+    warm_stats(all_repos)
+    print("  Waiting 10s for GitHub to compute stats...")
+    time.sleep(10)
 
     # Statistics use ALL repos (public + private)
     print("Fetching contributors (all repos)...")
