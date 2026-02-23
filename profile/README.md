@@ -139,10 +139,10 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Commits | |
 |---|---|---:|---|
-| <img src="https://github.com/hletrd.png?size=40" width="40" alt="hletrd"> | [@hletrd](https://github.com/hletrd) | 2653 | `████████████████████` |
-| <img src="https://github.com/jiunbae.png?size=40" width="40" alt="jiunbae"> | [@jiunbae](https://github.com/jiunbae) | 483 | `████░░░░░░░░░░░░░░░░` |
-| <img src="https://github.com/cheon7886.png?size=40" width="40" alt="cheon7886"> | [@cheon7886](https://github.com/cheon7886) | 3 | `█░░░░░░░░░░░░░░░░░░░` |
-| <img src="https://github.com/codingskynet.png?size=40" width="40" alt="codingskynet"> | [@codingskynet](https://github.com/codingskynet) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
+| <img src="https://github.com/hletrd.png?size=40" width="40" height="40" alt="hletrd"> | [@hletrd](https://github.com/hletrd) | 2653 | `████████████████████` |
+| <img src="https://github.com/jiunbae.png?size=40" width="40" height="40" alt="jiunbae"> | [@jiunbae](https://github.com/jiunbae) | 483 | `████░░░░░░░░░░░░░░░░` |
+| <img src="https://github.com/cheon7886.png?size=40" width="40" height="40" alt="cheon7886"> | [@cheon7886](https://github.com/cheon7886) | 3 | `█░░░░░░░░░░░░░░░░░░░` |
+| <img src="https://github.com/codingskynet.png?size=40" width="40" height="40" alt="codingskynet"> | [@codingskynet](https://github.com/codingskynet) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
@@ -160,6 +160,6 @@ pie title Codebase by language (bytes)
 
 ### 👥 Team
 
-| <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=64" width="64" height="64" style="border-radius:50%" alt="cheon7886"></a> | <a href="https://github.com/circle-oo"><img src="https://github.com/circle-oo.png?size=64" width="64" height="64" style="border-radius:50%" alt="circle-oo"></a> | <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=64" width="64" height="64" style="border-radius:50%" alt="codingskynet"></a> | <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=64" width="64" height="64" style="border-radius:50%" alt="hletrd"></a> | <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=64" width="64" height="64" style="border-radius:50%" alt="jiunbae"></a> | <a href="https://github.com/leejseo"><img src="https://github.com/leejseo.png?size=64" width="64" height="64" style="border-radius:50%" alt="leejseo"></a> | <a href="https://github.com/Overlaine-00"><img src="https://github.com/Overlaine-00.png?size=64" width="64" height="64" style="border-radius:50%" alt="Overlaine-00"></a> |
+| <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=64" width="64" height="64" alt="cheon7886"></a> | <a href="https://github.com/circle-oo"><img src="https://github.com/circle-oo.png?size=64" width="64" height="64" alt="circle-oo"></a> | <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=64" width="64" height="64" alt="codingskynet"></a> | <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=64" width="64" height="64" alt="hletrd"></a> | <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=64" width="64" height="64" alt="jiunbae"></a> | <a href="https://github.com/leejseo"><img src="https://github.com/leejseo.png?size=64" width="64" height="64" alt="leejseo"></a> | <a href="https://github.com/Overlaine-00"><img src="https://github.com/Overlaine-00.png?size=64" width="64" height="64" alt="Overlaine-00"></a> |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [cheon7886](https://github.com/cheon7886) | [circle-oo](https://github.com/circle-oo) | [codingskynet](https://github.com/codingskynet) | [hletrd](https://github.com/hletrd) | [jiunbae](https://github.com/jiunbae) | [leejseo](https://github.com/leejseo) | [Overlaine-00](https://github.com/Overlaine-00) |

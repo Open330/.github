@@ -419,7 +419,7 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("|---|---|---:|---|")
     max_cm = max(contributors.values()) if contributors else 1
     for login, commits in contributors.items():
-        a(f"| <img src=\"https://github.com/{login}.png?size=40\" width=\"40\" alt=\"{login}\"> "
+        a(f"| <img src=\"https://github.com/{login}.png?size=40\" width=\"40\" height=\"40\" alt=\"{login}\"> "
           f"| [@{login}](https://github.com/{login}) | {commits} | `{bar(commits, max_cm)}` |")
     a("")
 
@@ -444,7 +444,7 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("")
     avatars = " | ".join(
         f'<a href="https://github.com/{m}"><img src="https://github.com/{m}.png?size=64" '
-        f'width="64" height="64" style="border-radius:50%" alt="{m}"></a>' for m in members)
+        f'width="64" height="64" alt="{m}"></a>' for m in members)
     a(f"| {avatars} |")
     a("|" + "|".join(":---:" for _ in members) + "|")
     names = " | ".join(f"[{m}](https://github.com/{m})" for m in members)
