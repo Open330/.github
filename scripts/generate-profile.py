@@ -19,24 +19,38 @@ TEAM = [
     "jiunbae", "codingskynet", "hletrd", "cheon7886",
     "Overlaine-00", "leejseo", "circle-oo",
 ]
-EXTRA_PROJECTS = [
-    ("📸", "BurstPick", False,
-     "![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) "
-     "![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square)",
+# Curated project list for the README table, in display order.
+# (emoji, name, main_repo_or_None, sub_repos, stack, description)
+#   main_repo_or_None: GitHub repo name to link to, or None if private
+#   sub_repos: [(label, repo_name), ...] for related public repos
+_B = "https://img.shields.io/badge"
+PROJECTS = [
+    ("📸", "BurstPick", None,
+     [("web", "BurstPick-web"), ("releases", "BurstPick-releases")],
+     f"![Swift]({_B}/-Swift-F05138?style=flat-square) "
+     f"![CoreML]({_B}/-CoreML-34AADC?style=flat-square) "
+     f"![TS]({_B}/-TS-3178C6?style=flat-square) "
+     f"![Next.js]({_B}/-Next.js-000?style=flat-square)",
      "AI-powered burst photo culling for photographers"),
-    ("🧠", "ConText", False, "", "AI-powered personal knowledge assistant — chat-style memo service"),
-    ("💡", "MaC", False, "", "Mind as Context"),
+    ("🤖", "open-agent-contribution", "open-agent-contribution", [],
+     f"![TS]({_B}/-TS-3178C6?style=flat-square)",
+     "Use your leftover AI agent tokens to automatically contribute to GitHub repositories"),
+    ("🧰", "agt", "agt", [],
+     f"![Rust]({_B}/-Rust-000?style=flat-square)",
+     "A modular toolkit for extending AI coding agents"),
+    ("🗺️", "travelback", "travelback", [],
+     f"![TS]({_B}/-TS-3178C6?style=flat-square) "
+     f"![React]({_B}/-React-61DAFB?style=flat-square)",
+     "Animate GPX, KML, and Google Location History into travel videos"),
+    ("📁", "quickstart-for-agents", "quickstart-for-agents", [], "", ""),
+    ("🧠", "ConText", None, [], "", "AI-powered personal knowledge assistant — chat-style memo service"),
+    ("💡", "MaC", None, [], "", "Mind as Context"),
 ]
-REPO_META = {
-    "open-agent-contribution": ("🤖", "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square)"),
-    "travelback": ("🗺️", "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) "
-                   "![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square)"),
-    "BurstPick-web": ("🌐", "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) "
-                      "![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square)"),
-    "BurstPick-releases": ("📦", ""),
-    "agt": ("🧰", "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square)"),
+# Non-programming languages to exclude from LOC statistics
+SKIP_LANGS = {
+    "Markdown", "JSON", "YAML", "TOML", "XML", "Plain Text", "Text",
+    "License", "SVG", "Docker ignore", "Gitignore",
 }
-SKIP_REPOS = {".github", "open330.github.io"}
 # Bot / AI accounts that appear via Co-Authored-By trailers — not real committers
 EXCLUDE_AUTHORS = {"claude", "augmentcode", "github-actions[bot]", "dependabot[bot]"}
 
@@ -76,21 +90,6 @@ def api_get(path, retries=5, delay=3, accept_202=False):
     return None
 
 
-def api_get_pages(path, per_page=100):
-    """Fetch all pages of a paginated GitHub API endpoint."""
-    items, page = [], 1
-    sep = "&" if "?" in path else "?"
-    while True:
-        data = api_get(f"{path}{sep}per_page={per_page}&page={page}")
-        if not data or not isinstance(data, list):
-            break
-        items.extend(data)
-        if len(data) < per_page:
-            break
-        page += 1
-    return items
-
-
 # ── Data fetchers ─────────────────────────────────────────────────────────────
 
 def fetch_repos(repo_type="all"):
@@ -107,28 +106,16 @@ def fetch_repos(repo_type="all"):
     return repos
 
 
-def _count_commits_via_listing(name):
-    """Count commits per author using the commits listing API (paginated)."""
-    counts = defaultdict(int)
-    commits = api_get_pages(f"/repos/{ORG}/{name}/commits")
-    for cm in commits:
-        author = cm.get("author")
-        if author and author.get("login"):
-            counts[author["login"]] += 1
-    return counts
-
-
 def fetch_contributors(repos):
-    """Fetch contributor commit counts across all repos.
+    """Fetch contributor LOC (lines added + deleted) across all repos.
 
-    Uses a two-phase approach:
-    1. Warm up: fire stats/contributors for every repo, wait, then fetch.
-    2. For any repo where stats still returns 202 or empty, fall back to the
-       paginated commit listing API which always works.
+    Uses the stats/contributors API which returns weekly additions and
+    deletions for each contributor.  A two-phase retry is used because the
+    endpoint returns 202 while GitHub computes the data.
 
-    The stats API is preferred because it returns exact totals without needing
-    to paginate through every commit, but it is notoriously unreliable (returns
-    202 while data is being computed and often never finishes within CI).
+    Repos where the stats API never succeeds are skipped — the commit listing
+    API does not provide per-commit addition/deletion data without fetching
+    each commit individually, which is prohibitively expensive.
     """
     totals = defaultdict(int)
     failed_repos = []
@@ -140,9 +127,10 @@ def fetch_contributors(repos):
             repo_total = 0
             for c in data:
                 login = c["author"]["login"]
-                totals[login] += c["total"]
-                repo_total += c["total"]
-            print(f"    {name}: {repo_total} commits (stats API)")
+                loc = sum(w.get("a", 0) + w.get("d", 0) for w in c.get("weeks", []))
+                totals[login] += loc
+                repo_total += loc
+            print(f"    {name}: {repo_total:,} lines changed (stats API)")
             continue
         failed_repos.append(r)
 
@@ -163,23 +151,18 @@ def fetch_contributors(repos):
                 repo_total = 0
                 for c in data:
                     login = c["author"]["login"]
-                    totals[login] += c["total"]
-                    repo_total += c["total"]
-                print(f"    {name}: {repo_total} commits (stats API, retry)")
+                    loc = sum(w.get("a", 0) + w.get("d", 0) for w in c.get("weeks", []))
+                    totals[login] += loc
+                    repo_total += loc
+                print(f"    {name}: {repo_total:,} lines changed (stats API, retry)")
                 continue
             still_failed.append(r)
 
-        # Final fallback: commit listing API (always works, just slower)
+        # Stats API unavailable — LOC data not obtainable without individual
+        # commit fetches, so skip these repos.
         for r in still_failed:
-            name = r["name"]
-            print(f"  ⚠ stats API unavailable for {name}, using commit listing",
+            print(f"  ⚠ stats API unavailable for {r['name']}, LOC data skipped",
                   file=sys.stderr)
-            counts = _count_commits_via_listing(name)
-            repo_total = 0
-            for login, n in counts.items():
-                totals[login] += n
-                repo_total += n
-            print(f"    {name}: {repo_total} commits (listing API)")
 
     # Filter out bots / AI co-author accounts
     filtered = {k: v for k, v in totals.items() if k not in EXCLUDE_AUTHORS}
@@ -306,7 +289,7 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a('  <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">')
     a('  <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">')
     if loc:
-        total_code = sum(v["code"] for v in loc.values())
+        total_code = sum(v["code"] for k, v in loc.items() if k not in SKIP_LANGS)
         a(f'  <img src="https://img.shields.io/badge/lines%20of%20code-'
           f'{fmt(total_code).replace(",", "%2C")}-orange?style=flat-square" alt="LOC">')
     a("</p>")
@@ -353,24 +336,22 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("```")
     a("")
 
-    deep = sum(punch.get(h, 0) for h in range(0, 6))
-    dawn = sum(punch.get(h, 0) for h in range(6, 9))
-    morn = sum(punch.get(h, 0) for h in range(9, 13))
-    aftn = sum(punch.get(h, 0) for h in range(13, 19))
-    eve = sum(punch.get(h, 0) for h in range(19, 24))
-    total = deep + dawn + morn + aftn + eve
+    night = sum(punch.get(h, 0) for h in range(0, 6))
+    morn = sum(punch.get(h, 0) for h in range(6, 12))
+    aftn = sum(punch.get(h, 0) for h in range(12, 18))
+    eve = sum(punch.get(h, 0) for h in range(18, 24))
+    total = night + morn + aftn + eve
     pct = lambda n: f"{round(n / total * 100)}%" if total else "0%"
 
     a("| Period | Hours | Commits | Share |")
     a("|--------|-------|--------:|------:|")
-    a(f"| 🌙 Deep night | 12–5 AM | {deep} | {pct(deep)} |")
-    a(f"| 🌅 Dawn | 6–8 AM | {dawn} | {pct(dawn)} |")
-    a(f"| ☀️ Morning | 9 AM–12 PM | {morn} | {pct(morn)} |")
-    a(f"| 🌤️ Afternoon | 1–6 PM | {aftn} | {pct(aftn)} |")
-    a(f"| 🌆 Evening | 7–11 PM | {eve} | {pct(eve)} |")
+    a(f"| 🌙 Night | 12–5 AM | {night} | {pct(night)} |")
+    a(f"| ☀️ Morning | 6–11 AM | {morn} | {pct(morn)} |")
+    a(f"| 🌤️ Afternoon | 12–5 PM | {aftn} | {pct(aftn)} |")
+    a(f"| 🌆 Evening | 6–11 PM | {eve} | {pct(eve)} |")
     a("")
-    night_pct = round((deep + dawn) / total * 100) if total else 0
-    a(f"> **{night_pct}%** of all commits land between midnight and 8 AM. The name isn't ironic.")
+    night_pct = round(night / total * 100) if total else 0
+    a(f"> **{night_pct}%** of all commits land between midnight and 5 AM. The name isn't ironic.")
     a("")
 
     # LOC
@@ -381,7 +362,7 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
         a("|----------|------:|-----:|---------:|-------:|")
         tf = tc = tcm = tb = 0
         for lang, s in loc.items():
-            if s["code"] < 10:
+            if s["code"] < 10 or lang in SKIP_LANGS:
                 continue
             tf += s["files"]; tc += s["code"]; tcm += s["comments"]; tb += s["blanks"]
             a(f"| {lang} | {fmt(s['files'])} | {fmt(s['code'])} | {fmt(s['comments'])} | {fmt(s['blanks'])} |")
@@ -415,12 +396,13 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     # top contributors
     a("### 🏆 Top contributors")
     a("")
-    a("| | Contributor | Commits | |")
+    a("| | Contributor | Lines changed | |")
     a("|---|---|---:|---|")
-    max_cm = max(contributors.values()) if contributors else 1
-    for login, commits in contributors.items():
-        a(f"| <img src=\"https://github.com/{login}.png?size=40\" width=\"40\" height=\"40\" alt=\"{login}\"> "
-          f"| [@{login}](https://github.com/{login}) | {commits} | `{bar(commits, max_cm)}` |")
+    max_loc = max(contributors.values()) if contributors else 1
+    for login, loc_count in contributors.items():
+        a(f'| <a href="https://github.com/{login}"><img src="https://github.com/{login}.png?size=40" '
+          f'width="40" height="40" alt="{login}"></a> '
+          f"| [@{login}](https://github.com/{login}) | {fmt(loc_count)} | `{bar(loc_count, max_loc)}` |")
     a("")
 
     # projects
@@ -428,27 +410,35 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("")
     a("| Project | Stack | Description |")
     a("|---------|-------|-------------|")
-    for r in public_repos:
-        name = r["name"]
-        if name in SKIP_REPOS:
-            continue
-        emoji, stack = REPO_META.get(name, ("📁", ""))
-        desc = r.get("description") or ""
-        a(f"| {emoji} [**{name}**](https://github.com/{ORG.lower()}/{name}) | {stack} | {desc} |")
-    for emoji, name, has_link, stack, desc in EXTRA_PROJECTS:
-        a(f"| {emoji} **{name}** | {stack} | {desc} |")
+    org = ORG.lower()
+    for emoji, name, main_repo, sub_repos, stack, desc in PROJECTS:
+        if main_repo:
+            proj = f"{emoji} [**{name}**](https://github.com/{org}/{main_repo})"
+        else:
+            proj = f"{emoji} **{name}**"
+        if sub_repos:
+            links = " · ".join(
+                f"[{label}](https://github.com/{org}/{repo})"
+                for label, repo in sub_repos
+            )
+            proj += f" · {links}"
+        a(f"| {proj} | {stack} | {desc} |")
     a("")
 
     # team
     a("### 👥 Team")
     a("")
-    avatars = " | ".join(
-        f'<a href="https://github.com/{m}"><img src="https://github.com/{m}.png?size=64" '
-        f'width="64" height="64" alt="{m}"></a>' for m in members)
-    a(f"| {avatars} |")
-    a("|" + "|".join(":---:" for _ in members) + "|")
-    names = " | ".join(f"[{m}](https://github.com/{m})" for m in members)
-    a(f"| {names} |")
+    a("<table>")
+    a("  <tr>")
+    for m in members:
+        a(f'    <td align="center" width="100">')
+        a(f'      <a href="https://github.com/{m}">')
+        a(f'        <img src="https://github.com/{m}.png?size=64" width="64" height="64" alt="{m}">')
+        a(f'      </a><br>')
+        a(f'      <a href="https://github.com/{m}">{m}</a>')
+        a(f'    </td>')
+    a("  </tr>")
+    a("</table>")
     a("")
 
     return "\n".join(L)

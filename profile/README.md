@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-7-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-303%2C077-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-188%2C634-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -65,43 +65,34 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Deep night | 12–5 AM | 884 | 28% |
-| 🌅 Dawn | 6–8 AM | 677 | 21% |
-| ☀️ Morning | 9 AM–12 PM | 781 | 25% |
-| 🌤️ Afternoon | 1–6 PM | 277 | 9% |
-| 🌆 Evening | 7–11 PM | 562 | 18% |
+| 🌙 Night | 12–5 AM | 884 | 28% |
+| ☀️ Morning | 6–11 AM | 1260 | 40% |
+| 🌤️ Afternoon | 12–5 PM | 401 | 13% |
+| 🌆 Evening | 6–11 PM | 636 | 20% |
 
-> **49%** of all commits land between midnight and 8 AM. The name isn't ironic.
+> **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | Swift | 680 | 108,799 | 12,683 | 18,968 |
-| Markdown | 554 | 89,390 | 0 | 31,473 |
 | TypeScript | 374 | 63,301 | 6,523 | 9,399 |
-| JSON | 89 | 23,570 | 0 | 7 |
 | Rust | 24 | 5,023 | 312 | 729 |
 | Python | 18 | 2,397 | 328 | 399 |
 | C Header | 6 | 1,926 | 7,858 | 879 |
 | JavaScript | 18 | 1,686 | 24 | 121 |
 | HTML | 5 | 1,682 | 13 | 172 |
 | Shell | 9 | 1,432 | 226 | 295 |
-| YAML | 19 | 962 | 8 | 133 |
 | CSS | 5 | 808 | 31 | 166 |
 | Powershell | 2 | 732 | 158 | 85 |
-| SVG | 22 | 288 | 11 | 32 |
 | C++ | 1 | 240 | 0 | 31 |
 | Batch | 2 | 204 | 62 | 28 |
 | SQL | 3 | 164 | 44 | 54 |
 | C | 3 | 147 | 11 | 17 |
-| TOML | 5 | 89 | 6 | 12 |
-| License | 4 | 68 | 0 | 16 |
 | Dockerfile | 3 | 67 | 34 | 41 |
-| Docker ignore | 2 | 46 | 11 | 10 |
 | Makefile | 1 | 26 | 7 | 7 |
-| Plain Text | 2 | 20 | 0 | 3 |
-| **Total** | **1,851** | **303,067** | **28,350** | **63,077** |
+| **Total** | **1,154** | **188,634** | **28,314** | **31,391** |
 
 ### 💻 Tech stack
 
@@ -137,29 +128,70 @@ pie title Codebase by language (bytes)
 
 ### 🏆 Top contributors
 
-| | Contributor | Commits | |
+| | Contributor | Lines changed | |
 |---|---|---:|---|
-| <img src="https://github.com/hletrd.png?size=40" width="40" height="40" alt="hletrd"> | [@hletrd](https://github.com/hletrd) | 2657 | `████████████████████` |
-| <img src="https://github.com/jiunbae.png?size=40" width="40" height="40" alt="jiunbae"> | [@jiunbae](https://github.com/jiunbae) | 483 | `████░░░░░░░░░░░░░░░░` |
-| <img src="https://github.com/cheon7886.png?size=40" width="40" height="40" alt="cheon7886"> | [@cheon7886](https://github.com/cheon7886) | 3 | `█░░░░░░░░░░░░░░░░░░░` |
-| <img src="https://github.com/codingskynet.png?size=40" width="40" height="40" alt="codingskynet"> | [@codingskynet](https://github.com/codingskynet) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 2,657 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 483 | `████░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 3 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
 | Project | Stack | Description |
 |---------|-------|-------------|
+| 📸 **BurstPick** · [web](https://github.com/open330/BurstPick-web) · [releases](https://github.com/open330/BurstPick-releases) | ![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) ![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square) ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) | AI-powered burst photo culling for photographers |
 | 🤖 [**open-agent-contribution**](https://github.com/open330/open-agent-contribution) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) | Use your leftover AI agent tokens to automatically contribute to GitHub repositories |
-| 📦 [**BurstPick-releases**](https://github.com/open330/BurstPick-releases) |  | Official release distribution for BurstPick — DMG downloads, Sparkle appcast, and update artifacts for macOS |
-| 🌐 [**BurstPick-web**](https://github.com/open330/BurstPick-web) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) | Official website for BurstPick — AI-powered burst photo culling app for photographers. Built with Next.js 16, React 19, Tailwind CSS & Framer Motion. |
 | 🧰 [**agt**](https://github.com/open330/agt) | ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) | A modular toolkit for extending AI coding agents |
 | 🗺️ [**travelback**](https://github.com/open330/travelback) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square) | Animate GPX, KML, and Google Location History into travel videos |
 | 📁 [**quickstart-for-agents**](https://github.com/open330/quickstart-for-agents) |  |  |
-| 📸 **BurstPick** | ![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) ![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square) | AI-powered burst photo culling for photographers |
 | 🧠 **ConText** |  | AI-powered personal knowledge assistant — chat-style memo service |
 | 💡 **MaC** |  | Mind as Context |
 
 ### 👥 Team
 
-| <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=64" width="64" height="64" alt="cheon7886"></a> | <a href="https://github.com/circle-oo"><img src="https://github.com/circle-oo.png?size=64" width="64" height="64" alt="circle-oo"></a> | <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=64" width="64" height="64" alt="codingskynet"></a> | <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=64" width="64" height="64" alt="hletrd"></a> | <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=64" width="64" height="64" alt="jiunbae"></a> | <a href="https://github.com/leejseo"><img src="https://github.com/leejseo.png?size=64" width="64" height="64" alt="leejseo"></a> | <a href="https://github.com/Overlaine-00"><img src="https://github.com/Overlaine-00.png?size=64" width="64" height="64" alt="Overlaine-00"></a> |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [cheon7886](https://github.com/cheon7886) | [circle-oo](https://github.com/circle-oo) | [codingskynet](https://github.com/codingskynet) | [hletrd](https://github.com/hletrd) | [jiunbae](https://github.com/jiunbae) | [leejseo](https://github.com/leejseo) | [Overlaine-00](https://github.com/Overlaine-00) |
+<table>
+  <tr>
+    <td align="center" width="100">
+      <a href="https://github.com/cheon7886">
+        <img src="https://github.com/cheon7886.png?size=64" width="64" height="64" alt="cheon7886">
+      </a><br>
+      <a href="https://github.com/cheon7886">cheon7886</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/circle-oo">
+        <img src="https://github.com/circle-oo.png?size=64" width="64" height="64" alt="circle-oo">
+      </a><br>
+      <a href="https://github.com/circle-oo">circle-oo</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/codingskynet">
+        <img src="https://github.com/codingskynet.png?size=64" width="64" height="64" alt="codingskynet">
+      </a><br>
+      <a href="https://github.com/codingskynet">codingskynet</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/hletrd">
+        <img src="https://github.com/hletrd.png?size=64" width="64" height="64" alt="hletrd">
+      </a><br>
+      <a href="https://github.com/hletrd">hletrd</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/jiunbae">
+        <img src="https://github.com/jiunbae.png?size=64" width="64" height="64" alt="jiunbae">
+      </a><br>
+      <a href="https://github.com/jiunbae">jiunbae</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/leejseo">
+        <img src="https://github.com/leejseo.png?size=64" width="64" height="64" alt="leejseo">
+      </a><br>
+      <a href="https://github.com/leejseo">leejseo</a>
+    </td>
+    <td align="center" width="100">
+      <a href="https://github.com/Overlaine-00">
+        <img src="https://github.com/Overlaine-00.png?size=64" width="64" height="64" alt="Overlaine-00">
+      </a><br>
+      <a href="https://github.com/Overlaine-00">Overlaine-00</a>
+    </td>
+  </tr>
+</table>
