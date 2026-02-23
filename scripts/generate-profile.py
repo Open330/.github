@@ -380,8 +380,8 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("### 👥 Team")
     a("")
     avatars = " | ".join(
-        f'<a href="https://github.com/{m}"><img src="https://github.com/{m}.png?size=60" '
-        f'width="60" alt="{m}"></a>' for m in members)
+        f'<a href="https://github.com/{m}"><img src="https://github.com/{m}.png?size=64" '
+        f'width="64" height="64" style="border-radius:50%" alt="{m}"></a>' for m in members)
     a(f"| {avatars} |")
     a("|" + "|".join(":---:" for _ in members) + "|")
     names = " | ".join(f"[{m}](https://github.com/{m})" for m in members)
