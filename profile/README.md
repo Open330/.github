@@ -14,7 +14,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/repos-8-blue?style=flat-square" alt="Repos">
-  <img src="https://img.shields.io/badge/team-2-green?style=flat-square" alt="Team">
+  <img src="https://img.shields.io/badge/team-7-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
   <img src="https://img.shields.io/badge/lines%20of%20code-57%2C048-orange?style=flat-square" alt="LOC">
@@ -141,6 +141,6 @@ pie title Codebase by language (bytes)
 
 ### 👥 Team
 
-| <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=60" width="60" alt="hletrd"></a> | <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=60" width="60" alt="jiunbae"></a> |
-|:---:|:---:|
-| [hletrd](https://github.com/hletrd) | [jiunbae](https://github.com/jiunbae) |
+| <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=60" width="60" alt="jiunbae"></a> | <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=60" width="60" alt="codingskynet"></a> | <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=60" width="60" alt="hletrd"></a> | <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=60" width="60" alt="cheon7886"></a> | <a href="https://github.com/Overlaine-00"><img src="https://github.com/Overlaine-00.png?size=60" width="60" alt="Overlaine-00"></a> | <a href="https://github.com/leejseo"><img src="https://github.com/leejseo.png?size=60" width="60" alt="leejseo"></a> | <a href="https://github.com/circle-oo"><img src="https://github.com/circle-oo.png?size=60" width="60" alt="circle-oo"></a> |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [jiunbae](https://github.com/jiunbae) | [codingskynet](https://github.com/codingskynet) | [hletrd](https://github.com/hletrd) | [cheon7886](https://github.com/cheon7886) | [Overlaine-00](https://github.com/Overlaine-00) | [leejseo](https://github.com/leejseo) | [circle-oo](https://github.com/circle-oo) |
