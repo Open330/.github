@@ -37,6 +37,8 @@ REPO_META = {
     "agt": ("🧰", "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square)"),
 }
 SKIP_REPOS = {".github", "open330.github.io"}
+# Bot / AI accounts that appear via Co-Authored-By trailers — not real committers
+EXCLUDE_AUTHORS = {"claude", "augmentcode", "github-actions[bot]", "dependabot[bot]"}
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 HEADERS = {"Accept": "application/vnd.github+json", "User-Agent": "open330-profile-gen"}
@@ -179,7 +181,9 @@ def fetch_contributors(repos):
                 repo_total += n
             print(f"    {name}: {repo_total} commits (listing API)")
 
-    return dict(sorted(totals.items(), key=lambda x: -x[1]))
+    # Filter out bots / AI co-author accounts
+    filtered = {k: v for k, v in totals.items() if k not in EXCLUDE_AUTHORS}
+    return dict(sorted(filtered.items(), key=lambda x: -x[1]))
 
 
 def fetch_punch_card(repos):

@@ -140,11 +140,9 @@ pie title Codebase by language (bytes)
 | | Contributor | Commits | |
 |---|---|---:|---|
 | <img src="https://github.com/hletrd.png?size=40" width="40" alt="hletrd"> | [@hletrd](https://github.com/hletrd) | 2653 | `████████████████████` |
-| <img src="https://github.com/claude.png?size=40" width="40" alt="claude"> | [@claude](https://github.com/claude) | 605 | `█████░░░░░░░░░░░░░░░` |
 | <img src="https://github.com/jiunbae.png?size=40" width="40" alt="jiunbae"> | [@jiunbae](https://github.com/jiunbae) | 483 | `████░░░░░░░░░░░░░░░░` |
 | <img src="https://github.com/cheon7886.png?size=40" width="40" alt="cheon7886"> | [@cheon7886](https://github.com/cheon7886) | 3 | `█░░░░░░░░░░░░░░░░░░░` |
 | <img src="https://github.com/codingskynet.png?size=40" width="40" alt="codingskynet"> | [@codingskynet](https://github.com/codingskynet) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
-| <img src="https://github.com/github-actions[bot].png?size=40" width="40" alt="github-actions[bot]"> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
