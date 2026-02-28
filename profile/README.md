@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-7-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-222%2C956-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-222%2C974-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -64,9 +64,9 @@ Commit activity across all repositories (KST, UTC+9):
   3 AM  ████████░░░░░░░░░░░░ 136  <-- 3:30 AM
   4 AM  ██████░░░░░░░░░░░░░░ 101
   5 AM  █████████░░░░░░░░░░░ 150
-  6 AM  ████████████░░░░░░░░ 199
-  7 AM  █████████████████░░░ 278
-  8 AM  ██████████████████░░ 292
+  6 AM  ████████████░░░░░░░░ 200
+  7 AM  █████████████████░░░ 279
+  8 AM  ██████████████████░░ 293
   9 AM  ████████████████████ 328
  10 AM  ███████████░░░░░░░░░ 180
  11 AM  ██████░░░░░░░░░░░░░░ 97
@@ -79,7 +79,7 @@ Commit activity across all repositories (KST, UTC+9):
   6 PM  ████░░░░░░░░░░░░░░░░ 73
   7 PM  ███████░░░░░░░░░░░░░ 116
   8 PM  ████████░░░░░░░░░░░░ 131
-  9 PM  ██████░░░░░░░░░░░░░░ 99
+  9 PM  ██████░░░░░░░░░░░░░░ 100
  10 PM  ██████████░░░░░░░░░░ 169
  11 PM  ███████████░░░░░░░░░ 182
 ```
@@ -87,9 +87,9 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 1003 | 28% |
-| ☀️ Morning | 6–11 AM | 1374 | 38% |
+| ☀️ Morning | 6–11 AM | 1377 | 38% |
 | 🌤️ Afternoon | 12–5 PM | 487 | 13% |
-| 🌆 Evening | 6–11 PM | 770 | 21% |
+| 🌆 Evening | 6–11 PM | 771 | 21% |
 
 > **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -101,7 +101,7 @@ Commit activity across all repositories (KST, UTC+9):
 | TypeScript | 430 | 75,306 | 7,840 | 11,432 |
 | Shell | 33 | 7,808 | 1,003 | 1,561 |
 | Rust | 26 | 6,591 | 405 | 941 |
-| Python | 25 | 5,516 | 583 | 741 |
+| Python | 25 | 5,534 | 584 | 742 |
 | JavaScript | 23 | 3,198 | 248 | 361 |
 | C Header | 6 | 1,926 | 7,858 | 879 |
 | HTML | 4 | 1,681 | 13 | 172 |
@@ -114,18 +114,18 @@ Commit activity across all repositories (KST, UTC+9):
 | C | 3 | 147 | 11 | 17 |
 | Dockerfile | 3 | 67 | 34 | 41 |
 | Makefile | 1 | 26 | 7 | 7 |
-| **Total** | **1,290** | **222,955** | **32,449** | **37,155** |
+| **Total** | **1,290** | **222,973** | **32,450** | **37,156** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "Swift" : 6005047
+    "Swift" : 6014054
     "TypeScript" : 2950014
     "C++" : 380845
     "Shell" : 350007
     "Rust" : 253484
-    "Python" : 236918
+    "Python" : 237781
     "JavaScript" : 131644
     "C" : 114444
     "PowerShell" : 75874
@@ -152,10 +152,10 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://github.com/hletrd.png?size=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 665,145 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://github.com/jiunbae.png?size=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 283,751 | `█████████░░░░░░░░░░░` |
-| <a href="https://github.com/cheon7886"><img src="https://github.com/cheon7886.png?size=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 621 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/codingskynet"><img src="https://github.com/codingskynet.png?size=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 33 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 1,053,250 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 884,713 | `█████████████████░░░` |
+| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 621 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/codingskynet"><img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 66 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
@@ -175,43 +175,43 @@ pie title Codebase by language (bytes)
   <tr>
     <td align="center" width="100">
       <a href="https://github.com/cheon7886">
-        <img src="https://github.com/cheon7886.png?size=64" width="64" height="64" alt="cheon7886">
+        <img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=64" width="64" height="64" alt="cheon7886">
       </a><br>
       <a href="https://github.com/cheon7886">cheon7886</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/circle-oo">
-        <img src="https://github.com/circle-oo.png?size=64" width="64" height="64" alt="circle-oo">
+        <img src="https://avatars.githubusercontent.com/u/9482404?v=4&s=64" width="64" height="64" alt="circle-oo">
       </a><br>
       <a href="https://github.com/circle-oo">circle-oo</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/codingskynet">
-        <img src="https://github.com/codingskynet.png?size=64" width="64" height="64" alt="codingskynet">
+        <img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=64" width="64" height="64" alt="codingskynet">
       </a><br>
       <a href="https://github.com/codingskynet">codingskynet</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/hletrd">
-        <img src="https://github.com/hletrd.png?size=64" width="64" height="64" alt="hletrd">
+        <img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=64" width="64" height="64" alt="hletrd">
       </a><br>
       <a href="https://github.com/hletrd">hletrd</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/jiunbae">
-        <img src="https://github.com/jiunbae.png?size=64" width="64" height="64" alt="jiunbae">
+        <img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=64" width="64" height="64" alt="jiunbae">
       </a><br>
       <a href="https://github.com/jiunbae">jiunbae</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/leejseo">
-        <img src="https://github.com/leejseo.png?size=64" width="64" height="64" alt="leejseo">
+        <img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=64" width="64" height="64" alt="leejseo">
       </a><br>
       <a href="https://github.com/leejseo">leejseo</a>
     </td>
     <td align="center" width="100">
       <a href="https://github.com/Overlaine-00">
-        <img src="https://github.com/Overlaine-00.png?size=64" width="64" height="64" alt="Overlaine-00">
+        <img src="https://avatars.githubusercontent.com/u/26185179?v=4&s=64" width="64" height="64" alt="Overlaine-00">
       </a><br>
       <a href="https://github.com/Overlaine-00">Overlaine-00</a>
     </td>
