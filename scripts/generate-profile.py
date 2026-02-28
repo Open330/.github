@@ -118,6 +118,7 @@ def fetch_contributors(repos):
     each commit individually, which is prohibitively expensive.
     """
     totals = defaultdict(int)
+    avatars = {}
     failed_repos = []
 
     for r in repos:
@@ -127,6 +128,8 @@ def fetch_contributors(repos):
             repo_total = 0
             for c in data:
                 login = c["author"]["login"]
+                if "avatar_url" in c.get("author", {}):
+                    avatars[login] = c["author"]["avatar_url"]
                 loc = sum(w.get("a", 0) + w.get("d", 0) for w in c.get("weeks", []))
                 totals[login] += loc
                 repo_total += loc
@@ -151,6 +154,8 @@ def fetch_contributors(repos):
                 repo_total = 0
                 for c in data:
                     login = c["author"]["login"]
+                    if "avatar_url" in c.get("author", {}):
+                        avatars[login] = c["author"]["avatar_url"]
                     loc = sum(w.get("a", 0) + w.get("d", 0) for w in c.get("weeks", []))
                     totals[login] += loc
                     repo_total += loc
@@ -166,7 +171,7 @@ def fetch_contributors(repos):
 
     # Filter out bots / AI co-author accounts
     filtered = {k: v for k, v in totals.items() if k not in EXCLUDE_AUTHORS}
-    return dict(sorted(filtered.items(), key=lambda x: -x[1]))
+    return dict(sorted(filtered.items(), key=lambda x: -x[1])), avatars
 
 
 def fetch_punch_card(repos):
@@ -195,10 +200,11 @@ def fetch_members():
     members than the known team (requires admin:org scope to list all)."""
     data = api_get(f"/orgs/{ORG}/members?per_page=100")
     if data and len(data) >= len(TEAM):
-        return [m["login"] for m in data]
+        avatars = {m["login"]: m["avatar_url"] for m in data if "avatar_url" in m}
+        return [m["login"] for m in data], avatars
     # API returned partial results (missing scope) — use hardcoded list
     print("  ⚠ members API returned partial results, using TEAM list", file=sys.stderr)
-    return list(TEAM)
+    return list(TEAM), {}
 
 
 def compute_loc(repos):
@@ -246,6 +252,15 @@ def compute_loc(repos):
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+def _avatar_url(avatars, login, size):
+    """Return a sized avatar URL, preferring the canonical API URL."""
+    url = avatars.get(login)
+    if url:
+        sep = "&" if "?" in url else "?"
+        return f"{url}{sep}s={size}"
+    return f"https://github.com/{login}.png?size={size}"
+
+
 def fmt(n):
     return f"{n:,}"
 
@@ -259,7 +274,7 @@ def bar(value, max_val, width=20):
 
 # ── README generator ──────────────────────────────────────────────────────────
 
-def generate(public_repos, n_all_repos, contributors, punch, languages, loc, members):
+def generate(public_repos, n_all_repos, contributors, punch, languages, loc, members, avatars):
     L = []
     a = L.append
 
@@ -425,7 +440,8 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("|---|---|---:|---|")
     max_loc = max(contributors.values()) if contributors else 1
     for login, loc_count in contributors.items():
-        a(f'| <a href="https://github.com/{login}"><img src="https://github.com/{login}.png?size=40" '
+        avatar = _avatar_url(avatars, login, 40)
+        a(f'| <a href="https://github.com/{login}"><img src="{avatar}" '
           f'width="40" height="40" alt="{login}"></a> '
           f"| [@{login}](https://github.com/{login}) | {fmt(loc_count)} | `{bar(loc_count, max_loc)}` |")
     a("")
@@ -456,9 +472,10 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("<table>")
     a("  <tr>")
     for m in members:
+        avatar = _avatar_url(avatars, m, 64)
         a(f'    <td align="center" width="100">')
         a(f'      <a href="https://github.com/{m}">')
-        a(f'        <img src="https://github.com/{m}.png?size=64" width="64" height="64" alt="{m}">')
+        a(f'        <img src="{avatar}" width="64" height="64" alt="{m}">')
         a(f'      </a><br>')
         a(f'      <a href="https://github.com/{m}">{m}</a>')
         a(f'    </td>')
@@ -510,7 +527,7 @@ def main():
 
     # Statistics use ALL repos (public + private)
     print("Fetching contributors (all repos)...")
-    contributors = fetch_contributors(all_repos)
+    contributors, contributor_avatars = fetch_contributors(all_repos)
     print(f"  {len(contributors)} contributors")
 
     print("Fetching punch card (all repos)...")
@@ -520,13 +537,16 @@ def main():
     languages = fetch_languages(all_repos)
 
     print("Fetching members...")
-    members = fetch_members()
+    members, member_avatars = fetch_members()
 
     print("Computing LOC (cloning + scc, all repos)...")
     loc = compute_loc(all_repos)
 
+    # Merge avatar maps (member avatars take precedence)
+    avatars = {**contributor_avatars, **member_avatars}
+
     print("Generating README...")
-    readme = generate(public_repos, len(all_repos), contributors, punch, languages, loc, members)
+    readme = generate(public_repos, len(all_repos), contributors, punch, languages, loc, members, avatars)
 
     out = Path(__file__).resolve().parent.parent / "profile" / "README.md"
     out.write_text(readme)
