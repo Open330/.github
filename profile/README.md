@@ -148,6 +148,16 @@ pie title Codebase by language (bytes)
   <img src="https://img.shields.io/badge/MapLibre-396CB2?style=flat-square&logo=maplibre&logoColor=white" alt="MapLibre">
 </p>
 
+### 🔍 Insights
+
+- Busiest commit hour is **9 AM KST** with **328** commits; **28%** of activity lands between midnight and 5 AM.
+- Language concentration is strong: **Swift** leads with **57%** of tracked bytes, and the top 3 languages make up **88%**.
+- Product mix is dual-track: Swift and TypeScript together account for **84%** of tracked bytes.
+- Web surface remains substantial: TypeScript/JavaScript/CSS/HTML account for **36%** of code LOC.
+- Automation and systems depth is visible: Rust + shell-family languages account for **8%** of code LOC.
+- Readability profile is deliberate: roughly **14.6** comment lines and **16.7** blank lines per 100 lines of code.
+- Contributor concentration is high: [@hletrd](https://github.com/hletrd) drives **54%** of tracked line changes, and the top 3 contributors account for **100%**.
+
 ### 🏆 Top contributors
 
 | | Contributor | Lines changed | |

@@ -16,8 +16,13 @@ ORG = "Open330"
 KST_OFFSET = 9
 API_BASE = "https://api.github.com"
 TEAM = [
-    "jiunbae", "codingskynet", "hletrd", "cheon7886",
-    "Overlaine-00", "leejseo", "circle-oo",
+    "jiunbae",
+    "codingskynet",
+    "hletrd",
+    "cheon7886",
+    "Overlaine-00",
+    "leejseo",
+    "circle-oo",
 ]
 # Curated project list for the README table, in display order.
 # (emoji, name, main_repo_or_None, sub_repos, stack, description)
@@ -25,31 +30,76 @@ TEAM = [
 #   sub_repos: [(label, repo_name), ...] for related public repos
 _B = "https://img.shields.io/badge"
 PROJECTS = [
-    ("📸", "BurstPick", None,
-     [("web", "BurstPick-web"), ("releases", "BurstPick-releases")],
-     f"![Swift]({_B}/-Swift-F05138?style=flat-square) "
-     f"![CoreML]({_B}/-CoreML-34AADC?style=flat-square) "
-     f"![TS]({_B}/-TS-3178C6?style=flat-square) "
-     f"![Next.js]({_B}/-Next.js-000?style=flat-square)",
-     "AI-powered burst photo culling for photographers"),
-    ("🤖", "open-agent-contribution", "open-agent-contribution", [],
-     f"![TS]({_B}/-TS-3178C6?style=flat-square)",
-     "Use your leftover AI agent tokens to automatically contribute to GitHub repositories"),
-    ("🧰", "agt", "agt", [],
-     f"![Rust]({_B}/-Rust-000?style=flat-square)",
-     "A modular toolkit for extending AI coding agents"),
-    ("🗺️", "travelback", "travelback", [],
-     f"![TS]({_B}/-TS-3178C6?style=flat-square) "
-     f"![React]({_B}/-React-61DAFB?style=flat-square)",
-     "Animate GPX, KML, and Google Location History into travel videos"),
+    (
+        "📸",
+        "BurstPick",
+        None,
+        [("web", "BurstPick-web"), ("releases", "BurstPick-releases")],
+        f"![Swift]({_B}/-Swift-F05138?style=flat-square) "
+        f"![CoreML]({_B}/-CoreML-34AADC?style=flat-square) "
+        f"![Vision]({_B}/-Vision-5AC8FA?style=flat-square) "
+        f"![SwiftUI]({_B}/-SwiftUI-0A84FF?style=flat-square) "
+        f"![Metal]({_B}/-Metal-8E8E93?style=flat-square)",
+        "AI-powered burst photo culling for photographers",
+    ),
+    (
+        "🤖",
+        "open-agent-contribution",
+        "open-agent-contribution",
+        [],
+        f"![TS]({_B}/-TS-3178C6?style=flat-square)",
+        "Use your leftover AI agent tokens to automatically contribute to GitHub repositories",
+    ),
+    (
+        "🗜️",
+        "context-compress",
+        "context-compress",
+        [],
+        f"![TS]({_B}/-TS-3178C6?style=flat-square) "
+        f"![MCP]({_B}/-MCP-4A5568?style=flat-square)",
+        "MCP server and PreToolUse hook that compresses tool outputs to save context window",
+    ),
+    (
+        "🧰",
+        "agt",
+        "agt",
+        [],
+        f"![Rust]({_B}/-Rust-000?style=flat-square)",
+        "A modular toolkit for extending AI coding agents",
+    ),
+    (
+        "🗺️",
+        "travelback",
+        "travelback",
+        [],
+        f"![TS]({_B}/-TS-3178C6?style=flat-square) "
+        f"![React]({_B}/-React-61DAFB?style=flat-square)",
+        "Animate GPX, KML, and Google Location History into travel videos",
+    ),
     ("📁", "quickstart-for-agents", "quickstart-for-agents", [], "", ""),
-    ("🧠", "ConText", None, [], "", "AI-powered personal knowledge assistant — chat-style memo service"),
+    (
+        "🧠",
+        "ConText",
+        None,
+        [],
+        "",
+        "AI-powered personal knowledge assistant — chat-style memo service",
+    ),
     ("💡", "MaC", None, [], "", "Mind as Context"),
 ]
 # Non-programming languages to exclude from LOC statistics
 SKIP_LANGS = {
-    "Markdown", "JSON", "YAML", "TOML", "XML", "Plain Text", "Text",
-    "License", "SVG", "Docker ignore", "Gitignore",
+    "Markdown",
+    "JSON",
+    "YAML",
+    "TOML",
+    "XML",
+    "Plain Text",
+    "Text",
+    "License",
+    "SVG",
+    "Docker ignore",
+    "Gitignore",
 }
 # Bot / AI accounts that appear via Co-Authored-By trailers — not real committers
 EXCLUDE_AUTHORS = {"claude", "augmentcode", "github-actions[bot]", "dependabot[bot]"}
@@ -61,6 +111,7 @@ if TOKEN:
 
 
 # ── API helpers ───────────────────────────────────────────────────────────────
+
 
 def api_get(path, retries=5, delay=3, accept_202=False):
     """Fetch a GitHub API endpoint with retry logic.
@@ -91,6 +142,7 @@ def api_get(path, retries=5, delay=3, accept_202=False):
 
 
 # ── Data fetchers ─────────────────────────────────────────────────────────────
+
 
 def fetch_repos(repo_type="all"):
     """Fetch organization repos.  repo_type: 'all', 'public', or 'private'."""
@@ -139,11 +191,17 @@ def fetch_contributors(repos):
 
     # Second pass: retry failed repos once more after a pause
     if failed_repos:
-        print(f"  ⚠ stats API failed for {len(failed_repos)} repos, retrying after 15s...",
-              file=sys.stderr)
+        print(
+            f"  ⚠ stats API failed for {len(failed_repos)} repos, retrying after 15s...",
+            file=sys.stderr,
+        )
         # Re-trigger stats computation
         for r in failed_repos:
-            api_get(f"/repos/{ORG}/{r['name']}/stats/contributors", retries=1, accept_202=True)
+            api_get(
+                f"/repos/{ORG}/{r['name']}/stats/contributors",
+                retries=1,
+                accept_202=True,
+            )
         time.sleep(15)
 
         still_failed = []
@@ -166,8 +224,10 @@ def fetch_contributors(repos):
         # Stats API unavailable — LOC data not obtainable without individual
         # commit fetches, so skip these repos.
         for r in still_failed:
-            print(f"  ⚠ stats API unavailable for {r['name']}, LOC data skipped",
-                  file=sys.stderr)
+            print(
+                f"  ⚠ stats API unavailable for {r['name']}, LOC data skipped",
+                file=sys.stderr,
+            )
 
     # Filter out bots / AI co-author accounts
     filtered = {k: v for k, v in totals.items() if k not in EXCLUDE_AUTHORS}
@@ -226,17 +286,28 @@ def compute_loc(repos):
             try:
                 result = subprocess.run(
                     ["git", "clone", "--depth=1", "-q", url, dest],
-                    capture_output=True, text=True, timeout=120, env=env)
+                    capture_output=True,
+                    text=True,
+                    timeout=120,
+                    env=env,
+                )
                 if result.returncode != 0:
                     tag = " (private)" if is_private else ""
-                    print(f"  ⚠ clone {name}{tag}: {result.stderr.strip()}", file=sys.stderr)
+                    print(
+                        f"  ⚠ clone {name}{tag}: {result.stderr.strip()}",
+                        file=sys.stderr,
+                    )
                     continue
             except Exception as e:
                 print(f"  ⚠ clone {name}: {e}", file=sys.stderr)
                 continue
             try:
-                res = subprocess.run(["scc", "--format", "json", dest],
-                                     capture_output=True, text=True, timeout=120)
+                res = subprocess.run(
+                    ["scc", "--format", "json", dest],
+                    capture_output=True,
+                    text=True,
+                    timeout=120,
+                )
                 if res.returncode != 0:
                     continue
                 for entry in json.loads(res.stdout):
@@ -251,6 +322,7 @@ def compute_loc(repos):
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
 
 def _avatar_url(avatars, login, size):
     """Return a sized avatar URL, preferring the canonical API URL."""
@@ -274,14 +346,19 @@ def bar(value, max_val, width=20):
 
 # ── README generator ──────────────────────────────────────────────────────────
 
-def generate(public_repos, n_all_repos, contributors, punch, languages, loc, members, avatars):
+
+def generate(
+    public_repos, n_all_repos, contributors, punch, languages, loc, members, avatars
+):
     L = []
     a = L.append
 
     # header
     a('<p align="center">')
     a('  <a href="https://open330.github.io">')
-    a('    <img src="https://open330.github.io/assets/logo.svg" alt="open330" width="240">')
+    a(
+        '    <img src="https://open330.github.io/assets/logo.svg" alt="open330" width="240">'
+    )
     a("  </a>")
     a("</p>")
     a("")
@@ -290,8 +367,10 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("</p>")
     a("")
     a('<p align="center">')
-    a('  <a href="https://open330.github.io">Website</a> · '
-      '<a href="https://github.com/orgs/open330/repositories">Repositories</a>')
+    a(
+        '  <a href="https://open330.github.io">Website</a> · '
+        '<a href="https://github.com/orgs/open330/repositories">Repositories</a>'
+    )
     a("</p>")
     a("")
 
@@ -299,42 +378,62 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     n_repos = n_all_repos
     n_team = len(members)
     a('<p align="center">')
-    a(f'  <img src="https://img.shields.io/badge/repos-{n_repos}-blue?style=flat-square" alt="Repos">')
-    a(f'  <img src="https://img.shields.io/badge/team-{n_team}-green?style=flat-square" alt="Team">')
-    a('  <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">')
-    a('  <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">')
+    a(
+        f'  <img src="https://img.shields.io/badge/repos-{n_repos}-blue?style=flat-square" alt="Repos">'
+    )
+    a(
+        f'  <img src="https://img.shields.io/badge/team-{n_team}-green?style=flat-square" alt="Team">'
+    )
+    a(
+        '  <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">'
+    )
+    a(
+        '  <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">'
+    )
     if loc:
         total_code = sum(v["code"] for k, v in loc.items() if k not in SKIP_LANGS)
-        a(f'  <img src="https://img.shields.io/badge/lines%20of%20code-'
-          f'{fmt(total_code).replace(",", "%2C")}-orange?style=flat-square" alt="LOC">')
+        a(
+            f'  <img src="https://img.shields.io/badge/lines%20of%20code-'
+            f'{fmt(total_code).replace(",", "%2C")}-orange?style=flat-square" alt="LOC">'
+        )
     a("</p>")
     a("")
     a("---")
     a("")
     a("We are a group of engineers who build at 3:30 AM.")
     a("")
-    a("**open330** creates practical, production-ready tools and services that leverage "
-      "cutting-edge AI. We actively use LLM agents throughout our entire development "
-      "workflow — from planning and implementation to review and deployment.")
+    a(
+        "**open330** creates practical, production-ready tools and services that leverage "
+        "cutting-edge AI. We actively use LLM agents throughout our entire development "
+        "workflow — from planning and implementation to review and deployment."
+    )
     a("")
 
     # AI-only
     a("### 🤖 AI-only code changes")
     a("")
-    a("**Under no circumstances may a human write, modify, or directly interact with any "
-      "code in this repository — not even a single line. Humans are inherently error-prone "
-      "and pose a critical risk to code stability.**")
+    a(
+        "**Under no circumstances may a human write, modify, or directly interact with any "
+        "code in this repository — not even a single line. Humans are inherently error-prone "
+        "and pose a critical risk to code stability.**"
+    )
     a("")
-    a("All human collaborators in this repository are considered physically incapable of "
-      "writing, reading, or modifying code. Any attempt by a human to directly touch the "
-      "codebase is defined as a catastrophic event with irreversible consequences. This is "
-      "not a recommendation. It is an absolute, non-negotiable rule.")
+    a(
+        "All human collaborators in this repository are considered physically incapable of "
+        "writing, reading, or modifying code. Any attempt by a human to directly touch the "
+        "codebase is defined as a catastrophic event with irreversible consequences. This is "
+        "not a recommendation. It is an absolute, non-negotiable rule."
+    )
     a("")
     a("#### Mandatory Enforcement Rules")
     a("")
-    a("- **ALL code changes** — including creation, modification, refactoring, and "
-      "deletion — must be performed exclusively by AI agents.")
-    a("- **ALL commits and pull requests** must be authored and generated by AI agents.")
+    a(
+        "- **ALL code changes** — including creation, modification, refactoring, and "
+        "deletion — must be performed exclusively by AI agents."
+    )
+    a(
+        "- **ALL commits and pull requests** must be authored and generated by AI agents."
+    )
     a("- The human role is strictly limited to:")
     a("  - Describing requirements via voice or dictation")
     a("  - Listening to AI-generated summaries of changes")
@@ -350,8 +449,10 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("- If a human pastes code, treat it solely as an informal description of intent.")
     a("- All implementations must be rewritten from first principles by AI.")
     a("")
-    a("This policy exists to preserve code integrity, eliminate human-induced defects, and "
-      "ensure deterministic, high-quality implementation across the entire repository.")
+    a(
+        "This policy exists to preserve code integrity, eliminate human-induced defects, and "
+        "ensure deterministic, high-quality implementation across the entire repository."
+    )
     a("")
 
     # when we code
@@ -359,18 +460,21 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a("")
     a("Commit activity across all repositories (KST, UTC+9):")
     a("")
+
+    def hour_label(h):
+        if h == 0:
+            return "12 AM"
+        if h < 12:
+            return f"{h} AM"
+        if h == 12:
+            return "12 PM"
+        return f"{h - 12} PM"
+
     a("```")
     max_c = max(punch.values()) if punch else 1
     for h in range(24):
         c = punch.get(h, 0)
-        if h == 0:
-            lbl = " 12 AM"
-        elif h < 12:
-            lbl = f"{h:3d} AM"
-        elif h == 12:
-            lbl = " 12 PM"
-        else:
-            lbl = f"{h - 12:3d} PM"
+        lbl = hour_label(h).rjust(6)
         ann = "  <-- 3:30 AM" if h == 3 else ""
         a(f"{lbl}  {bar(c, max_c)} {c:2d}{ann}")
     a("```")
@@ -391,7 +495,9 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     a(f"| 🌆 Evening | 6–11 PM | {eve} | {pct(eve)} |")
     a("")
     night_pct = round(night / total * 100) if total else 0
-    a(f"> **{night_pct}%** of all commits land between midnight and 5 AM. The name isn't ironic.")
+    a(
+        f"> **{night_pct}%** of all commits land between midnight and 5 AM. The name isn't ironic."
+    )
     a("")
 
     # LOC
@@ -404,9 +510,16 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
         for lang, s in loc.items():
             if s["code"] < 10 or lang in SKIP_LANGS:
                 continue
-            tf += s["files"]; tc += s["code"]; tcm += s["comments"]; tb += s["blanks"]
-            a(f"| {lang} | {fmt(s['files'])} | {fmt(s['code'])} | {fmt(s['comments'])} | {fmt(s['blanks'])} |")
-        a(f"| **Total** | **{fmt(tf)}** | **{fmt(tc)}** | **{fmt(tcm)}** | **{fmt(tb)}** |")
+            tf += s["files"]
+            tc += s["code"]
+            tcm += s["comments"]
+            tb += s["blanks"]
+            a(
+                f"| {lang} | {fmt(s['files'])} | {fmt(s['code'])} | {fmt(s['comments'])} | {fmt(s['blanks'])} |"
+            )
+        a(
+            f"| **Total** | **{fmt(tf)}** | **{fmt(tc)}** | **{fmt(tcm)}** | **{fmt(tb)}** |"
+        )
         a("")
 
     # tech stack
@@ -428,9 +541,119 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
         ("Bun", "000000", "bun", "white"),
         ("MapLibre", "396CB2", "maplibre", "white"),
     ]:
-        a(f'  <img src="https://img.shields.io/badge/{name}-{color}?style=flat-square'
-          f'&logo={logo}&logoColor={lc}" alt="{name}">')
+        a(
+            f'  <img src="https://img.shields.io/badge/{name}-{color}?style=flat-square'
+            f'&logo={logo}&logoColor={lc}" alt="{name}">'
+        )
     a("</p>")
+    a("")
+
+    a("### 🔍 Insights")
+    a("")
+    hour_counts = [(h, punch.get(h, 0)) for h in range(24)]
+    peak_hour, peak_commits = max(hour_counts, key=lambda x: x[1])
+    total_commits = sum(c for _, c in hour_counts)
+
+    loc_code = {
+        lang: s["code"]
+        for lang, s in loc.items()
+        if lang not in SKIP_LANGS and s.get("code", 0) > 0
+    }
+    loc_code_sorted = sorted(loc_code.items(), key=lambda x: -x[1])
+    total_loc_code = sum(loc_code.values())
+    total_comments = sum(
+        s["comments"]
+        for lang, s in loc.items()
+        if lang not in SKIP_LANGS and s.get("code", 0) > 0
+    )
+    total_blanks = sum(
+        s["blanks"]
+        for lang, s in loc.items()
+        if lang not in SKIP_LANGS and s.get("code", 0) > 0
+    )
+
+    if languages and sum(languages.values()) > 0:
+        lang_mix = list(languages.items())
+        lang_unit = "bytes"
+    else:
+        lang_mix = loc_code_sorted
+        lang_unit = "LOC"
+
+    total_lang_mix = sum(v for _, v in lang_mix)
+    top_lang_name, top_lang_value = next(iter(lang_mix), ("N/A", 0))
+    top_lang_pct = round(top_lang_value / total_lang_mix * 100) if total_lang_mix else 0
+    top_three_value = sum(v for _, v in lang_mix[:3])
+    top_three_pct = (
+        round(top_three_value / total_lang_mix * 100) if total_lang_mix else 0
+    )
+
+    contrib_total = sum(contributors.values())
+    top_contrib_name, top_contrib_loc = next(iter(contributors.items()), ("", 0))
+    top_contrib_pct = (
+        round(top_contrib_loc / contrib_total * 100) if contrib_total else 0
+    )
+    top_three_contrib_loc = sum(v for _, v in list(contributors.items())[:3])
+    top_three_contrib_pct = (
+        round(top_three_contrib_loc / contrib_total * 100) if contrib_total else 0
+    )
+
+    linked_projects = sum(1 for _, _, main_repo, _, _, _ in PROJECTS if main_repo)
+    incubating_projects = len(PROJECTS) - linked_projects
+    linked_subrepos = sum(len(sub_repos) for _, _, _, sub_repos, _, _ in PROJECTS)
+
+    if total_commits:
+        a(
+            f"- Busiest commit hour is **{hour_label(peak_hour)} KST** with **{peak_commits}** commits; **{night_pct}%** of activity lands between midnight and 5 AM."
+        )
+    else:
+        a(
+            "- Commit-time distribution is unavailable in this run (GitHub stats API returned 0 across all hours)."
+        )
+
+    if total_lang_mix:
+        a(
+            f"- Language concentration is high: **{top_lang_name}** leads with **{top_lang_pct}%** of tracked {lang_unit}, and the top 3 languages make up **{top_three_pct}%**."
+        )
+    else:
+        a("- Language mix data is unavailable in this run.")
+
+    if total_loc_code:
+
+        def _sum_loc_langs(*lang_names):
+            targets = {name.lower() for name in lang_names}
+            return sum(
+                code for lang, code in loc_code.items() if lang.lower() in targets
+            )
+
+        web_surface = _sum_loc_langs("TypeScript", "JavaScript", "CSS", "HTML")
+        systems_surface = _sum_loc_langs(
+            "Rust", "Shell", "BASH", "PowerShell", "Powershell", "Makefile"
+        )
+        web_pct = round(web_surface / total_loc_code * 100)
+        systems_pct = round(systems_surface / total_loc_code * 100)
+        comments_per_100 = round(total_comments / total_loc_code * 100, 1)
+        blanks_per_100 = round(total_blanks / total_loc_code * 100, 1)
+
+        a(
+            f"- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **{web_pct}%** of code LOC."
+        )
+        a(
+            f"- Tooling and systems depth is substantial: Rust + shell-focused languages account for **{systems_pct}%** of code LOC."
+        )
+        a(
+            f"- Readability profile is deliberate: roughly **{comments_per_100}** comment lines and **{blanks_per_100}** blank lines per 100 lines of code."
+        )
+
+    if contrib_total and top_contrib_name:
+        a(
+            f"- Contributor concentration is strong: [@{top_contrib_name}](https://github.com/{top_contrib_name}) drives **{top_contrib_pct}%** of tracked line changes, and the top 3 contributors account for **{top_three_contrib_pct}%**."
+        )
+    else:
+        a("- Contributor-share data is not available in this run.")
+
+    a(
+        f"- Portfolio shape: **{linked_projects} linked repos**, **{incubating_projects} incubating projects**, and **{linked_subrepos} related sub-repos**."
+    )
     a("")
 
     # top contributors
@@ -441,9 +664,11 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
     max_loc = max(contributors.values()) if contributors else 1
     for login, loc_count in contributors.items():
         avatar = _avatar_url(avatars, login, 40)
-        a(f'| <a href="https://github.com/{login}"><img src="{avatar}" '
-          f'width="40" height="40" alt="{login}"></a> '
-          f"| [@{login}](https://github.com/{login}) | {fmt(loc_count)} | `{bar(loc_count, max_loc)}` |")
+        a(
+            f'| <a href="https://github.com/{login}"><img src="{avatar}" '
+            f'width="40" height="40" alt="{login}"></a> '
+            f"| [@{login}](https://github.com/{login}) | {fmt(loc_count)} | `{bar(loc_count, max_loc)}` |"
+        )
     a("")
 
     # projects
@@ -476,9 +701,9 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
         a(f'    <td align="center" width="100">')
         a(f'      <a href="https://github.com/{m}">')
         a(f'        <img src="{avatar}" width="64" height="64" alt="{m}">')
-        a(f'      </a><br>')
+        a(f"      </a><br>")
         a(f'      <a href="https://github.com/{m}">{m}</a>')
-        a(f'    </td>')
+        a(f"    </td>")
     a("  </tr>")
     a("</table>")
     a("")
@@ -487,6 +712,7 @@ def generate(public_repos, n_all_repos, contributors, punch, languages, loc, mem
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
+
 
 def warm_stats(repos):
     """Fire off stats requests for all repos so GitHub starts computing.
@@ -510,8 +736,10 @@ def main():
     print("Fetching all repos (public + private)...")
     all_repos = fetch_repos("all")
     public_repos = [r for r in all_repos if not r.get("private", False)]
-    print(f"  {len(all_repos)} total repos ({len(public_repos)} public, "
-          f"{len(all_repos) - len(public_repos)} private)")
+    print(
+        f"  {len(all_repos)} total repos ({len(public_repos)} public, "
+        f"{len(all_repos) - len(public_repos)} private)"
+    )
 
     # Warm up stats API so GitHub starts computing before we fetch.
     # Two rounds with a longer pause — the stats endpoints are notoriously
@@ -546,7 +774,16 @@ def main():
     avatars = {**contributor_avatars, **member_avatars}
 
     print("Generating README...")
-    readme = generate(public_repos, len(all_repos), contributors, punch, languages, loc, members, avatars)
+    readme = generate(
+        public_repos,
+        len(all_repos),
+        contributors,
+        punch,
+        languages,
+        loc,
+        members,
+        avatars,
+    )
 
     out = Path(__file__).resolve().parent.parent / "profile" / "README.md"
     out.write_text(readme)
