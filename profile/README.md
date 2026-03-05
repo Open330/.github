@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/repos-15-blue?style=flat-square" alt="Repos">
+  <img src="https://img.shields.io/badge/repos-16-blue?style=flat-square" alt="Repos">
   <img src="https://img.shields.io/badge/team-7-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-253%2C060-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-252%2C747-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -71,7 +71,7 @@ Commit activity across all repositories (KST, UTC+9):
  10 AM  ██████████░░░░░░░░░░ 206
  11 AM  █████░░░░░░░░░░░░░░░ 103
  12 PM  █████████████░░░░░░░ 269
-  1 PM  ███████░░░░░░░░░░░░░ 141
+  1 PM  ███████░░░░░░░░░░░░░ 142
   2 PM  █████░░░░░░░░░░░░░░░ 100
   3 PM  █░░░░░░░░░░░░░░░░░░░ 16
   4 PM  █░░░░░░░░░░░░░░░░░░░ 12
@@ -80,7 +80,7 @@ Commit activity across all repositories (KST, UTC+9):
   7 PM  ██████░░░░░░░░░░░░░░ 122
   8 PM  █████████░░░░░░░░░░░ 191
   9 PM  ██████░░░░░░░░░░░░░░ 115
- 10 PM  █████████░░░░░░░░░░░ 187
+ 10 PM  ██████████░░░░░░░░░░ 193
  11 PM  ██████████░░░░░░░░░░ 207
 ```
 
@@ -88,8 +88,8 @@ Commit activity across all repositories (KST, UTC+9):
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 1191 | 28% |
 | ☀️ Morning | 6–11 AM | 1610 | 38% |
-| 🌤️ Afternoon | 12–5 PM | 556 | 13% |
-| 🌆 Evening | 6–11 PM | 895 | 21% |
+| 🌤️ Afternoon | 12–5 PM | 557 | 13% |
+| 🌆 Evening | 6–11 PM | 901 | 21% |
 
 > **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -98,15 +98,15 @@ Commit activity across all repositories (KST, UTC+9):
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | Swift | 830 | 137,020 | 17,191 | 23,848 |
-| TypeScript | 482 | 80,263 | 8,084 | 12,109 |
-| Rust | 37 | 9,625 | 449 | 1,251 |
-| Shell | 41 | 8,631 | 1,071 | 1,720 |
+| TypeScript | 486 | 79,844 | 8,081 | 11,994 |
+| Rust | 37 | 9,633 | 449 | 1,251 |
+| Shell | 42 | 8,688 | 1,072 | 1,737 |
 | Python | 22 | 4,783 | 540 | 673 |
-| JavaScript | 24 | 3,224 | 250 | 364 |
+| JavaScript | 26 | 3,244 | 252 | 367 |
 | C Header | 9 | 2,417 | 9,481 | 1,059 |
 | HTML | 5 | 1,693 | 13 | 172 |
 | BASH | 2 | 1,594 | 167 | 280 |
-| CSS | 6 | 1,488 | 50 | 278 |
+| CSS | 7 | 1,509 | 50 | 281 |
 | Powershell | 2 | 1,250 | 102 | 163 |
 | C++ | 2 | 461 | 0 | 60 |
 | C | 5 | 244 | 15 | 30 |
@@ -114,22 +114,22 @@ Commit activity across all repositories (KST, UTC+9):
 | Batch | 2 | 109 | 31 | 15 |
 | Dockerfile | 3 | 67 | 34 | 41 |
 | Makefile | 1 | 26 | 7 | 7 |
-| **Total** | **1,476** | **253,059** | **37,529** | **42,124** |
+| **Total** | **1,484** | **252,746** | **37,529** | **42,032** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "Swift" : 7176928
-    "TypeScript" : 3119833
+    "TypeScript" : 3102674
     "C++" : 761143
-    "Shell" : 383454
-    "Rust" : 373081
+    "Shell" : 385335
+    "Rust" : 373619
     "C" : 224217
     "Python" : 199966
-    "JavaScript" : 138425
+    "JavaScript" : 138984
     "PowerShell" : 58184
-    "CSS" : 36933
+    "CSS" : 37561
     "HTML" : 31957
     "HLSL" : 15054
     "Metal" : 11011
@@ -160,17 +160,17 @@ pie title Codebase by language (bytes)
 - Language concentration is high: **Swift** leads with **57%** of tracked bytes, and the top 3 languages make up **88%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **34%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **8%** of code LOC.
-- Readability profile is deliberate: roughly **14.8** comment lines and **16.6** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **14.9** comment lines and **16.6** blank lines per 100 lines of code.
 - Contributor concentration is strong: [@hletrd](https://github.com/hletrd) drives **54%** of tracked line changes, and the top 3 contributors account for **100%**.
-- Portfolio shape: **5 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
+- Portfolio shape: **6 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
 ### 🏆 Top contributors
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 1,214,948 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,036,569 | `█████████████████░░░` |
-| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 838 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 1,215,034 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,038,127 | `█████████████████░░░` |
+| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 944 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/codingskynet"><img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 101 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cursoragent"><img src="https://avatars.githubusercontent.com/u/199161495?v=4&s=40" width="40" height="40" alt="cursoragent"></a> | [@cursoragent](https://github.com/cursoragent) | 33 | `█░░░░░░░░░░░░░░░░░░░` |
 
