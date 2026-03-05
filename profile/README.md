@@ -139,13 +139,19 @@ pie title Codebase by language (bytes)
 ```
 
 <p>
+  <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
   <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun">
   <img src="https://img.shields.io/badge/MapLibre-396CB2?style=flat-square&logo=maplibre&logoColor=white" alt="MapLibre">
+  <img src="https://img.shields.io/badge/CoreML-34AADC?style=flat-square" alt="CoreML">
+  <img src="https://img.shields.io/badge/Vision-5AC8FA?style=flat-square" alt="Vision">
+  <img src="https://img.shields.io/badge/SwiftUI-0A84FF?style=flat-square" alt="SwiftUI">
+  <img src="https://img.shields.io/badge/Metal-8E8E93?style=flat-square" alt="Metal">
 </p>
 
 ### 🔍 Insights

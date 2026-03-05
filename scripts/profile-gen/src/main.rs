@@ -937,7 +937,9 @@ fn generate_readme(
     add(&mut lines, "");
     add(&mut lines, "<p>");
     for (name, color, logo, logo_color) in [
+        ("Swift", "F05138", "swift", "white"),
         ("TypeScript", "3178C6", "typescript", "white"),
+        ("Python", "3776AB", "python", "white"),
         ("Rust", "000000", "rust", "white"),
         ("Next.js", "000000", "nextdotjs", "white"),
         ("React", "61DAFB", "react", "black"),
@@ -949,6 +951,19 @@ fn generate_readme(
             &mut lines,
             format!(
                 "  <img src=\"https://img.shields.io/badge/{name}-{color}?style=flat-square&logo={logo}&logoColor={logo_color}\" alt=\"{name}\">"
+            ),
+        );
+    }
+    for (name, color) in [
+        ("CoreML", "34AADC"),
+        ("Vision", "5AC8FA"),
+        ("SwiftUI", "0A84FF"),
+        ("Metal", "8E8E93"),
+    ] {
+        add(
+            &mut lines,
+            format!(
+                "  <img src=\"https://img.shields.io/badge/{name}-{color}?style=flat-square\" alt=\"{name}\">"
             ),
         );
     }
