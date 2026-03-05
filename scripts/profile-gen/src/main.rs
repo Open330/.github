@@ -70,6 +70,22 @@ const PROJECTS: &[Project] = &[
         description: "AI-powered burst photo culling for photographers",
     },
     Project {
+        emoji: "🛡️",
+        name: "docs-sentry",
+        main_repo: Some("docs-sentry"),
+        sub_repos: &[],
+        stack: "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) ![CLI](https://img.shields.io/badge/-CLI-334155?style=flat-square)",
+        description: "Audit README quality and template consistency across organization repositories",
+    },
+    Project {
+        emoji: "📈",
+        name: "open330-repo-pulse",
+        main_repo: Some("open330-repo-pulse"),
+        sub_repos: &[],
+        stack: "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) ![CLI](https://img.shields.io/badge/-CLI-334155?style=flat-square)",
+        description: "Scan GitHub organization repositories and score maintenance health",
+    },
+    Project {
         emoji: "🤖",
         name: "open-agent-contribution",
         main_repo: Some("open-agent-contribution"),
@@ -764,6 +780,11 @@ fn generate_readme(
     add(
         &mut lines,
         "**open330** creates practical, production-ready tools and services that leverage cutting-edge AI. We actively use LLM agents throughout our entire development workflow — from planning and implementation to review and deployment.",
+    );
+    add(&mut lines, "");
+    add(
+        &mut lines,
+        "Latest additions: **[docs-sentry](https://github.com/open330/docs-sentry)**, a Rust CLI that audits README quality across organization repositories, and **[open330-repo-pulse](https://github.com/open330/open330-repo-pulse)**, a Rust CLI that scans repos and scores maintenance health.",
     );
     add(&mut lines, "");
 
