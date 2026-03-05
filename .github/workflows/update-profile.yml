@@ -25,6 +25,10 @@ jobs:
 
       - uses: dtolnay/rust-toolchain@stable
 
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: scripts/profile-gen
+
       - name: Install scc
         run: |
           wget -qO- https://github.com/boyter/scc/releases/download/v3.4.0/scc_Linux_x86_64.tar.gz | tar xz
