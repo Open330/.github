@@ -1,11 +1,12 @@
 use anyhow::{Context, Result};
+use rayon::prelude::*;
 use reqwest::StatusCode;
 use reqwest::blocking::Client;
 use reqwest::header::{ACCEPT, AUTHORIZATION, HeaderMap, HeaderValue, USER_AGENT};
 use serde_json::Value;
 use std::collections::{HashMap, HashSet};
 use std::fs;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::thread::sleep;
 use std::time::Duration;
@@ -496,6 +497,95 @@ fn fetch_members(gh: &GithubClient) -> (Vec<String>, HashMap<String, String>) {
     )
 }
 
+fn analyze_repo_loc(
+    repo: &Repo,
+    root: &Path,
+    token: Option<&str>,
+) -> Option<HashMap<String, LocStats>> {
+    let mut clone_url = repo.clone_url.clone();
+    if let Some(token) = token
+        && repo.private_repo
+    {
+        clone_url = clone_url.replacen("https://", &format!("https://x-access-token:{token}@"), 1);
+    }
+
+    let dest = root.join(&repo.name);
+    let mut clone_cmd = Command::new("git");
+    clone_cmd
+        .arg("clone")
+        .arg("--depth=1")
+        .arg("-q")
+        .arg(&clone_url)
+        .arg(&dest);
+
+    if token.is_some() {
+        clone_cmd.env("GIT_ASKPASS", "/bin/echo");
+        clone_cmd.env("GIT_TERMINAL_PROMPT", "0");
+    }
+
+    match clone_cmd.output() {
+        Ok(output) if output.status.success() => {}
+        Ok(output) => {
+            let tag = if repo.private_repo { " (private)" } else { "" };
+            let stderr = String::from_utf8_lossy(&output.stderr).trim().to_string();
+            eprintln!("  ⚠ clone {}{}: {}", repo.name, tag, stderr);
+            return None;
+        }
+        Err(err) => {
+            eprintln!("  ⚠ clone {}: {}", repo.name, err);
+            return None;
+        }
+    }
+
+    let scc_output = match Command::new("scc")
+        .arg("--format")
+        .arg("json")
+        .arg(&dest)
+        .output()
+    {
+        Ok(output) => output,
+        Err(err) => {
+            eprintln!("  ⚠ scc {}: {}", repo.name, err);
+            return None;
+        }
+    };
+
+    if !scc_output.status.success() {
+        return None;
+    }
+
+    let payload = match serde_json::from_slice::<Value>(&scc_output.stdout) {
+        Ok(v) => v,
+        Err(err) => {
+            eprintln!("  ⚠ scc {}: {}", repo.name, err);
+            return None;
+        }
+    };
+
+    let Some(entries) = payload.as_array() else {
+        return None;
+    };
+
+    let mut repo_loc: HashMap<String, LocStats> = HashMap::new();
+    for entry in entries {
+        let Some(lang) = entry.get("Name").and_then(Value::as_str) else {
+            continue;
+        };
+
+        let stats = repo_loc.entry(lang.to_string()).or_default();
+        stats.files = stats.files.saturating_add(value_to_u64(entry.get("Count")));
+        stats.code = stats.code.saturating_add(value_to_u64(entry.get("Code")));
+        stats.comments = stats
+            .comments
+            .saturating_add(value_to_u64(entry.get("Comment")));
+        stats.blanks = stats
+            .blanks
+            .saturating_add(value_to_u64(entry.get("Blank")));
+    }
+
+    Some(repo_loc)
+}
+
 fn compute_loc(gh: &GithubClient, repos: &[Repo]) -> Vec<(String, LocStats)> {
     let mut loc: HashMap<String, LocStats> = HashMap::new();
     let tmp = match TempDir::new() {
@@ -506,86 +596,20 @@ fn compute_loc(gh: &GithubClient, repos: &[Repo]) -> Vec<(String, LocStats)> {
         }
     };
 
-    for repo in repos {
-        let mut clone_url = repo.clone_url.clone();
-        if let Some(token) = &gh.token
-            && repo.private_repo
-        {
-            clone_url =
-                clone_url.replacen("https://", &format!("https://x-access-token:{token}@"), 1);
-        }
+    let root = tmp.path().to_path_buf();
+    let token = gh.token.clone();
+    let partial_loc: Vec<HashMap<String, LocStats>> = repos
+        .par_iter()
+        .filter_map(|repo| analyze_repo_loc(repo, &root, token.as_deref()))
+        .collect();
 
-        let dest = tmp.path().join(&repo.name);
-        let mut clone_cmd = Command::new("git");
-        clone_cmd
-            .arg("clone")
-            .arg("--depth=1")
-            .arg("-q")
-            .arg(&clone_url)
-            .arg(&dest);
-
-        if gh.token.is_some() {
-            clone_cmd.env("GIT_ASKPASS", "/bin/echo");
-            clone_cmd.env("GIT_TERMINAL_PROMPT", "0");
-        }
-
-        match clone_cmd.output() {
-            Ok(output) if output.status.success() => {}
-            Ok(output) => {
-                let tag = if repo.private_repo { " (private)" } else { "" };
-                let stderr = String::from_utf8_lossy(&output.stderr).trim().to_string();
-                eprintln!("  ⚠ clone {}{}: {}", repo.name, tag, stderr);
-                continue;
-            }
-            Err(err) => {
-                eprintln!("  ⚠ clone {}: {}", repo.name, err);
-                continue;
-            }
-        }
-
-        let scc_output = match Command::new("scc")
-            .arg("--format")
-            .arg("json")
-            .arg(&dest)
-            .output()
-        {
-            Ok(output) => output,
-            Err(err) => {
-                eprintln!("  ⚠ scc {}: {}", repo.name, err);
-                continue;
-            }
-        };
-
-        if !scc_output.status.success() {
-            continue;
-        }
-
-        let payload = match serde_json::from_slice::<Value>(&scc_output.stdout) {
-            Ok(v) => v,
-            Err(err) => {
-                eprintln!("  ⚠ scc {}: {}", repo.name, err);
-                continue;
-            }
-        };
-
-        let Some(entries) = payload.as_array() else {
-            continue;
-        };
-
-        for entry in entries {
-            let Some(lang) = entry.get("Name").and_then(Value::as_str) else {
-                continue;
-            };
-
-            let stats = loc.entry(lang.to_string()).or_default();
-            stats.files = stats.files.saturating_add(value_to_u64(entry.get("Count")));
-            stats.code = stats.code.saturating_add(value_to_u64(entry.get("Code")));
-            stats.comments = stats
-                .comments
-                .saturating_add(value_to_u64(entry.get("Comment")));
-            stats.blanks = stats
-                .blanks
-                .saturating_add(value_to_u64(entry.get("Blank")));
+    for repo_loc in partial_loc {
+        for (lang, stats) in repo_loc {
+            let acc = loc.entry(lang).or_default();
+            acc.files = acc.files.saturating_add(stats.files);
+            acc.code = acc.code.saturating_add(stats.code);
+            acc.comments = acc.comments.saturating_add(stats.comments);
+            acc.blanks = acc.blanks.saturating_add(stats.blanks);
         }
     }
 
