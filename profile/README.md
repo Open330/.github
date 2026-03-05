@@ -26,6 +26,8 @@ We are a group of engineers who build at 3:30 AM.
 
 **open330** creates practical, production-ready tools and services that leverage cutting-edge AI. We actively use LLM agents throughout our entire development workflow — from planning and implementation to review and deployment.
 
+Latest addition: **[docs-sentry](https://github.com/open330/docs-sentry)**, a Rust CLI that audits README quality across organization repositories and highlights documentation gaps.
+
 ### 🤖 AI-only code changes
 
 **Under no circumstances may a human write, modify, or directly interact with any code in this repository — not even a single line. Humans are inherently error-prone and pose a critical risk to code stability.**
@@ -179,6 +181,7 @@ pie title Codebase by language (bytes)
 | Project | Stack | Description |
 |---------|-------|-------------|
 | 📸 **BurstPick** · [web](https://github.com/open330/BurstPick-web) · [releases](https://github.com/open330/BurstPick-releases) | ![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) ![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square) ![Vision](https://img.shields.io/badge/-Vision-5AC8FA?style=flat-square) ![SwiftUI](https://img.shields.io/badge/-SwiftUI-0A84FF?style=flat-square) ![Metal](https://img.shields.io/badge/-Metal-8E8E93?style=flat-square) | AI-powered burst photo culling for photographers |
+| 🛡️ [**docs-sentry**](https://github.com/open330/docs-sentry) | ![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) ![CLI](https://img.shields.io/badge/-CLI-334155?style=flat-square) | Audit README quality and template consistency across organization repositories |
 | 🤖 [**open-agent-contribution**](https://github.com/open330/open-agent-contribution) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) | Use your leftover AI agent tokens to automatically contribute to GitHub repositories |
 | 🗜️ [**context-compress**](https://github.com/open330/context-compress) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![MCP](https://img.shields.io/badge/-MCP-4A5568?style=flat-square) | MCP server and PreToolUse hook that compresses tool outputs to save context window |
 | 🕒 [**cron-mini-manager**](https://github.com/open330/cron-mini-manager) | ![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square) | Web-based cron job manager for macOS with local crontab control |
