@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "scripts/generate-profile.py"
+      - "scripts/profile-gen/**"
       - ".github/workflows/update-profile.yml"
   workflow_dispatch:
 
@@ -23,9 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
+      - uses: dtolnay/rust-toolchain@stable
 
       - name: Install scc
         run: |
@@ -36,7 +34,7 @@ jobs:
       - name: Generate profile
         env:
           GITHUB_TOKEN: ${{ secrets.ORG_PAT || secrets.GITHUB_TOKEN }}
-        run: python scripts/generate-profile.py
+        run: cargo run --release --manifest-path scripts/profile-gen/Cargo.toml
 
       - name: Commit and push
         run: |
@@ -46,4 +44,3 @@ jobs:
           git diff --staged --quiet || git commit -m "chore(profile): 🔄 update profile statistics"
           git pull --rebase
           git push
-
