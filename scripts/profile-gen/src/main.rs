@@ -86,6 +86,14 @@ const PROJECTS: &[Project] = &[
         description: "MCP server and PreToolUse hook that compresses tool outputs to save context window",
     },
     Project {
+        emoji: "🕒",
+        name: "cron-mini-manager",
+        main_repo: Some("cron-mini-manager"),
+        sub_repos: &[],
+        stack: "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square)",
+        description: "Web-based cron job manager for macOS with local crontab control",
+    },
+    Project {
         emoji: "🧰",
         name: "agt",
         main_repo: Some("agt"),
