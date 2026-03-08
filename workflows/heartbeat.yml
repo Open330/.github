@@ -1,0 +1,89 @@
+name: OAC Heartbeat
+
+on:
+  schedule:
+    # Run every 8 hours
+    - cron: "0 */8 * * *"
+
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Target repository (or 'all' for all repos)"
+        type: string
+        default: "all"
+      tokens:
+        description: "Token budget per run"
+        type: number
+        default: 50000
+      provider:
+        description: "AI provider to use"
+        type: string
+        default: "claude-code"
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  burstpick-web:
+    name: "OAC: burstpick-web"
+    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'schedule' ||
+      github.event.inputs.repo == 'all' ||
+      github.event.inputs.repo == 'burstpick-web'
+    concurrency:
+      group: oac-heartbeat-burstpick-web
+      cancel-in-progress: false
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install OAC
+        run: npm install -g @open330/oac
+
+      - name: Run OAC against burstpick-web
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx @open330/oac run \
+            --repo "Open330/burstpick-web" \
+            --tokens "${{ inputs.tokens || '50000' }}" \
+            --provider "${{ inputs.provider || 'claude-code' }}"
+
+  open-agent-contribution:
+    name: "OAC: open-agent-contribution"
+    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'schedule' ||
+      github.event.inputs.repo == 'all' ||
+      github.event.inputs.repo == 'open-agent-contribution'
+    concurrency:
+      group: oac-heartbeat-open-agent-contribution
+      cancel-in-progress: false
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install OAC
+        run: npm install -g @open330/oac
+
+      - name: Run OAC against open-agent-contribution
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx @open330/oac run \
+            --repo "Open330/open-agent-contribution" \
+            --tokens "${{ inputs.tokens || '50000' }}" \
+            --provider "${{ inputs.provider || 'claude-code' }}"

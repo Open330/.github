@@ -1,0 +1,129 @@
+name: PR Auto-Approve
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  auto-approve:
+    name: "Evaluate PR for auto-approval"
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'oac-contribution')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Determine task complexity
+        id: complexity
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_LABELS: ${{ join(github.event.pull_request.labels.*.name, ',') }}
+        run: |
+          # Safety check: only process PRs from bot or with oac-contribution label
+          IS_BOT="false"
+          if [[ "$PR_AUTHOR" == "github-actions[bot]" ]]; then
+            IS_BOT="true"
+          fi
+
+          HAS_OAC_LABEL="false"
+          if echo "$PR_LABELS" | grep -q "oac-contribution"; then
+            HAS_OAC_LABEL="true"
+          fi
+
+          if [[ "$IS_BOT" != "true" && "$HAS_OAC_LABEL" != "true" ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "reason=PR is not from bot and does not have oac-contribution label" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+          # Determine complexity from labels first
+          COMPLEXITY="unknown"
+
+          if echo "$PR_LABELS" | grep -qi "trivial"; then
+            COMPLEXITY="trivial"
+          elif echo "$PR_LABELS" | grep -qi "simple"; then
+            COMPLEXITY="simple"
+          elif echo "$PR_LABELS" | grep -qi "complex"; then
+            COMPLEXITY="complex"
+          elif echo "$PR_LABELS" | grep -qi "moderate"; then
+            COMPLEXITY="moderate"
+          fi
+
+          # If no complexity label, infer from title and body
+          if [[ "$COMPLEXITY" == "unknown" ]]; then
+            TITLE_LOWER=$(echo "$PR_TITLE" | tr '[:upper:]' '[:lower:]')
+            BODY_LOWER=$(echo "$PR_BODY" | tr '[:upper:]' '[:lower:]')
+            COMBINED="$TITLE_LOWER $BODY_LOWER"
+
+            # Trivial patterns: lint fixes, formatting, typo fixes
+            if echo "$COMBINED" | grep -qE "(lint fix|linting|format|formatting|typo|whitespace|trailing space)"; then
+              COMPLEXITY="trivial"
+            # Simple patterns: TODO resolves, test additions, minor docs
+            elif echo "$COMBINED" | grep -qE "(todo|resolve todo|add test|test addition|simple fix|minor fix|add missing test)"; then
+              COMPLEXITY="simple"
+            # Complex patterns: refactor, architecture, breaking change
+            elif echo "$COMBINED" | grep -qE "(breaking change|major refactor|architecture|redesign|migration)"; then
+              COMPLEXITY="complex"
+            # Default to moderate for anything else
+            else
+              COMPLEXITY="moderate"
+            fi
+          fi
+
+          echo "complexity=$COMPLEXITY" >> "$GITHUB_OUTPUT"
+
+          # Decide approval
+          if [[ "$COMPLEXITY" == "trivial" || "$COMPLEXITY" == "simple" ]]; then
+            echo "auto_approve=true" >> "$GITHUB_OUTPUT"
+            echo "reason=Complexity is '$COMPLEXITY' - safe for auto-approval." >> "$GITHUB_OUTPUT"
+          else
+            echo "auto_approve=false" >> "$GITHUB_OUTPUT"
+            echo "reason=Complexity is '$COMPLEXITY' - requires human review." >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Auto-approve trivial/simple PR
+        if: steps.complexity.outputs.skip != 'true' && steps.complexity.outputs.auto_approve == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMPLEXITY: ${{ steps.complexity.outputs.complexity }}
+          REASON: ${{ steps.complexity.outputs.reason }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr review "$PR_NUMBER" --approve --body \
+            "Auto-approved by OAC workflow.
+
+          **Complexity:** $COMPLEXITY
+          **Reason:** $REASON
+
+          This PR was automatically approved because it falls within the auto-approvable complexity threshold (trivial/simple)."
+
+      - name: Label and comment on moderate/complex PR
+        if: steps.complexity.outputs.skip != 'true' && steps.complexity.outputs.auto_approve == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMPLEXITY: ${{ steps.complexity.outputs.complexity }}
+          REASON: ${{ steps.complexity.outputs.reason }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR_NUMBER" --add-label "needs-human-review"
+
+          gh pr comment "$PR_NUMBER" --body \
+            "This PR requires human review before merging.
+
+          **Complexity:** $COMPLEXITY
+          **Reason:** $REASON
+
+          A maintainer should review this PR before it can be approved."
+
+      - name: Skip non-OAC PR
+        if: steps.complexity.outputs.skip == 'true'
+        run: |
+          echo "Skipping: ${{ steps.complexity.outputs.reason }}"
