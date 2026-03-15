@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-371%2C928-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-384%2C927-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,18 +60,18 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ███████████░░░░░░░░░ 292
-  1 AM  ████████████████░░░░ 425
-  2 AM  ████████████░░░░░░░░ 316
-  3 AM  █████████░░░░░░░░░░░ 250  <-- 3:30 AM
-  4 AM  ███████████░░░░░░░░░ 283
-  5 AM  ███████████░░░░░░░░░ 287
-  6 AM  ████████████████░░░░ 416
-  7 AM  █████████████████░░░ 438
-  8 AM  ███████████████░░░░░ 404
-  9 AM  ████████████████████ 527
+ 12 AM  ███████████░░░░░░░░░ 296
+  1 AM  █████████████████░░░ 450
+  2 AM  ████████████░░░░░░░░ 323
+  3 AM  ███████████░░░░░░░░░ 279  <-- 3:30 AM
+  4 AM  ████████████░░░░░░░░ 316
+  5 AM  ████████████░░░░░░░░ 320
+  6 AM  ████████████████░░░░ 434
+  7 AM  ██████████████████░░ 469
+  8 AM  ████████████████░░░░ 421
+  9 AM  ████████████████████ 529
  10 AM  ███████████░░░░░░░░░ 288
- 11 AM  ████████░░░░░░░░░░░░ 214
+ 11 AM  ████████░░░░░░░░░░░░ 215
  12 PM  ███████████░░░░░░░░░ 296
   1 PM  ██████░░░░░░░░░░░░░░ 149
   2 PM  ████░░░░░░░░░░░░░░░░ 102
@@ -83,46 +83,47 @@ Commit activity across all repositories (KST, UTC+9):
   8 PM  ███████████░░░░░░░░░ 280
   9 PM  ██████████░░░░░░░░░░ 262
  10 PM  █████████████░░░░░░░ 337
- 11 PM  ██████████████░░░░░░ 372
+ 11 PM  ██████████████░░░░░░ 381
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 1853 | 28% |
-| ☀️ Morning | 6–11 AM | 2287 | 35% |
+| 🌙 Night | 12–5 AM | 1984 | 30% |
+| ☀️ Morning | 6–11 AM | 2356 | 35% |
 | 🌤️ Afternoon | 12–5 PM | 668 | 10% |
-| 🌆 Evening | 6–11 PM | 1697 | 26% |
+| 🌆 Evening | 6–11 PM | 1706 | 25% |
 
-> **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
+> **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| Swift | 1,304 | 245,327 | 26,477 | 39,354 |
-| TypeScript | 502 | 82,507 | 8,215 | 12,382 |
+| Swift | 1,341 | 256,632 | 26,627 | 40,937 |
+| TypeScript | 502 | 83,237 | 7,627 | 12,240 |
 | Rust | 51 | 14,616 | 548 | 1,883 |
 | Shell | 49 | 9,658 | 1,180 | 1,953 |
-| Python | 34 | 6,197 | 833 | 977 |
-| JavaScript | 30 | 3,761 | 304 | 464 |
-| Powershell | 7 | 2,131 | 80 | 250 |
+| Python | 34 | 6,265 | 805 | 937 |
+| JavaScript | 30 | 3,776 | 304 | 449 |
+| Powershell | 8 | 2,328 | 80 | 278 |
 | C Header | 6 | 1,938 | 7,844 | 876 |
 | HTML | 5 | 1,693 | 13 | 172 |
 | BASH | 2 | 1,594 | 167 | 280 |
 | CSS | 7 | 1,531 | 50 | 285 |
+| Metal | 3 | 684 | 96 | 108 |
 | C++ | 1 | 432 | 9 | 50 |
 | SQL | 3 | 164 | 44 | 54 |
 | C | 3 | 163 | 9 | 18 |
 | Batch | 3 | 122 | 31 | 18 |
 | Dockerfile | 3 | 67 | 34 | 41 |
 | Makefile | 1 | 26 | 7 | 7 |
-| **Total** | **2,011** | **371,927** | **45,845** | **59,064** |
+| **Total** | **2,052** | **384,926** | **45,475** | **60,586** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "Swift" : 12436301
+    "Swift" : 12962174
     "TypeScript" : 3216445
     "Rust" : 554906
     "Shell" : 425481
@@ -130,7 +131,7 @@ pie title Codebase by language (bytes)
     "Python" : 268245
     "JavaScript" : 160462
     "C" : 114143
-    "PowerShell" : 90870
+    "PowerShell" : 97532
     "CSS" : 38244
     "Metal" : 33033
     "HTML" : 31957
@@ -158,11 +159,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **9 AM KST** with **527** commits; **28%** of activity lands between midnight and 5 AM.
-- Language concentration is high: **Swift** leads with **70%** of tracked bytes, and the top 3 languages make up **91%**.
-- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **24%** of code LOC.
-- Tooling and systems depth is substantial: Rust + shell-focused languages account for **8%** of code LOC.
-- Readability profile is deliberate: roughly **12.3** comment lines and **15.9** blank lines per 100 lines of code.
+- Busiest commit hour is **9 AM KST** with **529** commits; **30%** of activity lands between midnight and 5 AM.
+- Language concentration is high: **Swift** leads with **71%** of tracked bytes, and the top 3 languages make up **91%**.
+- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **23%** of code LOC.
+- Tooling and systems depth is substantial: Rust + shell-focused languages account for **7%** of code LOC.
+- Readability profile is deliberate: roughly **11.8** comment lines and **15.7** blank lines per 100 lines of code.
 - Contributor concentration is strong: [@hletrd](https://github.com/hletrd) drives **67%** of tracked line changes, and the top 3 contributors account for **98%**.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
@@ -170,11 +171,11 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 3,755,410 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,662,022 | `█████████░░░░░░░░░░░` |
-| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 97,786 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 58,685 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 25,508 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 3,766,072 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,663,045 | `█████████░░░░░░░░░░░` |
+| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 101,461 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 70,821 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 26,427 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/MinSoekJeon"><img src="https://avatars.githubusercontent.com/u/19373742?v=4&s=40" width="40" height="40" alt="MinSoekJeon"></a> | [@MinSoekJeon](https://github.com/MinSoekJeon) | 284 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/codingskynet"><img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 101 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cursoragent"><img src="https://avatars.githubusercontent.com/u/199161495?v=4&s=40" width="40" height="40" alt="cursoragent"></a> | [@cursoragent](https://github.com/cursoragent) | 33 | `█░░░░░░░░░░░░░░░░░░░` |
