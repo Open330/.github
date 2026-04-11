@@ -71,7 +71,7 @@ Commit activity across all repositories (KST, UTC+9):
   8 AM  ████████████████░░░░ 436
   9 AM  ████████████████████ 539
  10 AM  ███████████░░░░░░░░░ 303
- 11 AM  █████████░░░░░░░░░░░ 244
+ 11 AM  █████████░░░░░░░░░░░ 245
  12 PM  ███████████░░░░░░░░░ 296
   1 PM  ██████░░░░░░░░░░░░░░ 149
   2 PM  ████░░░░░░░░░░░░░░░░ 102
@@ -89,7 +89,7 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 2143 | 30% |
-| ☀️ Morning | 6–11 AM | 2463 | 35% |
+| ☀️ Morning | 6–11 AM | 2464 | 35% |
 | 🌤️ Afternoon | 12–5 PM | 672 | 9% |
 | 🌆 Evening | 6–11 PM | 1801 | 25% |
 
@@ -166,22 +166,17 @@ pie title Codebase by language (bytes)
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **62%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **4%** of code LOC.
 - Readability profile is deliberate: roughly **16.5** comment lines and **12.3** blank lines per 100 lines of code.
-- Contributor concentration is strong: [@jiunbae](https://github.com/jiunbae) drives **46%** of tracked line changes, and the top 3 contributors account for **96%**.
+- Contributor concentration is strong: [@jiunbae](https://github.com/jiunbae) drives **67%** of tracked line changes, and the top 3 contributors account for **100%**.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
 ### 🏆 Top contributors
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,374,199 | `████████████████████` |
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 1,209,846 | `██████████████████░░` |
-| <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 272,909 | `████░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 84,069 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 16,763 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/codex"><img src="https://avatars.githubusercontent.com/u/267193182?v=4&s=40" width="40" height="40" alt="codex"></a> | [@codex](https://github.com/codex) | 4,115 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 592,012 | `████████████████████` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 293,127 | `██████████░░░░░░░░░░` |
 | <a href="https://github.com/Overlaine-00"><img src="https://avatars.githubusercontent.com/u/26185179?v=4&s=40" width="40" height="40" alt="Overlaine-00"></a> | [@Overlaine-00](https://github.com/Overlaine-00) | 1,508 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/MinSoekJeon"><img src="https://avatars.githubusercontent.com/u/19373742?v=4&s=40" width="40" height="40" alt="MinSoekJeon"></a> | [@MinSoekJeon](https://github.com/MinSoekJeon) | 284 | `█░░░░░░░░░░░░░░░░░░░` |
-| <a href="https://github.com/codingskynet"><img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 33 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 492 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
