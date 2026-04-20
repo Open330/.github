@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-810%2C576-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-812%2C864-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,53 +60,53 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  █████████████░░░░░░░ 341
-  1 AM  ███████████████████░ 511
-  2 AM  █████████████░░░░░░░ 351
-  3 AM  ████████████░░░░░░░░ 323  <-- 3:30 AM
-  4 AM  ███████████████░░░░░ 420
-  5 AM  ██████████████░░░░░░ 374
-  6 AM  ██████████████████░░ 483
-  7 AM  ████████████████████ 542
-  8 AM  █████████████████░░░ 454
-  9 AM  ████████████████████ 545
- 10 AM  █████████████░░░░░░░ 342
- 11 AM  ██████████░░░░░░░░░░ 266
- 12 PM  █████████████░░░░░░░ 347
-  1 PM  ███████░░░░░░░░░░░░░ 178
-  2 PM  █████░░░░░░░░░░░░░░░ 130
+ 12 AM  ████████████░░░░░░░░ 344
+  1 AM  ██████████████████░░ 536
+  2 AM  ████████████░░░░░░░░ 353
+  3 AM  ███████████░░░░░░░░░ 330  <-- 3:30 AM
+  4 AM  ██████████████░░░░░░ 424
+  5 AM  █████████████░░░░░░░ 374
+  6 AM  █████████████████░░░ 513
+  7 AM  ████████████████████ 589
+  8 AM  ████████████████░░░░ 485
+  9 AM  ███████████████████░ 558
+ 10 AM  ████████████░░░░░░░░ 357
+ 11 AM  █████████░░░░░░░░░░░ 266
+ 12 PM  ████████████░░░░░░░░ 356
+  1 PM  ██████░░░░░░░░░░░░░░ 189
+  2 PM  █████░░░░░░░░░░░░░░░ 137
   3 PM  ██░░░░░░░░░░░░░░░░░░ 50
-  4 PM  ██░░░░░░░░░░░░░░░░░░ 46
-  5 PM  █████░░░░░░░░░░░░░░░ 127
-  6 PM  ████████░░░░░░░░░░░░ 215
-  7 PM  ████████████░░░░░░░░ 340
-  8 PM  ████████████░░░░░░░░ 330
-  9 PM  ███████████░░░░░░░░░ 293
- 10 PM  ██████████████░░░░░░ 368
- 11 PM  ██████████████░░░░░░ 393
+  4 PM  ██░░░░░░░░░░░░░░░░░░ 50
+  5 PM  ████░░░░░░░░░░░░░░░░ 127
+  6 PM  ███████░░░░░░░░░░░░░ 219
+  7 PM  ████████████░░░░░░░░ 341
+  8 PM  ████████████░░░░░░░░ 349
+  9 PM  ███████████░░░░░░░░░ 329
+ 10 PM  █████████████░░░░░░░ 386
+ 11 PM  ██████████████░░░░░░ 403
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 2320 | 30% |
-| ☀️ Morning | 6–11 AM | 2632 | 34% |
-| 🌤️ Afternoon | 12–5 PM | 878 | 11% |
-| 🌆 Evening | 6–11 PM | 1939 | 25% |
+| 🌙 Night | 12–5 AM | 2361 | 29% |
+| ☀️ Morning | 6–11 AM | 2768 | 34% |
+| 🌤️ Afternoon | 12–5 PM | 909 | 11% |
+| 🌆 Evening | 6–11 PM | 2027 | 25% |
 
-> **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
+> **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,424 | 484,925 | 92,606 | 47,701 |
-| Swift | 1,440 | 275,867 | 28,393 | 44,076 |
+| TypeScript | 2,424 | 485,323 | 92,631 | 47,700 |
+| Swift | 1,444 | 277,655 | 28,863 | 44,406 |
 | Rust | 51 | 14,833 | 561 | 1,905 |
-| Shell | 55 | 10,087 | 1,203 | 1,999 |
+| Shell | 55 | 10,231 | 1,199 | 2,000 |
 | Python | 39 | 6,750 | 904 | 1,082 |
-| JavaScript | 56 | 4,824 | 359 | 602 |
+| JavaScript | 55 | 4,775 | 343 | 593 |
 | Powershell | 8 | 3,175 | 75 | 388 |
-| CSS | 9 | 2,933 | 152 | 518 |
+| CSS | 9 | 2,940 | 154 | 518 |
 | C Header | 6 | 1,938 | 7,844 | 876 |
 | HTML | 5 | 1,693 | 13 | 172 |
 | BASH | 2 | 1,594 | 167 | 280 |
@@ -118,22 +118,22 @@ Commit activity across all repositories (KST, UTC+9):
 | Dockerfile | 4 | 83 | 42 | 50 |
 | Windows Resource-Definition Script | 1 | 39 | 0 | 4 |
 | Makefile | 1 | 25 | 8 | 8 |
-| **Total** | **4,118** | **810,574** | **132,420** | **99,886** |
+| **Total** | **4,121** | **812,862** | **132,897** | **100,207** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 33908550
-    "Swift" : 14008863
+    "TypeScript" : 33929646
+    "Swift" : 14130794
     "Rust" : 564235
-    "Shell" : 439422
+    "Shell" : 443039
     "C++" : 388775
     "Python" : 294503
-    "JavaScript" : 205071
+    "JavaScript" : 202082
     "PowerShell" : 128198
     "C" : 114143
-    "CSS" : 75124
+    "CSS" : 75566
     "Metal" : 33033
     "HTML" : 31957
     "Go" : 22811
@@ -161,11 +161,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **9 AM KST** with **545** commits; **30%** of activity lands between midnight and 5 AM.
-- Language concentration is high: **TypeScript** leads with **68%** of tracked bytes, and the top 3 languages make up **97%**.
+- Busiest commit hour is **7 AM KST** with **589** commits; **29%** of activity lands between midnight and 5 AM.
+- Language concentration is high: **TypeScript** leads with **67%** of tracked bytes, and the top 3 languages make up **97%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **61%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **4%** of code LOC.
-- Readability profile is deliberate: roughly **16.3** comment lines and **12.3** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **16.4** comment lines and **12.3** blank lines per 100 lines of code.
 - Contributor-share data is not available in this run.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
