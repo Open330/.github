@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-850%2C859-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-852%2C777-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,38 +60,38 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ████████████░░░░░░░░ 413
+ 12 AM  █████████████░░░░░░░ 416
   1 AM  ██████████████████░░ 611
   2 AM  █████████████░░░░░░░ 421
   3 AM  ████████████░░░░░░░░ 388  <-- 3:30 AM
   4 AM  ███████████████░░░░░ 493
-  5 AM  █████████████░░░░░░░ 426
-  6 AM  ██████████████████░░ 592
-  7 AM  ████████████████████ 661
+  5 AM  █████████████░░░░░░░ 430
+  6 AM  ██████████████████░░ 610
+  7 AM  ████████████████████ 663
   8 AM  █████████████████░░░ 570
   9 AM  ███████████████████░ 618
  10 AM  ████████████░░░░░░░░ 389
  11 AM  █████████░░░░░░░░░░░ 311
- 12 PM  █████████████░░░░░░░ 418
+ 12 PM  █████████████░░░░░░░ 429
   1 PM  ███████░░░░░░░░░░░░░ 237
   2 PM  █████░░░░░░░░░░░░░░░ 152
   3 PM  ██░░░░░░░░░░░░░░░░░░ 74
   4 PM  ███░░░░░░░░░░░░░░░░░ 84
   5 PM  █████░░░░░░░░░░░░░░░ 173
   6 PM  ████████░░░░░░░░░░░░ 251
-  7 PM  ███████████░░░░░░░░░ 365
-  8 PM  ████████████░░░░░░░░ 406
+  7 PM  ███████████░░░░░░░░░ 369
+  8 PM  ████████████░░░░░░░░ 413
   9 PM  ████████████░░░░░░░░ 393
- 10 PM  █████████████░░░░░░░ 446
- 11 PM  ██████████████░░░░░░ 466
+ 10 PM  ██████████████░░░░░░ 449
+ 11 PM  ██████████████░░░░░░ 468
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 2752 | 29% |
-| ☀️ Morning | 6–11 AM | 3141 | 34% |
-| 🌤️ Afternoon | 12–5 PM | 1138 | 12% |
-| 🌆 Evening | 6–11 PM | 2327 | 25% |
+| 🌙 Night | 12–5 AM | 2759 | 29% |
+| ☀️ Morning | 6–11 AM | 3161 | 34% |
+| 🌤️ Afternoon | 12–5 PM | 1149 | 12% |
+| 🌆 Evening | 6–11 PM | 2343 | 25% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -100,9 +100,9 @@ Commit activity across all repositories (KST, UTC+9):
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,433 | 489,022 | 92,909 | 48,138 |
-| Swift | 1,573 | 298,531 | 33,591 | 48,081 |
-| Rust | 89 | 26,393 | 3,820 | 3,170 |
-| Shell | 61 | 10,776 | 1,402 | 2,084 |
+| Swift | 1,592 | 299,360 | 33,619 | 48,278 |
+| Rust | 90 | 27,485 | 4,406 | 3,285 |
+| Shell | 61 | 10,773 | 1,401 | 2,087 |
 | Python | 40 | 6,799 | 921 | 1,098 |
 | JavaScript | 59 | 5,616 | 425 | 688 |
 | CSS | 10 | 3,226 | 166 | 562 |
@@ -120,16 +120,16 @@ Commit activity across all repositories (KST, UTC+9):
 | Ruby | 1 | 37 | 2 | 6 |
 | Makefile | 1 | 25 | 8 | 8 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,312** | **850,857** | **141,478** | **105,837** |
+| **Total** | **4,332** | **852,775** | **142,091** | **106,152** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34121315
-    "Swift" : 15360568
-    "Rust" : 1153395
-    "Shell" : 470459
+    "Swift" : 15402307
+    "Rust" : 1228306
+    "Shell" : 470041
     "C++" : 388775
     "Python" : 297604
     "JavaScript" : 239569
@@ -164,11 +164,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **7 AM KST** with **661** commits; **29%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **7 AM KST** with **663** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **65%** of tracked bytes, and the top 3 languages make up **97%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **59%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **5%** of code LOC.
-- Readability profile is deliberate: roughly **16.6** comment lines and **12.4** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **16.7** comment lines and **12.4** blank lines per 100 lines of code.
 - Contributor-share data is not available in this run.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
