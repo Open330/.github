@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/repos-24-blue?style=flat-square" alt="Repos">
+  <img src="https://img.shields.io/badge/repos-25-blue?style=flat-square" alt="Repos">
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-871%2C239-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-888%2C215-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,19 +60,19 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ██████████████░░░░░░ 460
-  1 AM  ████████████████████ 660
-  2 AM  █████████████░░░░░░░ 438
-  3 AM  ████████████░░░░░░░░ 390  <-- 3:30 AM
-  4 AM  ███████████████░░░░░ 498
-  5 AM  ██████████████░░░░░░ 480
+ 12 AM  ██████████████░░░░░░ 462
+  1 AM  ████████████████████ 673
+  2 AM  ██████████████░░░░░░ 476
+  3 AM  █████████████░░░░░░░ 428  <-- 3:30 AM
+  4 AM  █████████████████░░░ 587
+  5 AM  ██████████████░░░░░░ 487
   6 AM  ███████████████████░ 643
-  7 AM  ████████████████████ 663
-  8 AM  █████████████████░░░ 570
-  9 AM  ███████████████████░ 618
- 10 AM  ████████████░░░░░░░░ 389
- 11 AM  ███████████░░░░░░░░░ 374
- 12 PM  ███████████████░░░░░ 499
+  7 AM  ████████████████████ 666
+  8 AM  █████████████████░░░ 583
+  9 AM  ███████████████████░ 636
+ 10 AM  ████████████░░░░░░░░ 391
+ 11 AM  ███████████░░░░░░░░░ 375
+ 12 PM  ███████████████░░░░░ 500
   1 PM  █████████░░░░░░░░░░░ 312
   2 PM  ██████░░░░░░░░░░░░░░ 213
   3 PM  ████░░░░░░░░░░░░░░░░ 129
@@ -81,62 +81,66 @@ Commit activity across all repositories (KST, UTC+9):
   6 PM  █████████░░░░░░░░░░░ 292
   7 PM  ████████████░░░░░░░░ 411
   8 PM  ██████████████░░░░░░ 465
-  9 PM  ██████████████░░░░░░ 455
- 10 PM  ██████████████░░░░░░ 480
- 11 PM  ███████████████░░░░░ 507
+  9 PM  ██████████████░░░░░░ 485
+ 10 PM  ███████████████░░░░░ 491
+ 11 PM  ███████████████░░░░░ 511
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 2926 | 28% |
-| ☀️ Morning | 6–11 AM | 3257 | 32% |
-| 🌤️ Afternoon | 12–5 PM | 1543 | 15% |
-| 🌆 Evening | 6–11 PM | 2610 | 25% |
+| 🌙 Night | 12–5 AM | 3113 | 29% |
+| ☀️ Morning | 6–11 AM | 3294 | 31% |
+| 🌤️ Afternoon | 12–5 PM | 1544 | 15% |
+| 🌆 Evening | 6–11 PM | 2655 | 25% |
 
-> **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
+> **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,434 | 489,355 | 92,956 | 48,197 |
-| Swift | 1,668 | 313,218 | 36,696 | 50,836 |
-| Rust | 108 | 31,659 | 5,306 | 3,665 |
+| TypeScript | 2,449 | 490,809 | 93,086 | 48,376 |
+| Swift | 1,732 | 322,090 | 37,976 | 52,440 |
+| Rust | 129 | 33,901 | 5,562 | 3,913 |
 | Shell | 62 | 10,805 | 1,426 | 2,098 |
-| Python | 40 | 6,799 | 921 | 1,098 |
-| JavaScript | 59 | 5,676 | 433 | 692 |
-| CSS | 10 | 3,230 | 167 | 563 |
+| Python | 41 | 6,814 | 921 | 1,101 |
+| JavaScript | 60 | 5,693 | 436 | 694 |
+| Svelte | 22 | 3,980 | 263 | 316 |
+| CSS | 11 | 3,443 | 192 | 598 |
 | Powershell | 8 | 3,175 | 75 | 388 |
 | C Header | 6 | 1,938 | 7,844 | 876 |
-| HTML | 6 | 1,779 | 13 | 176 |
+| HTML | 7 | 1,828 | 13 | 177 |
 | BASH | 2 | 1,594 | 167 | 280 |
 | Go | 7 | 927 | 0 | 85 |
 | C++ | 1 | 432 | 9 | 50 |
-| SQL | 3 | 164 | 44 | 54 |
+| SQL | 5 | 199 | 44 | 58 |
 | C | 3 | 163 | 9 | 18 |
 | Batch | 3 | 122 | 31 | 18 |
 | Dockerfile | 4 | 83 | 42 | 50 |
+| Autoconf | 9 | 76 | 0 | 0 |
 | Windows Resource-Definition Script | 1 | 39 | 0 | 4 |
 | Ruby | 1 | 37 | 2 | 6 |
 | Makefile | 1 | 25 | 8 | 8 |
+| TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,428** | **871,237** | **146,149** | **109,165** |
+| **Total** | **4,570** | **888,215** | **148,121** | **111,561** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 34135645
-    "Swift" : 16211680
-    "Rust" : 1425413
+    "TypeScript" : 34188191
+    "Swift" : 16673252
+    "Rust" : 1518262
     "Shell" : 472359
     "C++" : 388775
-    "Python" : 297604
-    "JavaScript" : 242073
+    "Python" : 297585
+    "JavaScript" : 242649
+    "Svelte" : 143451
     "PowerShell" : 128198
     "C" : 114143
-    "CSS" : 84495
-    "HTML" : 34594
+    "CSS" : 91645
+    "HTML" : 36084
     "Metal" : 33033
     "Go" : 22811
     "HLSL" : 7527
@@ -164,11 +168,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **7 AM KST** with **663** commits; **28%** of activity lands between midnight and 5 AM.
-- Language concentration is high: **TypeScript** leads with **64%** of tracked bytes, and the top 3 languages make up **97%**.
-- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **57%** of code LOC.
-- Tooling and systems depth is substantial: Rust + shell-focused languages account for **5%** of code LOC.
-- Readability profile is deliberate: roughly **16.8** comment lines and **12.5** blank lines per 100 lines of code.
+- Busiest commit hour is **1 AM KST** with **673** commits; **29%** of activity lands between midnight and 5 AM.
+- Language concentration is high: **TypeScript** leads with **63%** of tracked bytes, and the top 3 languages make up **96%**.
+- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **56%** of code LOC.
+- Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
+- Readability profile is deliberate: roughly **16.7** comment lines and **12.6** blank lines per 100 lines of code.
 - Contributor-share data is not available in this run.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
