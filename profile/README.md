@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-914%2C543-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-918%2C373-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,9 +60,9 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ██████████████░░░░░░ 474
-  1 AM  ████████████████████ 675
-  2 AM  ██████████████░░░░░░ 480
+ 12 AM  ███████████████░░░░░ 493
+  1 AM  ████████████████████ 680
+  2 AM  ██████████████░░░░░░ 484
   3 AM  █████████████░░░░░░░ 429  <-- 3:30 AM
   4 AM  █████████████████░░░ 590
   5 AM  ███████████████░░░░░ 495
@@ -70,9 +70,9 @@ Commit activity across all repositories (KST, UTC+9):
   7 AM  ████████████████████ 669
   8 AM  ██████████████████░░ 602
   9 AM  ████████████████████ 672
- 10 AM  █████████████░░░░░░░ 422
+ 10 AM  ████████████░░░░░░░░ 422
  11 AM  ████████████░░░░░░░░ 396
- 12 PM  ████████████████░░░░ 535
+ 12 PM  ████████████████░░░░ 536
   1 PM  ██████████░░░░░░░░░░ 336
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
@@ -81,27 +81,27 @@ Commit activity across all repositories (KST, UTC+9):
   6 PM  █████████░░░░░░░░░░░ 315
   7 PM  █████████████░░░░░░░ 426
   8 PM  ██████████████░░░░░░ 485
-  9 PM  ███████████████░░░░░ 491
- 10 PM  ███████████████░░░░░ 518
- 11 PM  ████████████████░░░░ 526
+  9 PM  ███████████████░░░░░ 502
+ 10 PM  ████████████████░░░░ 537
+ 11 PM  ████████████████░░░░ 545
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3143 | 28% |
+| 🌙 Night | 12–5 AM | 3171 | 29% |
 | ☀️ Morning | 6–11 AM | 3411 | 31% |
-| 🌤️ Afternoon | 12–5 PM | 1724 | 16% |
-| 🌆 Evening | 6–11 PM | 2761 | 25% |
+| 🌤️ Afternoon | 12–5 PM | 1725 | 16% |
+| 🌆 Evening | 6–11 PM | 2810 | 25% |
 
-> **28%** of all commits land between midnight and 5 AM. The name isn't ironic.
+> **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,482 | 495,166 | 93,472 | 48,825 |
-| Swift | 1,747 | 338,842 | 38,389 | 54,669 |
-| Rust | 134 | 37,780 | 6,688 | 4,260 |
+| TypeScript | 2,484 | 495,790 | 93,601 | 48,903 |
+| Swift | 1,753 | 341,994 | 38,398 | 55,013 |
+| Rust | 135 | 37,834 | 6,705 | 4,267 |
 | Shell | 63 | 10,823 | 1,432 | 2,102 |
 | Python | 41 | 6,814 | 921 | 1,101 |
 | JavaScript | 62 | 6,372 | 541 | 814 |
@@ -123,18 +123,18 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,628** | **914,543** | **150,176** | **114,757** |
+| **Total** | **4,637** | **918,373** | **150,331** | **115,186** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 34344418
-    "Swift" : 17539700
-    "Rust" : 1725108
+    "TypeScript" : 34372101
+    "Swift" : 17688726
+    "Rust" : 1729836
     "Shell" : 473339
     "C++" : 388775
-    "JavaScript" : 305886
+    "JavaScript" : 306840
     "Python" : 297585
     "Svelte" : 143451
     "PowerShell" : 128198
@@ -168,7 +168,7 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **675** commits; **28%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **680** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **62%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **55%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
