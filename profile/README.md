@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-918%2C373-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-918%2C396-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -64,7 +64,7 @@ Commit activity across all repositories (KST, UTC+9):
   1 AM  ████████████████████ 680
   2 AM  ██████████████░░░░░░ 484
   3 AM  █████████████░░░░░░░ 429  <-- 3:30 AM
-  4 AM  █████████████████░░░ 590
+  4 AM  █████████████████░░░ 594
   5 AM  ███████████████░░░░░ 495
   6 AM  ███████████████████░ 650
   7 AM  ████████████████████ 669
@@ -72,7 +72,7 @@ Commit activity across all repositories (KST, UTC+9):
   9 AM  ████████████████████ 672
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ████████████░░░░░░░░ 396
- 12 PM  ████████████████░░░░ 536
+ 12 PM  ████████████████░░░░ 537
   1 PM  ██████████░░░░░░░░░░ 336
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
@@ -82,16 +82,16 @@ Commit activity across all repositories (KST, UTC+9):
   7 PM  █████████████░░░░░░░ 426
   8 PM  ██████████████░░░░░░ 485
   9 PM  ███████████████░░░░░ 502
- 10 PM  ████████████████░░░░ 537
+ 10 PM  ████████████████░░░░ 538
  11 PM  ████████████████░░░░ 545
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3171 | 29% |
+| 🌙 Night | 12–5 AM | 3175 | 29% |
 | ☀️ Morning | 6–11 AM | 3411 | 31% |
-| 🌤️ Afternoon | 12–5 PM | 1725 | 16% |
-| 🌆 Evening | 6–11 PM | 2810 | 25% |
+| 🌤️ Afternoon | 12–5 PM | 1726 | 16% |
+| 🌆 Evening | 6–11 PM | 2811 | 25% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -99,12 +99,12 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,484 | 495,790 | 93,601 | 48,903 |
-| Swift | 1,753 | 341,994 | 38,398 | 55,013 |
+| TypeScript | 2,484 | 495,794 | 93,601 | 48,903 |
+| Swift | 1,753 | 342,010 | 38,398 | 55,013 |
 | Rust | 135 | 37,834 | 6,705 | 4,267 |
 | Shell | 63 | 10,823 | 1,432 | 2,102 |
 | Python | 41 | 6,814 | 921 | 1,101 |
-| JavaScript | 62 | 6,372 | 541 | 814 |
+| JavaScript | 62 | 6,375 | 541 | 814 |
 | Svelte | 22 | 3,980 | 263 | 316 |
 | CSS | 12 | 3,883 | 211 | 640 |
 | Powershell | 8 | 3,175 | 75 | 388 |
@@ -123,18 +123,18 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,637** | **918,373** | **150,331** | **115,186** |
+| **Total** | **4,637** | **918,396** | **150,331** | **115,186** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 34372101
-    "Swift" : 17688726
+    "TypeScript" : 34372299
+    "Swift" : 17689698
     "Rust" : 1729836
     "Shell" : 473339
     "C++" : 388775
-    "JavaScript" : 306840
+    "JavaScript" : 306983
     "Python" : 297585
     "Svelte" : 143451
     "PowerShell" : 128198
