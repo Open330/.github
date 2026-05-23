@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/repos-25-blue?style=flat-square" alt="Repos">
+  <img src="https://img.shields.io/badge/repos-26-blue?style=flat-square" alt="Repos">
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-922%2C740-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-923%2C270-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -61,19 +61,19 @@ Commit activity across all repositories (KST, UTC+9):
 
 ```
  12 AM  ███████████████░░░░░ 523
-  1 AM  ████████████████████ 689
-  2 AM  ██████████████░░░░░░ 484
+  1 AM  ████████████████████ 693
+  2 AM  ██████████████░░░░░░ 485
   3 AM  █████████████░░░░░░░ 451  <-- 3:30 AM
-  4 AM  ██████████████████░░ 617
+  4 AM  ██████████████████░░ 619
   5 AM  ███████████████░░░░░ 522
-  6 AM  ████████████████████ 673
+  6 AM  ███████████████████░ 675
   7 AM  ████████████████████ 676
-  8 AM  ██████████████████░░ 603
-  9 AM  ████████████████████ 672
+  8 AM  █████████████████░░░ 603
+  9 AM  ███████████████████░ 672
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ███████████░░░░░░░░░ 396
  12 PM  ████████████████░░░░ 547
-  1 PM  ██████████░░░░░░░░░░ 338
+  1 PM  ██████████░░░░░░░░░░ 339
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
   4 PM  █████░░░░░░░░░░░░░░░ 184
@@ -88,9 +88,9 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3286 | 29% |
-| ☀️ Morning | 6–11 AM | 3442 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1738 | 15% |
+| 🌙 Night | 12–5 AM | 3293 | 29% |
+| ☀️ Morning | 6–11 AM | 3444 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 1739 | 15% |
 | 🌆 Evening | 6–11 PM | 2939 | 26% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
@@ -104,11 +104,11 @@ Commit activity across all repositories (KST, UTC+9):
 | Rust | 135 | 39,013 | 6,972 | 4,339 |
 | Shell | 64 | 10,857 | 1,439 | 2,109 |
 | Python | 41 | 6,814 | 921 | 1,101 |
-| JavaScript | 62 | 6,375 | 541 | 814 |
+| JavaScript | 64 | 6,667 | 541 | 887 |
+| CSS | 14 | 4,070 | 211 | 670 |
 | Svelte | 22 | 3,980 | 263 | 316 |
-| CSS | 12 | 3,883 | 211 | 640 |
 | Powershell | 8 | 3,175 | 75 | 388 |
-| HTML | 8 | 2,031 | 13 | 182 |
+| HTML | 9 | 2,082 | 13 | 189 |
 | C Header | 6 | 1,938 | 7,844 | 876 |
 | BASH | 2 | 1,594 | 167 | 280 |
 | Go | 7 | 927 | 0 | 85 |
@@ -124,7 +124,7 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,669** | **922,740** | **151,819** | **115,683** |
+| **Total** | **4,674** | **923,270** | **151,819** | **115,793** |
 
 ### 💻 Tech stack
 
@@ -135,13 +135,13 @@ pie title Codebase by language (bytes)
     "Rust" : 1789508
     "Shell" : 475058
     "C++" : 388775
-    "JavaScript" : 306983
+    "JavaScript" : 315798
     "Python" : 297585
     "Svelte" : 143451
     "PowerShell" : 128198
     "C" : 114143
-    "CSS" : 103462
-    "HTML" : 42579
+    "CSS" : 107047
+    "HTML" : 44303
     "Metal" : 33033
     "Go" : 22811
     "HLSL" : 7527
@@ -169,11 +169,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **689** commits; **29%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **693** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **61%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **55%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
-- Readability profile is deliberate: roughly **16.5** comment lines and **12.5** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **16.4** comment lines and **12.5** blank lines per 100 lines of code.
 - Contributor-share data is not available in this run.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
