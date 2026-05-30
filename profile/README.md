@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-923%2C355-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-924%2C566-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -61,19 +61,19 @@ Commit activity across all repositories (KST, UTC+9):
 
 ```
  12 AM  ███████████████░░░░░ 523
-  1 AM  ████████████████████ 693
-  2 AM  ██████████████░░░░░░ 491
+  1 AM  ████████████████████ 695
+  2 AM  ██████████████░░░░░░ 493
   3 AM  █████████████░░░░░░░ 455  <-- 3:30 AM
   4 AM  ██████████████████░░ 619
   5 AM  ███████████████░░░░░ 522
   6 AM  ███████████████████░ 675
-  7 AM  ████████████████████ 676
-  8 AM  █████████████████░░░ 603
+  7 AM  ███████████████████░ 677
+  8 AM  █████████████████░░░ 606
   9 AM  ███████████████████░ 672
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ███████████░░░░░░░░░ 396
  12 PM  ████████████████░░░░ 550
-  1 PM  ██████████░░░░░░░░░░ 342
+  1 PM  ██████████░░░░░░░░░░ 343
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
   4 PM  █████░░░░░░░░░░░░░░░ 184
@@ -81,17 +81,17 @@ Commit activity across all repositories (KST, UTC+9):
   6 PM  █████████░░░░░░░░░░░ 315
   7 PM  ████████████░░░░░░░░ 426
   8 PM  ███████████████░░░░░ 512
-  9 PM  ████████████████░░░░ 552
+  9 PM  ████████████████░░░░ 554
  10 PM  ████████████████░░░░ 561
- 11 PM  █████████████████░░░ 573
+ 11 PM  ████████████████░░░░ 573
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3303 | 29% |
-| ☀️ Morning | 6–11 AM | 3444 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1745 | 15% |
-| 🌆 Evening | 6–11 PM | 2939 | 26% |
+| 🌙 Night | 12–5 AM | 3307 | 29% |
+| ☀️ Morning | 6–11 AM | 3448 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 1746 | 15% |
+| 🌆 Evening | 6–11 PM | 2941 | 26% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -101,7 +101,7 @@ Commit activity across all repositories (KST, UTC+9):
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,484 | 495,794 | 93,601 | 48,903 |
 | Swift | 1,783 | 345,101 | 39,612 | 55,429 |
-| Rust | 135 | 39,025 | 6,984 | 4,342 |
+| Rust | 136 | 40,236 | 7,014 | 4,434 |
 | Shell | 64 | 10,866 | 1,441 | 2,110 |
 | Python | 41 | 6,814 | 921 | 1,101 |
 | JavaScript | 65 | 6,731 | 541 | 901 |
@@ -124,15 +124,15 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,675** | **923,355** | **151,833** | **115,811** |
+| **Total** | **4,676** | **924,566** | **151,863** | **115,903** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34372299
-    "Swift" : 17917236
-    "Rust" : 1791060
+    "Swift" : 17918054
+    "Rust" : 1835380
     "Shell" : 475519
     "C++" : 388775
     "JavaScript" : 317974
@@ -169,7 +169,7 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **693** commits; **29%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **695** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **61%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **55%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
