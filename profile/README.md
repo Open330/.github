@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-925%2C431-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-925%2C948-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -61,37 +61,37 @@ Commit activity across all repositories (KST, UTC+9):
 
 ```
  12 AM  ███████████████░░░░░ 523
-  1 AM  ████████████████████ 697
+  1 AM  ████████████████████ 698
   2 AM  ██████████████░░░░░░ 493
   3 AM  █████████████░░░░░░░ 455  <-- 3:30 AM
-  4 AM  ██████████████████░░ 619
+  4 AM  ██████████████████░░ 620
   5 AM  ███████████████░░░░░ 522
   6 AM  ███████████████████░ 675
   7 AM  ███████████████████░ 677
   8 AM  █████████████████░░░ 607
-  9 AM  ███████████████████░ 672
+  9 AM  ███████████████████░ 673
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ███████████░░░░░░░░░ 396
  12 PM  ████████████████░░░░ 551
-  1 PM  ██████████░░░░░░░░░░ 343
+  1 PM  ██████████░░░░░░░░░░ 344
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
   4 PM  █████░░░░░░░░░░░░░░░ 184
   5 PM  ████████░░░░░░░░░░░░ 264
   6 PM  █████████░░░░░░░░░░░ 315
   7 PM  ████████████░░░░░░░░ 426
-  8 PM  ███████████████░░░░░ 512
+  8 PM  ███████████████░░░░░ 514
   9 PM  ████████████████░░░░ 554
  10 PM  ████████████████░░░░ 561
- 11 PM  ████████████████░░░░ 573
+ 11 PM  █████████████████░░░ 576
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3309 | 29% |
-| ☀️ Morning | 6–11 AM | 3449 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1747 | 15% |
-| 🌆 Evening | 6–11 PM | 2941 | 26% |
+| 🌙 Night | 12–5 AM | 3311 | 29% |
+| ☀️ Morning | 6–11 AM | 3450 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 1748 | 15% |
+| 🌆 Evening | 6–11 PM | 2946 | 26% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -100,10 +100,10 @@ Commit activity across all repositories (KST, UTC+9):
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,484 | 495,794 | 93,601 | 48,903 |
-| Swift | 1,783 | 345,101 | 39,612 | 55,429 |
-| Rust | 137 | 41,101 | 7,023 | 4,516 |
-| Shell | 64 | 10,866 | 1,441 | 2,110 |
-| Python | 41 | 6,814 | 921 | 1,101 |
+| Swift | 1,784 | 345,155 | 39,639 | 55,436 |
+| Rust | 138 | 41,451 | 7,127 | 4,556 |
+| Shell | 65 | 10,921 | 1,465 | 2,119 |
+| Python | 42 | 6,872 | 928 | 1,109 |
 | JavaScript | 65 | 6,731 | 541 | 901 |
 | CSS | 14 | 4,070 | 211 | 670 |
 | Svelte | 22 | 3,980 | 263 | 316 |
@@ -124,19 +124,19 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,677** | **925,431** | **151,872** | **115,985** |
+| **Total** | **4,681** | **925,948** | **152,034** | **116,049** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34372299
-    "Swift" : 17918054
-    "Rust" : 1863586
-    "Shell" : 475519
+    "Swift" : 17922868
+    "Rust" : 1882554
+    "Shell" : 479227
     "C++" : 388775
     "JavaScript" : 317974
-    "Python" : 297585
+    "Python" : 300772
     "Svelte" : 143451
     "PowerShell" : 128198
     "C" : 114143
@@ -169,7 +169,7 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **697** commits; **29%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **698** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **61%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **55%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
