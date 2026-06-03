@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-928%2C081-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-930%2C613-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,10 +60,10 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ███████████████░░░░░ 524
-  1 AM  ████████████████████ 699
-  2 AM  ██████████████░░░░░░ 493
-  3 AM  █████████████░░░░░░░ 456  <-- 3:30 AM
+ 12 AM  ███████████████░░░░░ 525
+  1 AM  ████████████████████ 701
+  2 AM  ██████████████░░░░░░ 495
+  3 AM  █████████████░░░░░░░ 458  <-- 3:30 AM
   4 AM  ██████████████████░░ 620
   5 AM  ███████████████░░░░░ 522
   6 AM  ███████████████████░ 675
@@ -73,7 +73,7 @@ Commit activity across all repositories (KST, UTC+9):
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ███████████░░░░░░░░░ 396
  12 PM  ████████████████░░░░ 551
-  1 PM  ██████████░░░░░░░░░░ 345
+  1 PM  ██████████░░░░░░░░░░ 346
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  █████░░░░░░░░░░░░░░░ 159
   4 PM  █████░░░░░░░░░░░░░░░ 184
@@ -88,9 +88,9 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3314 | 29% |
+| 🌙 Night | 12–5 AM | 3321 | 29% |
 | ☀️ Morning | 6–11 AM | 3450 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1749 | 15% |
+| 🌤️ Afternoon | 12–5 PM | 1750 | 15% |
 | 🌆 Evening | 6–11 PM | 2950 | 26% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
@@ -101,8 +101,8 @@ Commit activity across all repositories (KST, UTC+9):
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,484 | 495,794 | 93,601 | 48,903 |
 | Swift | 1,784 | 345,155 | 39,639 | 55,436 |
-| Rust | 139 | 43,584 | 7,159 | 4,722 |
-| Shell | 65 | 10,921 | 1,465 | 2,119 |
+| Rust | 142 | 46,082 | 7,232 | 4,933 |
+| Shell | 65 | 10,955 | 1,471 | 2,123 |
 | Python | 42 | 6,872 | 928 | 1,109 |
 | JavaScript | 65 | 6,731 | 541 | 901 |
 | CSS | 14 | 4,070 | 211 | 670 |
@@ -124,7 +124,7 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 25 | 8 | 8 |
 | TypeScript Typings | 5 | 25 | 15 | 4 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,682** | **928,081** | **152,066** | **116,215** |
+| **Total** | **4,685** | **930,613** | **152,145** | **116,430** |
 
 ### 💻 Tech stack
 
@@ -132,7 +132,7 @@ Commit activity across all repositories (KST, UTC+9):
 pie title Codebase by language (bytes)
     "TypeScript" : 34372299
     "Swift" : 17922868
-    "Rust" : 1959505
+    "Rust" : 2053541
     "Shell" : 479227
     "C++" : 388775
     "JavaScript" : 317974
@@ -169,11 +169,11 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **699** commits; **29%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **701** commits; **29%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **61%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **55%** of code LOC.
-- Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
-- Readability profile is deliberate: roughly **16.4** comment lines and **12.5** blank lines per 100 lines of code.
+- Tooling and systems depth is substantial: Rust + shell-focused languages account for **7%** of code LOC.
+- Readability profile is deliberate: roughly **16.3** comment lines and **12.5** blank lines per 100 lines of code.
 - Contributor-share data is not available in this run.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
