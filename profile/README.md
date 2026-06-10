@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-942%2C881-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-943%2C558-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -66,13 +66,13 @@ Commit activity across all repositories (KST, UTC+9):
   3 AM  █████████████░░░░░░░ 458  <-- 3:30 AM
   4 AM  ██████████████████░░ 623
   5 AM  ███████████████░░░░░ 526
-  6 AM  ███████████████████░ 682
+  6 AM  ███████████████████░ 683
   7 AM  ███████████████████░ 680
   8 AM  █████████████████░░░ 607
   9 AM  ███████████████████░ 678
  10 AM  ████████████░░░░░░░░ 422
  11 AM  ███████████░░░░░░░░░ 396
- 12 PM  ████████████████░░░░ 555
+ 12 PM  ████████████████░░░░ 556
   1 PM  ██████████░░░░░░░░░░ 348
   2 PM  ███████░░░░░░░░░░░░░ 246
   3 PM  ████░░░░░░░░░░░░░░░░ 159
@@ -89,8 +89,8 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 3341 | 29% |
-| ☀️ Morning | 6–11 AM | 3465 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1756 | 15% |
+| ☀️ Morning | 6–11 AM | 3466 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 1757 | 15% |
 | 🌆 Evening | 6–11 PM | 2959 | 26% |
 
 > **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
@@ -101,14 +101,14 @@ Commit activity across all repositories (KST, UTC+9):
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,497 | 497,964 | 93,727 | 49,140 |
 | Swift | 1,784 | 345,155 | 39,639 | 55,436 |
-| Rust | 148 | 53,853 | 7,570 | 5,583 |
+| Rust | 148 | 54,498 | 7,571 | 5,623 |
 | Shell | 66 | 10,986 | 1,481 | 2,128 |
-| JavaScript | 66 | 7,972 | 553 | 1,005 |
+| JavaScript | 66 | 7,998 | 553 | 1,006 |
 | Python | 42 | 6,872 | 928 | 1,109 |
-| CSS | 15 | 5,036 | 227 | 811 |
+| CSS | 15 | 5,037 | 227 | 811 |
 | Svelte | 22 | 3,980 | 263 | 316 |
 | Powershell | 8 | 3,175 | 75 | 388 |
-| HTML | 9 | 2,209 | 13 | 195 |
+| HTML | 9 | 2,214 | 13 | 195 |
 | C Header | 6 | 1,938 | 7,844 | 876 |
 | BASH | 2 | 1,594 | 167 | 280 |
 | Go | 7 | 927 | 0 | 85 |
@@ -123,7 +123,7 @@ Commit activity across all repositories (KST, UTC+9):
 | TypeScript Typings | 6 | 27 | 17 | 5 |
 | Makefile | 1 | 25 | 8 | 8 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,707** | **942,881** | **152,649** | **117,572** |
+| **Total** | **4,707** | **943,558** | **152,650** | **117,613** |
 
 ### 💻 Tech stack
 
@@ -131,16 +131,16 @@ Commit activity across all repositories (KST, UTC+9):
 pie title Codebase by language (bytes)
     "TypeScript" : 34474664
     "Swift" : 17922868
-    "Rust" : 2353159
+    "Rust" : 2375319
     "Shell" : 480571
     "C++" : 388775
-    "JavaScript" : 367282
+    "JavaScript" : 368493
     "Python" : 300772
     "Svelte" : 143451
-    "CSS" : 142831
+    "CSS" : 142903
     "PowerShell" : 128198
     "C" : 114143
-    "HTML" : 49825
+    "HTML" : 50085
     "Metal" : 33033
     "Go" : 22811
     "HLSL" : 7527
@@ -181,7 +181,7 @@ pie title Codebase by language (bytes)
 | | Contributor | Lines changed | |
 |---|---|---:|---|
 | <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 6,574,705 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,827,673 | `██████░░░░░░░░░░░░░░` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,828,429 | `██████░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 217,650 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 26,427 | `█░░░░░░░░░░░░░░░░░░░` |
