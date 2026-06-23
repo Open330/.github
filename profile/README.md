@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-955%2C768-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-955%2C842-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -62,18 +62,18 @@ Commit activity across all repositories (KST, UTC+9):
 ```
  12 AM  ███████████████░░░░░ 567
   1 AM  ████████████████████ 759
-  2 AM  ███████████████░░░░░ 554
+  2 AM  ███████████████░░░░░ 555
   3 AM  █████████████░░░░░░░ 490  <-- 3:30 AM
   4 AM  █████████████████░░░ 659
-  5 AM  ███████████████░░░░░ 566
+  5 AM  ███████████████░░░░░ 567
   6 AM  ███████████████████░ 712
-  7 AM  ███████████████████░ 720
+  7 AM  ███████████████████░ 724
   8 AM  ████████████████░░░░ 622
   9 AM  ███████████████████░ 706
  10 AM  ███████████░░░░░░░░░ 436
  11 AM  ██████████░░░░░░░░░░ 398
  12 PM  ███████████████░░░░░ 562
-  1 PM  █████████░░░░░░░░░░░ 354
+  1 PM  █████████░░░░░░░░░░░ 355
   2 PM  ██████░░░░░░░░░░░░░░ 246
   3 PM  ████░░░░░░░░░░░░░░░░ 167
   4 PM  █████░░░░░░░░░░░░░░░ 200
@@ -88,9 +88,9 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3595 | 30% |
-| ☀️ Morning | 6–11 AM | 3594 | 30% |
-| 🌤️ Afternoon | 12–5 PM | 1797 | 15% |
+| 🌙 Night | 12–5 AM | 3597 | 30% |
+| ☀️ Morning | 6–11 AM | 3598 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 1798 | 15% |
 | 🌆 Evening | 6–11 PM | 3171 | 26% |
 
 > **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
@@ -100,7 +100,7 @@ Commit activity across all repositories (KST, UTC+9):
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,497 | 497,964 | 93,727 | 49,140 |
-| Swift | 1,798 | 349,555 | 43,471 | 55,956 |
+| Swift | 1,798 | 349,629 | 43,456 | 55,961 |
 | Rust | 151 | 61,298 | 8,274 | 6,166 |
 | Shell | 68 | 11,281 | 1,613 | 2,170 |
 | JavaScript | 66 | 7,998 | 553 | 1,006 |
@@ -123,14 +123,14 @@ Commit activity across all repositories (KST, UTC+9):
 | TypeScript Typings | 6 | 27 | 17 | 5 |
 | Makefile | 1 | 25 | 8 | 8 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,731** | **955,768** | **157,509** | **118,858** |
+| **Total** | **4,731** | **955,842** | **157,494** | **118,863** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34474664
-    "Swift" : 18456293
+    "Swift" : 18459377
     "Rust" : 2661626
     "Shell" : 500356
     "C++" : 388775
@@ -180,7 +180,7 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 6,841,497 | `████████████████████` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 6,850,039 | `████████████████████` |
 | <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,837,232 | `█████░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 217,650 | `█░░░░░░░░░░░░░░░░░░░` |
