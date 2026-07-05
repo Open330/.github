@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-968%2C569-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-968%2C424-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -66,21 +66,21 @@ Commit activity across all repositories (KST, UTC+9):
   3 AM  █████████████░░░░░░░ 504  <-- 3:30 AM
   4 AM  █████████████████░░░ 687
   5 AM  ███████████████░░░░░ 596
-  6 AM  ███████████████████░ 742
+  6 AM  ███████████████████░ 743
   7 AM  ███████████████████░ 754
   8 AM  ████████████████░░░░ 638
   9 AM  ██████████████████░░ 716
  10 AM  ███████████░░░░░░░░░ 458
- 11 AM  ███████████░░░░░░░░░ 426
- 12 PM  ███████████████░░░░░ 600
-  1 PM  █████████░░░░░░░░░░░ 375
+ 11 AM  ███████████░░░░░░░░░ 427
+ 12 PM  ███████████████░░░░░ 613
+  1 PM  ██████████░░░░░░░░░░ 379
   2 PM  ███████░░░░░░░░░░░░░ 265
   3 PM  █████░░░░░░░░░░░░░░░ 186
   4 PM  ██████░░░░░░░░░░░░░░ 232
   5 PM  ███████░░░░░░░░░░░░░ 279
   6 PM  ████████░░░░░░░░░░░░ 330
   7 PM  ████████████░░░░░░░░ 471
-  8 PM  ██████████████░░░░░░ 563
+  8 PM  ██████████████░░░░░░ 571
   9 PM  ███████████████░░░░░ 617
  10 PM  █████████████████░░░ 663
  11 PM  █████████████████░░░ 673
@@ -89,9 +89,9 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 3782 | 30% |
-| ☀️ Morning | 6–11 AM | 3734 | 29% |
-| 🌤️ Afternoon | 12–5 PM | 1937 | 15% |
-| 🌆 Evening | 6–11 PM | 3317 | 26% |
+| ☀️ Morning | 6–11 AM | 3736 | 29% |
+| 🌤️ Afternoon | 12–5 PM | 1954 | 15% |
+| 🌆 Evening | 6–11 PM | 3325 | 26% |
 
 > **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -100,10 +100,10 @@ Commit activity across all repositories (KST, UTC+9):
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
 | TypeScript | 2,500 | 498,297 | 93,795 | 49,174 |
-| Swift | 1,817 | 358,002 | 49,026 | 57,236 |
+| Swift | 1,817 | 357,848 | 49,160 | 57,206 |
 | Rust | 151 | 61,989 | 8,312 | 6,225 |
-| Shell | 74 | 11,770 | 1,833 | 2,249 |
-| Python | 57 | 10,366 | 1,596 | 1,521 |
+| Shell | 74 | 11,779 | 1,838 | 2,251 |
+| Python | 57 | 10,366 | 1,608 | 1,521 |
 | JavaScript | 66 | 8,004 | 562 | 1,007 |
 | CSS | 15 | 5,040 | 228 | 812 |
 | Svelte | 22 | 3,980 | 263 | 316 |
@@ -123,17 +123,17 @@ Commit activity across all repositories (KST, UTC+9):
 | TypeScript Typings | 6 | 27 | 17 | 5 |
 | Makefile | 1 | 25 | 8 | 8 |
 | Systemd | 1 | 17 | 0 | 3 |
-| **Total** | **4,770** | **968,569** | **163,876** | **120,594** |
+| **Total** | **4,770** | **968,424** | **164,027** | **120,566** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34493965
-    "Swift" : 19323441
+    "Swift" : 19324369
     "Rust" : 2688000
-    "Python" : 544258
-    "Shell" : 534169
+    "Python" : 545298
+    "Shell" : 535002
     "C++" : 388775
     "JavaScript" : 369505
     "Svelte" : 143451
@@ -172,7 +172,7 @@ pie title Codebase by language (bytes)
 - Language concentration is high: **TypeScript** leads with **58%** of tracked bytes, and the top 3 languages make up **96%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **53%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **8%** of code LOC.
-- Readability profile is deliberate: roughly **16.9** comment lines and **12.5** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **16.9** comment lines and **12.4** blank lines per 100 lines of code.
 - Contributor concentration is strong: [@hletrd](https://github.com/hletrd) drives **75%** of tracked line changes, and the top 3 contributors account for **97%**.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
@@ -180,8 +180,8 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,066,561 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,851,772 | `█████░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,182,328 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,851,806 | `█████░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 217,650 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 26,427 | `█░░░░░░░░░░░░░░░░░░░` |
