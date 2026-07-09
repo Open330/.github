@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/repos-28-blue?style=flat-square" alt="Repos">
+  <img src="https://img.shields.io/badge/repos-30-blue?style=flat-square" alt="Repos">
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-985%2C371-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C996%2C175-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,93 +60,99 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ███████████████░░░░░ 626
-  1 AM  ████████████████████ 809
-  2 AM  ███████████████░░░░░ 593
-  3 AM  █████████████░░░░░░░ 511  <-- 3:30 AM
-  4 AM  ██████████████████░░ 715
-  5 AM  ███████████████░░░░░ 602
-  6 AM  ███████████████████░ 779
-  7 AM  ███████████████████░ 754
-  8 AM  ████████████████░░░░ 656
-  9 AM  ███████████████████░ 753
- 10 AM  ████████████░░░░░░░░ 497
- 11 AM  ███████████░░░░░░░░░ 433
- 12 PM  ████████████████░░░░ 633
-  1 PM  █████████░░░░░░░░░░░ 382
-  2 PM  ████████░░░░░░░░░░░░ 322
-  3 PM  █████░░░░░░░░░░░░░░░ 214
-  4 PM  ██████░░░░░░░░░░░░░░ 239
-  5 PM  ███████░░░░░░░░░░░░░ 281
-  6 PM  ████████░░░░░░░░░░░░ 333
-  7 PM  ████████████░░░░░░░░ 501
-  8 PM  ███████████████░░░░░ 595
-  9 PM  ████████████████░░░░ 638
- 10 PM  █████████████████░░░ 699
- 11 PM  █████████████████░░░ 701
+ 12 AM  ███████████████░░░░░ 920
+  1 AM  ████████████████████ 1188
+  2 AM  █████████████████░░░ 997
+  3 AM  ███████████████░░░░░ 912  <-- 3:30 AM
+  4 AM  ██████████████████░░ 1041
+  5 AM  ███████████████░░░░░ 884
+  6 AM  ███████████████████░ 1100
+  7 AM  ██████████████████░░ 1061
+  8 AM  ███████████████░░░░░ 914
+  9 AM  █████████████████░░░ 1010
+ 10 AM  █████████████░░░░░░░ 776
+ 11 AM  ████████████░░░░░░░░ 700
+ 12 PM  ███████████████░░░░░ 910
+  1 PM  ██████████░░░░░░░░░░ 615
+  2 PM  ████████░░░░░░░░░░░░ 473
+  3 PM  █████░░░░░░░░░░░░░░░ 285
+  4 PM  █████░░░░░░░░░░░░░░░ 294
+  5 PM  █████░░░░░░░░░░░░░░░ 309
+  6 PM  ██████░░░░░░░░░░░░░░ 380
+  7 PM  █████████░░░░░░░░░░░ 557
+  8 PM  ███████████░░░░░░░░░ 681
+  9 PM  ████████████░░░░░░░░ 733
+ 10 PM  ██████████████░░░░░░ 833
+ 11 PM  ███████████████░░░░░ 906
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 3856 | 29% |
-| ☀️ Morning | 6–11 AM | 3872 | 29% |
-| 🌤️ Afternoon | 12–5 PM | 2071 | 16% |
-| 🌆 Evening | 6–11 PM | 3467 | 26% |
+| 🌙 Night | 12–5 AM | 5942 | 32% |
+| ☀️ Morning | 6–11 AM | 5561 | 30% |
+| 🌤️ Afternoon | 12–5 PM | 2886 | 16% |
+| 🌆 Evening | 6–11 PM | 4090 | 22% |
 
-> **29%** of all commits land between midnight and 5 AM. The name isn't ironic.
+> **32%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
 ### 📊 Lines of code
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,508 | 499,218 | 93,952 | 49,267 |
-| Swift | 1,839 | 364,501 | 54,512 | 58,292 |
-| Rust | 191 | 69,833 | 9,070 | 7,036 |
-| Shell | 81 | 12,227 | 2,099 | 2,311 |
-| Python | 65 | 11,411 | 1,771 | 1,599 |
-| JavaScript | 66 | 8,004 | 562 | 1,007 |
-| CSS | 15 | 5,040 | 228 | 812 |
+| Swift | 5,952 | 1,131,097 | 133,448 | 143,374 |
+| TypeScript | 2,951 | 568,447 | 97,231 | 55,722 |
+| Rust | 238 | 89,436 | 10,413 | 8,809 |
+| Python | 348 | 76,953 | 6,441 | 11,006 |
+| JavaScript | 808 | 49,721 | 3,296 | 1,819 |
+| Shell | 214 | 28,554 | 4,052 | 4,457 |
+| Go | 43 | 18,124 | 341 | 1,641 |
+| CSS | 23 | 9,226 | 370 | 1,319 |
+| BASH | 12 | 5,885 | 510 | 724 |
+| HTML | 27 | 5,509 | 13 | 290 |
 | Svelte | 22 | 3,980 | 263 | 316 |
 | Powershell | 9 | 3,207 | 82 | 393 |
-| HTML | 10 | 2,267 | 13 | 205 |
-| C Header | 6 | 1,938 | 7,844 | 876 |
-| BASH | 2 | 1,594 | 167 | 280 |
-| Go | 7 | 927 | 0 | 85 |
+| C Header | 12 | 2,057 | 7,860 | 908 |
+| Zsh | 5 | 1,701 | 127 | 217 |
+| SQL | 18 | 439 | 61 | 58 |
 | C++ | 1 | 432 | 9 | 50 |
-| SQL | 5 | 199 | 44 | 58 |
-| C | 3 | 163 | 9 | 18 |
+| Fish | 1 | 313 | 2 | 33 |
+| C | 6 | 230 | 9 | 24 |
+| Objective C | 1 | 224 | 13 | 38 |
 | Batch | 3 | 122 | 31 | 18 |
-| Dockerfile | 4 | 83 | 42 | 50 |
+| Dockerfile | 5 | 97 | 42 | 56 |
+| TypeScript Typings | 10 | 89 | 17 | 8 |
 | Autoconf | 9 | 76 | 0 | 0 |
+| Ruby | 3 | 71 | 16 | 14 |
+| Patch | 1 | 67 | 0 | 5 |
 | Windows Resource-Definition Script | 1 | 39 | 0 | 4 |
-| Ruby | 1 | 37 | 2 | 6 |
-| TypeScript Typings | 6 | 27 | 17 | 5 |
+| Xcode Config | 4 | 33 | 75 | 20 |
 | Makefile | 1 | 25 | 8 | 8 |
 | Systemd | 1 | 21 | 0 | 4 |
-| **Total** | **4,856** | **985,371** | **170,725** | **122,700** |
+| **Total** | **10,729** | **1,996,175** | **264,730** | **231,335** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 34523438
-    "Swift" : 20076214
-    "Rust" : 3047896
-    "Python" : 602762
-    "Shell" : 566222
+    "Swift" : 58651704
+    "TypeScript" : 37258706
+    "Rust" : 3863562
+    "Python" : 3553136
+    "Shell" : 1527801
+    "HTML" : 863200
+    "Go" : 572897
+    "JavaScript" : 485664
     "C++" : 388775
-    "JavaScript" : 369505
+    "CSS" : 237019
     "Svelte" : 143451
-    "CSS" : 143226
     "PowerShell" : 129999
-    "C" : 114143
-    "HTML" : 55101
+    "C" : 121359
     "Metal" : 33033
-    "Go" : 22811
+    "Objective-C" : 11658
     "HLSL" : 7527
     "Batchfile" : 5870
     "Dockerfile" : 4893
-    "Ruby" : 1554
+    "Ruby" : 3430
     "Makefile" : 1150
 ```
 
@@ -168,28 +174,125 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **809** commits; **29%** of activity lands between midnight and 5 AM.
-- Language concentration is high: **TypeScript** leads with **57%** of tracked bytes, and the top 3 languages make up **96%**.
-- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **52%** of code LOC.
-- Tooling and systems depth is substantial: Rust + shell-focused languages account for **9%** of code LOC.
-- Readability profile is deliberate: roughly **17.3** comment lines and **12.5** blank lines per 100 lines of code.
-- Contributor concentration is strong: [@hletrd](https://github.com/hletrd) drives **75%** of tracked line changes, and the top 3 contributors account for **97%**.
+- Busiest commit hour is **1 AM KST** with **1188** commits; **32%** of activity lands between midnight and 5 AM.
+- Language concentration is high: **Swift** leads with **54%** of tracked bytes, and the top 3 languages make up **92%**.
+- Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **32%** of code LOC.
+- Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
+- Readability profile is deliberate: roughly **13.3** comment lines and **11.6** blank lines per 100 lines of code.
+- Contributor concentration is strong: [@lawrencecchen](https://github.com/lawrencecchen) drives **41%** of tracked line changes, and the top 3 contributors account for **89%**.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
 ### 🏆 Top contributors
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,346,676 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,875,542 | `█████░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lawrencecchen"><img src="https://avatars.githubusercontent.com/u/54008264?v=4&s=40" width="40" height="40" alt="lawrencecchen"></a> | [@lawrencecchen](https://github.com/lawrencecchen) | 8,000,289 | `████████████████████` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,348,649 | `██████████████████░░` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 1,965,038 | `█████░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/azooz2003-bit"><img src="https://avatars.githubusercontent.com/u/67667005?v=4&s=40" width="40" height="40" alt="azooz2003-bit"></a> | [@azooz2003-bit](https://github.com/azooz2003-bit) | 946,208 | `██░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/austinywang"><img src="https://avatars.githubusercontent.com/u/38676809?v=4&s=40" width="40" height="40" alt="austinywang"></a> | [@austinywang](https://github.com/austinywang) | 578,154 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 217,650 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/sisyphus-dev-ai"><img src="https://avatars.githubusercontent.com/u/238992291?v=4&s=40" width="40" height="40" alt="sisyphus-dev-ai"></a> | [@sisyphus-dev-ai](https://github.com/sisyphus-dev-ai) | 26,427 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/tobi"><img src="https://avatars.githubusercontent.com/u/347?v=4&s=40" width="40" height="40" alt="tobi"></a> | [@tobi](https://github.com/tobi) | 14,926 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/atani"><img src="https://avatars.githubusercontent.com/u/76104?v=4&s=40" width="40" height="40" alt="atani"></a> | [@atani](https://github.com/atani) | 13,048 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/robertnisipeanu"><img src="https://avatars.githubusercontent.com/u/16354517?v=4&s=40" width="40" height="40" alt="robertnisipeanu"></a> | [@robertnisipeanu](https://github.com/robertnisipeanu) | 11,271 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/codex"><img src="https://avatars.githubusercontent.com/u/267193182?v=4&s=40" width="40" height="40" alt="codex"></a> | [@codex](https://github.com/codex) | 7,254 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/mvanhorn"><img src="https://avatars.githubusercontent.com/u/455140?v=4&s=40" width="40" height="40" alt="mvanhorn"></a> | [@mvanhorn](https://github.com/mvanhorn) | 5,478 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/kays0x"><img src="https://avatars.githubusercontent.com/u/48529172?v=4&s=40" width="40" height="40" alt="kays0x"></a> | [@kays0x](https://github.com/kays0x) | 5,269 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/the-gigi"><img src="https://avatars.githubusercontent.com/u/1409590?v=4&s=40" width="40" height="40" alt="the-gigi"></a> | [@the-gigi](https://github.com/the-gigi) | 3,952 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lucaspiritogit"><img src="https://avatars.githubusercontent.com/u/81486152?v=4&s=40" width="40" height="40" alt="lucaspiritogit"></a> | [@lucaspiritogit](https://github.com/lucaspiritogit) | 3,393 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/joshrzemien"><img src="https://avatars.githubusercontent.com/u/29206263?v=4&s=40" width="40" height="40" alt="joshrzemien"></a> | [@joshrzemien](https://github.com/joshrzemien) | 2,596 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/mp-grind"><img src="https://avatars.githubusercontent.com/u/296946452?v=4&s=40" width="40" height="40" alt="mp-grind"></a> | [@mp-grind](https://github.com/mp-grind) | 2,586 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/mxschmitt"><img src="https://avatars.githubusercontent.com/u/17984549?v=4&s=40" width="40" height="40" alt="mxschmitt"></a> | [@mxschmitt](https://github.com/mxschmitt) | 2,562 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lawrence703"><img src="https://avatars.githubusercontent.com/u/288889684?v=4&s=40" width="40" height="40" alt="lawrence703"></a> | [@lawrence703](https://github.com/lawrence703) | 2,486 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/tiffanysun1"><img src="https://avatars.githubusercontent.com/u/43159308?v=4&s=40" width="40" height="40" alt="tiffanysun1"></a> | [@tiffanysun1](https://github.com/tiffanysun1) | 2,009 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/deftdawg"><img src="https://avatars.githubusercontent.com/u/4991612?v=4&s=40" width="40" height="40" alt="deftdawg"></a> | [@deftdawg](https://github.com/deftdawg) | 1,950 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/say8425"><img src="https://avatars.githubusercontent.com/u/3258867?v=4&s=40" width="40" height="40" alt="say8425"></a> | [@say8425](https://github.com/say8425) | 1,864 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/rrva"><img src="https://avatars.githubusercontent.com/u/887132?v=4&s=40" width="40" height="40" alt="rrva"></a> | [@rrva](https://github.com/rrva) | 1,832 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/ejc3"><img src="https://avatars.githubusercontent.com/u/1694850?v=4&s=40" width="40" height="40" alt="ejc3"></a> | [@ejc3](https://github.com/ejc3) | 1,811 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/raghavpillai"><img src="https://avatars.githubusercontent.com/u/76788658?v=4&s=40" width="40" height="40" alt="raghavpillai"></a> | [@raghavpillai](https://github.com/raghavpillai) | 1,602 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/Nauxie"><img src="https://avatars.githubusercontent.com/u/37749663?v=4&s=40" width="40" height="40" alt="Nauxie"></a> | [@Nauxie](https://github.com/Nauxie) | 1,527 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/Eridanus117"><img src="https://avatars.githubusercontent.com/u/45489268?v=4&s=40" width="40" height="40" alt="Eridanus117"></a> | [@Eridanus117](https://github.com/Eridanus117) | 1,517 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/Overlaine-00"><img src="https://avatars.githubusercontent.com/u/26185179?v=4&s=40" width="40" height="40" alt="Overlaine-00"></a> | [@Overlaine-00](https://github.com/Overlaine-00) | 1,508 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lidge-jun"><img src="https://avatars.githubusercontent.com/u/243035832?v=4&s=40" width="40" height="40" alt="lidge-jun"></a> | [@lidge-jun](https://github.com/lidge-jun) | 1,383 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lauzierj"><img src="https://avatars.githubusercontent.com/u/383671?v=4&s=40" width="40" height="40" alt="lauzierj"></a> | [@lauzierj](https://github.com/lauzierj) | 1,340 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/homanp"><img src="https://avatars.githubusercontent.com/u/2464556?v=4&s=40" width="40" height="40" alt="homanp"></a> | [@homanp](https://github.com/homanp) | 1,294 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/ampagent"><img src="https://avatars.githubusercontent.com/u/289058786?v=4&s=40" width="40" height="40" alt="ampagent"></a> | [@ampagent](https://github.com/ampagent) | 1,078 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/SuperManfred"><img src="https://avatars.githubusercontent.com/u/4617302?v=4&s=40" width="40" height="40" alt="SuperManfred"></a> | [@SuperManfred](https://github.com/SuperManfred) | 887 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/zicochaos"><img src="https://avatars.githubusercontent.com/u/23367003?v=4&s=40" width="40" height="40" alt="zicochaos"></a> | [@zicochaos](https://github.com/zicochaos) | 857 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/y-agatsuma"><img src="https://avatars.githubusercontent.com/u/16019349?v=4&s=40" width="40" height="40" alt="y-agatsuma"></a> | [@y-agatsuma](https://github.com/y-agatsuma) | 686 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lederniermagicien"><img src="https://avatars.githubusercontent.com/u/162632566?v=4&s=40" width="40" height="40" alt="lederniermagicien"></a> | [@lederniermagicien](https://github.com/lederniermagicien) | 679 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/smorin"><img src="https://avatars.githubusercontent.com/u/124719?v=4&s=40" width="40" height="40" alt="smorin"></a> | [@smorin](https://github.com/smorin) | 672 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/comp615"><img src="https://avatars.githubusercontent.com/u/542149?v=4&s=40" width="40" height="40" alt="comp615"></a> | [@comp615](https://github.com/comp615) | 653 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/adinvadim"><img src="https://avatars.githubusercontent.com/u/8646071?v=4&s=40" width="40" height="40" alt="adinvadim"></a> | [@adinvadim](https://github.com/adinvadim) | 634 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/RubiconPerform"><img src="https://avatars.githubusercontent.com/u/129220274?v=4&s=40" width="40" height="40" alt="RubiconPerform"></a> | [@RubiconPerform](https://github.com/RubiconPerform) | 537 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/HamptonMakes"><img src="https://avatars.githubusercontent.com/u/111?v=4&s=40" width="40" height="40" alt="HamptonMakes"></a> | [@HamptonMakes](https://github.com/HamptonMakes) | 534 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lleewwiiss"><img src="https://avatars.githubusercontent.com/u/7379418?v=4&s=40" width="40" height="40" alt="lleewwiiss"></a> | [@lleewwiiss](https://github.com/lleewwiiss) | 533 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/gonzaloserrano"><img src="https://avatars.githubusercontent.com/u/349328?v=4&s=40" width="40" height="40" alt="gonzaloserrano"></a> | [@gonzaloserrano](https://github.com/gonzaloserrano) | 520 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/talldan"><img src="https://avatars.githubusercontent.com/u/677833?v=4&s=40" width="40" height="40" alt="talldan"></a> | [@talldan](https://github.com/talldan) | 426 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/psh4607"><img src="https://avatars.githubusercontent.com/u/49228032?v=4&s=40" width="40" height="40" alt="psh4607"></a> | [@psh4607](https://github.com/psh4607) | 373 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/kevinsslin"><img src="https://avatars.githubusercontent.com/u/86810837?v=4&s=40" width="40" height="40" alt="kevinsslin"></a> | [@kevinsslin](https://github.com/kevinsslin) | 354 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/jaredatch"><img src="https://avatars.githubusercontent.com/u/630686?v=4&s=40" width="40" height="40" alt="jaredatch"></a> | [@jaredatch](https://github.com/jaredatch) | 337 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/choi88andys"><img src="https://avatars.githubusercontent.com/u/56178052?v=4&s=40" width="40" height="40" alt="choi88andys"></a> | [@choi88andys](https://github.com/choi88andys) | 330 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/Reebz"><img src="https://avatars.githubusercontent.com/u/1386738?v=4&s=40" width="40" height="40" alt="Reebz"></a> | [@Reebz](https://github.com/Reebz) | 324 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/0xble"><img src="https://avatars.githubusercontent.com/u/20782088?v=4&s=40" width="40" height="40" alt="0xble"></a> | [@0xble](https://github.com/0xble) | 298 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/MinSoekJeon"><img src="https://avatars.githubusercontent.com/u/19373742?v=4&s=40" width="40" height="40" alt="MinSoekJeon"></a> | [@MinSoekJeon](https://github.com/MinSoekJeon) | 284 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/eliophan"><img src="https://avatars.githubusercontent.com/u/115722805?v=4&s=40" width="40" height="40" alt="eliophan"></a> | [@eliophan](https://github.com/eliophan) | 275 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/im4tta"><img src="https://avatars.githubusercontent.com/u/82812618?v=4&s=40" width="40" height="40" alt="im4tta"></a> | [@im4tta](https://github.com/im4tta) | 270 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/jasonko"><img src="https://avatars.githubusercontent.com/u/766567?v=4&s=40" width="40" height="40" alt="jasonko"></a> | [@jasonko](https://github.com/jasonko) | 255 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/0xJord4n"><img src="https://avatars.githubusercontent.com/u/74933942?v=4&s=40" width="40" height="40" alt="0xJord4n"></a> | [@0xJord4n](https://github.com/0xJord4n) | 206 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/wowpotato"><img src="https://avatars.githubusercontent.com/u/4546173?v=4&s=40" width="40" height="40" alt="wowpotato"></a> | [@wowpotato](https://github.com/wowpotato) | 206 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/liruifengv"><img src="https://avatars.githubusercontent.com/u/25167721?v=4&s=40" width="40" height="40" alt="liruifengv"></a> | [@liruifengv](https://github.com/liruifengv) | 174 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/samuelpatro"><img src="https://avatars.githubusercontent.com/u/3110002?v=4&s=40" width="40" height="40" alt="samuelpatro"></a> | [@samuelpatro](https://github.com/samuelpatro) | 165 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/sergej-koscejev"><img src="https://avatars.githubusercontent.com/u/538095?v=4&s=40" width="40" height="40" alt="sergej-koscejev"></a> | [@sergej-koscejev](https://github.com/sergej-koscejev) | 157 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/qianwan"><img src="https://avatars.githubusercontent.com/u/4355735?v=4&s=40" width="40" height="40" alt="qianwan"></a> | [@qianwan](https://github.com/qianwan) | 147 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/thiveeiyan"><img src="https://avatars.githubusercontent.com/u/241351723?v=4&s=40" width="40" height="40" alt="thiveeiyan"></a> | [@thiveeiyan](https://github.com/thiveeiyan) | 129 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/gaelic-ghost"><img src="https://avatars.githubusercontent.com/u/236288055?v=4&s=40" width="40" height="40" alt="gaelic-ghost"></a> | [@gaelic-ghost](https://github.com/gaelic-ghost) | 128 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/MaxiAschenbrenner"><img src="https://avatars.githubusercontent.com/u/137892238?v=4&s=40" width="40" height="40" alt="MaxiAschenbrenner"></a> | [@MaxiAschenbrenner](https://github.com/MaxiAschenbrenner) | 126 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/cheulyop"><img src="https://avatars.githubusercontent.com/u/36708385?v=4&s=40" width="40" height="40" alt="cheulyop"></a> | [@cheulyop](https://github.com/cheulyop) | 126 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/novarii"><img src="https://avatars.githubusercontent.com/u/165450912?v=4&s=40" width="40" height="40" alt="novarii"></a> | [@novarii](https://github.com/novarii) | 124 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/actions-user"><img src="https://avatars.githubusercontent.com/u/65916846?v=4&s=40" width="40" height="40" alt="actions-user"></a> | [@actions-user](https://github.com/actions-user) | 119 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/BillionClaw"><img src="https://avatars.githubusercontent.com/u/267901332?v=4&s=40" width="40" height="40" alt="BillionClaw"></a> | [@BillionClaw](https://github.com/BillionClaw) | 118 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/pstanton237"><img src="https://avatars.githubusercontent.com/u/4250687?v=4&s=40" width="40" height="40" alt="pstanton237"></a> | [@pstanton237](https://github.com/pstanton237) | 115 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/essamgouda97"><img src="https://avatars.githubusercontent.com/u/20748838?v=4&s=40" width="40" height="40" alt="essamgouda97"></a> | [@essamgouda97](https://github.com/essamgouda97) | 103 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/codingskynet"><img src="https://avatars.githubusercontent.com/u/8104782?v=4&s=40" width="40" height="40" alt="codingskynet"></a> | [@codingskynet](https://github.com/codingskynet) | 101 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/AI-per"><img src="https://avatars.githubusercontent.com/u/129778753?v=4&s=40" width="40" height="40" alt="AI-per"></a> | [@AI-per](https://github.com/AI-per) | 90 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/kylejcaron"><img src="https://avatars.githubusercontent.com/u/44980552?v=4&s=40" width="40" height="40" alt="kylejcaron"></a> | [@kylejcaron](https://github.com/kylejcaron) | 90 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/sugakoji"><img src="https://avatars.githubusercontent.com/u/29496312?v=4&s=40" width="40" height="40" alt="sugakoji"></a> | [@sugakoji](https://github.com/sugakoji) | 81 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/rerun0510"><img src="https://avatars.githubusercontent.com/u/74193310?v=4&s=40" width="40" height="40" alt="rerun0510"></a> | [@rerun0510](https://github.com/rerun0510) | 79 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/josemasri"><img src="https://avatars.githubusercontent.com/u/58571583?v=4&s=40" width="40" height="40" alt="josemasri"></a> | [@josemasri](https://github.com/josemasri) | 78 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/elvistranhere"><img src="https://avatars.githubusercontent.com/u/40386529?v=4&s=40" width="40" height="40" alt="elvistranhere"></a> | [@elvistranhere](https://github.com/elvistranhere) | 77 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/andrewlook"><img src="https://avatars.githubusercontent.com/u/236018?v=4&s=40" width="40" height="40" alt="andrewlook"></a> | [@andrewlook](https://github.com/andrewlook) | 75 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/arieltobiana"><img src="https://avatars.githubusercontent.com/u/19172361?v=4&s=40" width="40" height="40" alt="arieltobiana"></a> | [@arieltobiana](https://github.com/arieltobiana) | 72 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/matheustimbo"><img src="https://avatars.githubusercontent.com/u/29615644?v=4&s=40" width="40" height="40" alt="matheustimbo"></a> | [@matheustimbo](https://github.com/matheustimbo) | 61 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/dasanworld"><img src="https://avatars.githubusercontent.com/u/65518037?v=4&s=40" width="40" height="40" alt="dasanworld"></a> | [@dasanworld](https://github.com/dasanworld) | 60 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/michalstrnadel"><img src="https://avatars.githubusercontent.com/u/107399174?v=4&s=40" width="40" height="40" alt="michalstrnadel"></a> | [@michalstrnadel](https://github.com/michalstrnadel) | 55 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/atmigtnca"><img src="https://avatars.githubusercontent.com/u/211292833?v=4&s=40" width="40" height="40" alt="atmigtnca"></a> | [@atmigtnca](https://github.com/atmigtnca) | 52 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/che-3"><img src="https://avatars.githubusercontent.com/u/87685252?v=4&s=40" width="40" height="40" alt="che-3"></a> | [@che-3](https://github.com/che-3) | 50 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/ivanrvpereira"><img src="https://avatars.githubusercontent.com/u/183991?v=4&s=40" width="40" height="40" alt="ivanrvpereira"></a> | [@ivanrvpereira](https://github.com/ivanrvpereira) | 43 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/michaeljauk"><img src="https://avatars.githubusercontent.com/u/18634867?v=4&s=40" width="40" height="40" alt="michaeljauk"></a> | [@michaeljauk](https://github.com/michaeljauk) | 42 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/lark1115"><img src="https://avatars.githubusercontent.com/u/63707888?v=4&s=40" width="40" height="40" alt="lark1115"></a> | [@lark1115](https://github.com/lark1115) | 38 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cursoragent"><img src="https://avatars.githubusercontent.com/u/199161495?v=4&s=40" width="40" height="40" alt="cursoragent"></a> | [@cursoragent](https://github.com/cursoragent) | 33 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/jonathanwuki"><img src="https://avatars.githubusercontent.com/u/11484046?v=4&s=40" width="40" height="40" alt="jonathanwuki"></a> | [@jonathanwuki](https://github.com/jonathanwuki) | 30 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/tekacs"><img src="https://avatars.githubusercontent.com/u/63247?v=4&s=40" width="40" height="40" alt="tekacs"></a> | [@tekacs](https://github.com/tekacs) | 23 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/rjwittams"><img src="https://avatars.githubusercontent.com/u/752137?v=4&s=40" width="40" height="40" alt="rjwittams"></a> | [@rjwittams](https://github.com/rjwittams) | 21 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/greptile-apps[bot]"><img src="https://avatars.githubusercontent.com/in/867647?v=4&s=40" width="40" height="40" alt="greptile-apps[bot]"></a> | [@greptile-apps[bot]](https://github.com/greptile-apps[bot]) | 20 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/grimmerk"><img src="https://avatars.githubusercontent.com/u/5940941?v=4&s=40" width="40" height="40" alt="grimmerk"></a> | [@grimmerk](https://github.com/grimmerk) | 19 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/ConnorCallison"><img src="https://avatars.githubusercontent.com/u/9217108?v=4&s=40" width="40" height="40" alt="ConnorCallison"></a> | [@ConnorCallison](https://github.com/ConnorCallison) | 18 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/tmcarr"><img src="https://avatars.githubusercontent.com/u/32553?v=4&s=40" width="40" height="40" alt="tmcarr"></a> | [@tmcarr](https://github.com/tmcarr) | 12 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/zlatkoc"><img src="https://avatars.githubusercontent.com/u/385570?v=4&s=40" width="40" height="40" alt="zlatkoc"></a> | [@zlatkoc](https://github.com/zlatkoc) | 12 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/dezren39"><img src="https://avatars.githubusercontent.com/u/11225574?v=4&s=40" width="40" height="40" alt="dezren39"></a> | [@dezren39](https://github.com/dezren39) | 9 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/ukoasis"><img src="https://avatars.githubusercontent.com/u/165857?v=4&s=40" width="40" height="40" alt="ukoasis"></a> | [@ukoasis](https://github.com/ukoasis) | 9 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/harukitosa"><img src="https://avatars.githubusercontent.com/u/44115752?v=4&s=40" width="40" height="40" alt="harukitosa"></a> | [@harukitosa](https://github.com/harukitosa) | 7 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/Clean-Cole"><img src="https://avatars.githubusercontent.com/u/389053?v=4&s=40" width="40" height="40" alt="Clean-Cole"></a> | [@Clean-Cole](https://github.com/Clean-Cole) | 5 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/trydis"><img src="https://avatars.githubusercontent.com/u/446036?v=4&s=40" width="40" height="40" alt="trydis"></a> | [@trydis](https://github.com/trydis) | 5 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/GaetanJuvin"><img src="https://avatars.githubusercontent.com/u/646796?v=4&s=40" width="40" height="40" alt="GaetanJuvin"></a> | [@GaetanJuvin](https://github.com/GaetanJuvin) | 4 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/orzazade"><img src="https://avatars.githubusercontent.com/u/14540879?v=4&s=40" width="40" height="40" alt="orzazade"></a> | [@orzazade](https://github.com/orzazade) | 4 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/FredrikSeidl"><img src="https://avatars.githubusercontent.com/u/19795086?v=4&s=40" width="40" height="40" alt="FredrikSeidl"></a> | [@FredrikSeidl](https://github.com/FredrikSeidl) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/afxjzs"><img src="https://avatars.githubusercontent.com/u/778661?v=4&s=40" width="40" height="40" alt="afxjzs"></a> | [@afxjzs](https://github.com/afxjzs) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/s010s"><img src="https://avatars.githubusercontent.com/u/8357465?v=4&s=40" width="40" height="40" alt="s010s"></a> | [@s010s](https://github.com/s010s) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/sminamot"><img src="https://avatars.githubusercontent.com/u/26164869?v=4&s=40" width="40" height="40" alt="sminamot"></a> | [@sminamot](https://github.com/sminamot) | 2 | `█░░░░░░░░░░░░░░░░░░░` |
 
 ### 🏗️ Projects
 
