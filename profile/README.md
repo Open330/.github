@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-2%2C400%2C750-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-2%2C403%2C335-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,18 +60,18 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ██████████████████░░ 1892
-  1 AM  ██████████████████░░ 1881
-  2 AM  ████████████████░░░░ 1607
-  3 AM  █████████████░░░░░░░ 1384  <-- 3:30 AM
-  4 AM  █████████████████░░░ 1737
-  5 AM  █████████████████░░░ 1785
-  6 AM  ████████████████████ 2032
-  7 AM  ████████████████░░░░ 1641
-  8 AM  ████████████░░░░░░░░ 1184
-  9 AM  █████████████░░░░░░░ 1354
+ 12 AM  ██████████████████░░ 1899
+  1 AM  ██████████████████░░ 1887
+  2 AM  ████████████████░░░░ 1611
+  3 AM  █████████████░░░░░░░ 1389  <-- 3:30 AM
+  4 AM  █████████████████░░░ 1743
+  5 AM  █████████████████░░░ 1789
+  6 AM  ████████████████████ 2036
+  7 AM  ████████████████░░░░ 1645
+  8 AM  ████████████░░░░░░░░ 1187
+  9 AM  █████████████░░░░░░░ 1356
  10 AM  █████████░░░░░░░░░░░ 888
- 11 AM  ████████░░░░░░░░░░░░ 792
+ 11 AM  ████████░░░░░░░░░░░░ 793
  12 PM  ██████████░░░░░░░░░░ 983
   1 PM  ███████░░░░░░░░░░░░░ 675
   2 PM  █████░░░░░░░░░░░░░░░ 540
@@ -80,18 +80,18 @@ Commit activity across all repositories (KST, UTC+9):
   5 PM  ████████░░░░░░░░░░░░ 864
   6 PM  █████████████░░░░░░░ 1373
   7 PM  ████████████████░░░░ 1605
-  8 PM  ███████████████░░░░░ 1527
-  9 PM  ███████████████░░░░░ 1490
- 10 PM  ████████████████░░░░ 1686
- 11 PM  ████████████████████ 2055
+  8 PM  ███████████████░░░░░ 1533
+  9 PM  ███████████████░░░░░ 1496
+ 10 PM  ████████████████░░░░ 1690
+ 11 PM  ████████████████████ 2060
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 10286 | 32% |
-| ☀️ Morning | 6–11 AM | 7891 | 25% |
+| 🌙 Night | 12–5 AM | 10318 | 32% |
+| ☀️ Morning | 6–11 AM | 7905 | 25% |
 | 🌤️ Afternoon | 12–5 PM | 4113 | 13% |
-| 🌆 Evening | 6–11 PM | 9736 | 30% |
+| 🌆 Evening | 6–11 PM | 9757 | 30% |
 
 > **32%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -99,7 +99,7 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| Swift | 6,033 | 1,160,004 | 139,352 | 147,116 |
+| Swift | 6,034 | 1,162,589 | 139,343 | 147,357 |
 | TypeScript | 3,002 | 579,642 | 97,496 | 57,167 |
 | Zig | 777 | 237,657 | 43,969 | 34,510 |
 | Rust | 253 | 111,217 | 13,878 | 10,575 |
@@ -137,13 +137,13 @@ Commit activity across all repositories (KST, UTC+9):
 | Java | 1 | 17 | 0 | 1 |
 | MDX | 4 | 11 | 0 | 6 |
 | JSONC | 1 | 10 | 0 | 0 |
-| **Total** | **12,672** | **2,400,750** | **341,252** | **284,447** |
+| **Total** | **12,673** | **2,403,335** | **341,243** | **284,688** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "Swift" : 60356809
+    "Swift" : 60478977
     "TypeScript" : 37705626
     "Zig" : 10170181
     "Rust" : 4844474
@@ -189,7 +189,7 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **11 PM KST** with **2055** commits; **32%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **11 PM KST** with **2060** commits; **32%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **Swift** leads with **49%** of tracked bytes, and the top 3 languages make up **88%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **27%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **6%** of code LOC.
@@ -202,8 +202,8 @@ pie title Codebase by language (bytes)
 | | Contributor | Lines changed | |
 |---|---|---:|---|
 | <a href="https://github.com/lawrencecchen"><img src="https://avatars.githubusercontent.com/u/54008264?v=4&s=40" width="40" height="40" alt="lawrencecchen"></a> | [@lawrencecchen](https://github.com/lawrencecchen) | 8,000,289 | `████████████████████` |
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,574,633 | `███████████████████░` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,198,680 | `█████░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 7,591,472 | `███████████████████░` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,262,490 | `██████░░░░░░░░░░░░░░` |
 | <a href="https://github.com/azooz2003-bit"><img src="https://avatars.githubusercontent.com/u/67667005?v=4&s=40" width="40" height="40" alt="azooz2003-bit"></a> | [@azooz2003-bit](https://github.com/azooz2003-bit) | 946,208 | `██░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/austinywang"><img src="https://avatars.githubusercontent.com/u/38676809?v=4&s=40" width="40" height="40" alt="austinywang"></a> | [@austinywang](https://github.com/austinywang) | 578,154 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
