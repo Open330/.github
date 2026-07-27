@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C087%2C683-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C082%2C485-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -65,7 +65,7 @@ Commit activity across all repositories (KST, UTC+9):
   2 AM  ███████████████░░░░░ 704
   3 AM  ██████████████░░░░░░ 643  <-- 3:30 AM
   4 AM  ██████████████████░░ 835
-  5 AM  ███████████████░░░░░ 683
+  5 AM  ███████████████░░░░░ 685
   6 AM  ██████████████████░░ 846
   7 AM  ██████████████████░░ 833
   8 AM  ████████████████░░░░ 732
@@ -88,7 +88,7 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 4499 | 30% |
+| 🌙 Night | 12–5 AM | 4501 | 30% |
 | ☀️ Morning | 6–11 AM | 4243 | 29% |
 | 🌤️ Afternoon | 12–5 PM | 2258 | 15% |
 | 🌆 Evening | 6–11 PM | 3808 | 26% |
@@ -99,12 +99,12 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| TypeScript | 2,519 | 512,090 | 90,302 | 48,402 |
+| TypeScript | 2,519 | 507,716 | 93,004 | 50,074 |
 | Swift | 1,822 | 407,207 | 59,322 | 61,488 |
-| Rust | 207 | 93,493 | 13,005 | 8,983 |
-| Python | 108 | 26,965 | 2,309 | 2,669 |
+| Rust | 207 | 93,502 | 13,009 | 8,984 |
+| Python | 108 | 26,891 | 2,363 | 2,689 |
 | Shell | 82 | 9,233 | 1,993 | 1,426 |
-| JavaScript | 83 | 9,087 | 409 | 902 |
+| JavaScript | 83 | 9,012 | 406 | 980 |
 | Svelte | 29 | 8,091 | 453 | 558 |
 | Autoconf | 723 | 5,520 | 13 | 190 |
 | CSS | 16 | 5,436 | 240 | 849 |
@@ -112,7 +112,6 @@ Commit activity across all repositories (KST, UTC+9):
 | Powershell | 8 | 2,420 | 70 | 285 |
 | C Header | 7 | 1,941 | 7,847 | 878 |
 | Go | 8 | 952 | 0 | 87 |
-| Metal | 3 | 688 | 96 | 107 |
 | C++ | 5 | 484 | 16 | 54 |
 | C | 4 | 232 | 26 | 30 |
 | SQL | 9 | 229 | 50 | 63 |
@@ -122,10 +121,10 @@ Commit activity across all repositories (KST, UTC+9):
 | Windows Resource-Definition Script | 1 | 39 | 0 | 4 |
 | Makefile | 1 | 27 | 8 | 8 |
 | TypeScript Typings | 6 | 27 | 17 | 5 |
+| Systemd | 1 | 21 | 0 | 4 |
 | Java | 1 | 17 | 0 | 1 |
-| Systemd | 1 | 17 | 4 | 4 |
 | JSONC | 1 | 10 | 0 | 0 |
-| **Total** | **5,665** | **1,087,683** | **176,283** | **127,310** |
+| **Total** | **5,662** | **1,082,485** | **178,940** | **128,974** |
 
 ### 💻 Tech stack
 
@@ -133,7 +132,7 @@ Commit activity across all repositories (KST, UTC+9):
 pie title Codebase by language (bytes)
     "TypeScript" : 34820598
     "Swift" : 22484097
-    "Rust" : 4128292
+    "Rust" : 4128908
     "Python" : 1289928
     "Shell" : 447062
     "JavaScript" : 399159
@@ -174,7 +173,7 @@ pie title Codebase by language (bytes)
 - Language concentration is high: **TypeScript** leads with **54%** of tracked bytes, and the top 3 languages make up **95%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **49%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **10%** of code LOC.
-- Readability profile is deliberate: roughly **16.2** comment lines and **11.7** blank lines per 100 lines of code.
+- Readability profile is deliberate: roughly **16.5** comment lines and **11.9** blank lines per 100 lines of code.
 - Contributor concentration is strong: [@hletrd](https://github.com/hletrd) drives **38%** of tracked line changes, and the top 3 contributors account for **94%**.
 - Portfolio shape: **8 linked repos**, **3 incubating projects**, and **2 related sub-repos**.
 
