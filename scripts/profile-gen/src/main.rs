@@ -24,6 +24,31 @@ const TEAM: &[&str] = &[
     "Overlaine-00",
     "leejseo",
     "circle-oo",
+    "kadryjh1724",
+];
+
+// GitHub accounts used by AI coding agents. Contributor stats keep these plus
+// org members; everyone else is dropped so that upstream authors from forked or
+// imported repos never show up in the profile.
+const AI_AGENTS: &[&str] = &[
+    "claude",
+    "claude[bot]",
+    "codex",
+    "chatgpt-codex-connector[bot]",
+    "openai-codex[bot]",
+    "cursoragent",
+    "cursor[bot]",
+    "Copilot",
+    "devin-ai-integration[bot]",
+    "google-labs-jules[bot]",
+    "factory-droid[bot]",
+    "codegen-sh[bot]",
+    "ampagent",
+    "augmentcode",
+    "sisyphus-dev-ai",
+    "gemini-code-assist[bot]",
+    "coderabbitai[bot]",
+    "greptile-apps[bot]",
 ];
 
 const SKIP_LANGS: &[&str] = &[
@@ -40,11 +65,13 @@ const SKIP_LANGS: &[&str] = &[
     "Gitignore",
 ];
 
+// CI and dependency automation. Not AI agents, so they stay out even though
+// they commit to our own repos.
 const EXCLUDE_AUTHORS: &[&str] = &[
-    "claude",
-    "augmentcode",
     "github-actions[bot]",
     "dependabot[bot]",
+    "renovate[bot]",
+    "ghostty-vouch[bot]",
 ];
 
 const BURSTPICK_SUB_REPOS: &[(&str, &str)] =
@@ -268,8 +295,24 @@ fn skip_lang_set() -> HashSet<&'static str> {
     SKIP_LANGS.iter().copied().collect()
 }
 
-fn excluded_author_set() -> HashSet<&'static str> {
-    EXCLUDE_AUTHORS.iter().copied().collect()
+// GitHub logins are case-insensitive, so every membership test goes through a
+// lowercased key. A case mismatch here would silently drop a real teammate.
+fn excluded_author_set() -> HashSet<String> {
+    EXCLUDE_AUTHORS
+        .iter()
+        .map(|login| login.to_ascii_lowercase())
+        .collect()
+}
+
+// Org members are unioned with the hardcoded TEAM list so a partial members API
+// response (e.g. a token without org read access) cannot drop a teammate.
+fn allowed_author_set(members: &[String]) -> HashSet<String> {
+    members
+        .iter()
+        .map(|login| login.to_ascii_lowercase())
+        .chain(TEAM.iter().map(|login| login.to_ascii_lowercase()))
+        .chain(AI_AGENTS.iter().map(|login| login.to_ascii_lowercase()))
+        .collect()
 }
 
 fn value_to_u64(value: Option<&Value>) -> u64 {
@@ -384,6 +427,7 @@ fn parse_contributor_stats(
 fn fetch_contributors(
     gh: &GithubClient,
     repos: &[Repo],
+    allowed: &HashSet<String>,
 ) -> (Vec<(String, u64)>, HashMap<String, String>) {
     let mut totals: HashMap<String, u64> = HashMap::new();
     let mut avatars: HashMap<String, String> = HashMap::new();
@@ -441,11 +485,21 @@ fn fetch_contributors(
     }
 
     let excluded = excluded_author_set();
+    let total_authors = totals.len();
     let mut sorted: Vec<(String, u64)> = totals
         .into_iter()
-        .filter(|(login, _)| !excluded.contains(login.as_str()))
+        .filter(|(login, _)| {
+            let key = login.to_ascii_lowercase();
+            allowed.contains(&key) && !excluded.contains(&key)
+        })
         .collect();
     sorted.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
+
+    println!(
+        "  kept {} of {} authors (org members + AI agents)",
+        sorted.len(),
+        total_authors
+    );
 
     (sorted, avatars)
 }
@@ -1323,8 +1377,12 @@ fn main() -> Result<()> {
     println!("  Waiting 15s...");
     sleep(Duration::from_secs(15));
 
+    println!("Fetching members...");
+    let (members, member_avatars) = fetch_members(&gh);
+    let allowed_authors = allowed_author_set(&members);
+
     println!("Fetching contributors (all repos)...");
-    let (contributors, contributor_avatars) = fetch_contributors(&gh, &all_repos);
+    let (contributors, contributor_avatars) = fetch_contributors(&gh, &all_repos, &allowed_authors);
     println!("  {} contributors", contributors.len());
 
     println!("Fetching punch card (all repos)...");
@@ -1332,9 +1390,6 @@ fn main() -> Result<()> {
 
     println!("Fetching languages (all repos)...");
     let languages = fetch_languages(&gh, &all_repos);
-
-    println!("Fetching members...");
-    let (members, member_avatars) = fetch_members(&gh);
 
     println!("Computing LOC (cloning + scc, all repos)...");
     let loc = compute_loc(&gh, &all_repos);
