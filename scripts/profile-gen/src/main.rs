@@ -16,6 +16,11 @@ const ORG: &str = "Open330";
 const KST_OFFSET: i64 = 9;
 const API_BASE: &str = "https://api.github.com";
 
+// Repos we host but did not write: a fork (ghostty) and an upstream import
+// (amux). Their history is not ours, so they are dropped before any stat is
+// computed. Add a line here when another one lands.
+const SKIP_REPOS: &[&str] = &["ghostty", "amux"];
+
 const TEAM: &[&str] = &[
     "jiunbae",
     "codingskynet",
@@ -338,6 +343,11 @@ fn value_to_i64(value: Option<&Value>) -> i64 {
 }
 
 fn fetch_repos(gh: &GithubClient, repo_type: &str) -> Vec<Repo> {
+    // Repo names are case-insensitive on GitHub, same as logins.
+    let skipped: HashSet<String> = SKIP_REPOS
+        .iter()
+        .map(|name| name.to_ascii_lowercase())
+        .collect();
     let mut repos = Vec::new();
     let mut page = 1usize;
 
@@ -358,6 +368,10 @@ fn fetch_repos(gh: &GithubClient, repo_type: &str) -> Vec<Repo> {
                 .unwrap_or_default()
                 .to_string();
             if name.is_empty() {
+                continue;
+            }
+            if skipped.contains(&name.to_ascii_lowercase()) {
+                println!("  skipping {name} (not our code)");
                 continue;
             }
 
