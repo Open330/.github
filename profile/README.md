@@ -70,7 +70,7 @@ Commit activity across all repositories (KST, UTC+9):
   7 AM  ██████████████████░░ 882
   8 AM  ████████████████░░░░ 798
   9 AM  ██████████████████░░ 887
- 10 AM  ████████████░░░░░░░░ 610
+ 10 AM  ████████████░░░░░░░░ 611
  11 AM  ███████████░░░░░░░░░ 554
  12 PM  ██████████████░░░░░░ 714
   1 PM  █████████░░░░░░░░░░░ 454
@@ -89,7 +89,7 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 4779 | 30% |
-| ☀️ Morning | 6–11 AM | 4631 | 29% |
+| ☀️ Morning | 6–11 AM | 4632 | 29% |
 | 🌤️ Afternoon | 12–5 PM | 2536 | 16% |
 | 🌆 Evening | 6–11 PM | 4080 | 25% |
 
