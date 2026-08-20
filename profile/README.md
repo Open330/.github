@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C373%2C881-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C373%2C328-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -60,7 +60,7 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  ███████████████░░░░░ 750
+ 12 AM  ███████████████░░░░░ 752
   1 AM  ████████████████████ 998
   2 AM  ███████████████░░░░░ 754
   3 AM  ██████████████░░░░░░ 686  <-- 3:30 AM
@@ -70,28 +70,28 @@ Commit activity across all repositories (KST, UTC+9):
   7 AM  ██████████████████░░ 882
   8 AM  ████████████████░░░░ 798
   9 AM  ██████████████████░░ 887
- 10 AM  ████████████░░░░░░░░ 613
+ 10 AM  ████████████░░░░░░░░ 614
  11 AM  ███████████░░░░░░░░░ 554
  12 PM  ██████████████░░░░░░ 714
   1 PM  █████████░░░░░░░░░░░ 454
-  2 PM  █████████░░░░░░░░░░░ 433
-  3 PM  ██████░░░░░░░░░░░░░░ 294
+  2 PM  █████████░░░░░░░░░░░ 434
+  3 PM  ██████░░░░░░░░░░░░░░ 298
   4 PM  ██████░░░░░░░░░░░░░░ 299
   5 PM  ███████░░░░░░░░░░░░░ 342
-  6 PM  ████████░░░░░░░░░░░░ 417
+  6 PM  ████████░░░░░░░░░░░░ 418
   7 PM  ████████████░░░░░░░░ 601
   8 PM  ██████████████░░░░░░ 716
   9 PM  ███████████████░░░░░ 733
  10 PM  ████████████████░░░░ 800
- 11 PM  ████████████████░░░░ 813
+ 11 PM  ████████████████░░░░ 816
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 4789 | 30% |
-| ☀️ Morning | 6–11 AM | 4634 | 29% |
-| 🌤️ Afternoon | 12–5 PM | 2536 | 16% |
-| 🌆 Evening | 6–11 PM | 4080 | 25% |
+| 🌙 Night | 12–5 AM | 4791 | 30% |
+| ☀️ Morning | 6–11 AM | 4635 | 29% |
+| 🌤️ Afternoon | 12–5 PM | 2541 | 16% |
+| 🌆 Evening | 6–11 PM | 4084 | 25% |
 
 > **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -99,7 +99,7 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| Swift | 1,914 | 513,307 | 62,694 | 69,103 |
+| Swift | 1,914 | 512,754 | 62,992 | 69,721 |
 | TypeScript | 2,520 | 507,959 | 93,042 | 50,094 |
 | Rust | 319 | 242,578 | 18,680 | 19,135 |
 | Python | 154 | 49,935 | 2,848 | 4,144 |
@@ -125,14 +125,14 @@ Commit activity across all repositories (KST, UTC+9):
 | Systemd | 1 | 21 | 0 | 4 |
 | Java | 1 | 17 | 0 | 1 |
 | JSONC | 1 | 10 | 0 | 0 |
-| **Total** | **5,979** | **1,373,881** | **189,179** | **149,545** |
+| **Total** | **5,979** | **1,373,328** | **189,477** | **150,163** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
     "TypeScript" : 34829859
-    "Swift" : 27103693
+    "Swift" : 27123397
     "Rust" : 10091237
     "Python" : 2278419
     "Shell" : 826824
@@ -183,7 +183,7 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 8,390,198 | `████████████████████` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 8,390,701 | `████████████████████` |
 | <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,452,316 | `██████░░░░░░░░░░░░░░` |
 | <a href="https://github.com/claude"><img src="https://avatars.githubusercontent.com/u/81847?v=4&s=40" width="40" height="40" alt="claude"></a> | [@claude](https://github.com/claude) | 1,881,805 | `████░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/circle-oo"><img src="https://avatars.githubusercontent.com/u/9482404?v=4&s=40" width="40" height="40" alt="circle-oo"></a> | [@circle-oo](https://github.com/circle-oo) | 393,590 | `█░░░░░░░░░░░░░░░░░░░` |
