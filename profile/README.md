@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-8-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C481%2C181-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-1%2C485%2C442-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -66,13 +66,13 @@ Commit activity across all repositories (KST, UTC+9):
   3 AM  ██████████████░░░░░░ 736  <-- 3:30 AM
   4 AM  ██████████████████░░ 908
   5 AM  ██████████████░░░░░░ 739
-  6 AM  ██████████████████░░ 922
+  6 AM  ██████████████████░░ 924
   7 AM  ██████████████████░░ 896
   8 AM  ████████████████░░░░ 819
   9 AM  ██████████████████░░ 906
- 10 AM  █████████████░░░░░░░ 640
+ 10 AM  █████████████░░░░░░░ 642
  11 AM  ███████████░░░░░░░░░ 575
- 12 PM  ██████████████░░░░░░ 737
+ 12 PM  ██████████████░░░░░░ 738
   1 PM  █████████░░░░░░░░░░░ 483
   2 PM  █████████░░░░░░░░░░░ 463
   3 PM  ██████░░░░░░░░░░░░░░ 306
@@ -80,7 +80,7 @@ Commit activity across all repositories (KST, UTC+9):
   5 PM  ███████░░░░░░░░░░░░░ 361
   6 PM  █████████░░░░░░░░░░░ 456
   7 PM  ████████████░░░░░░░░ 636
-  8 PM  ███████████████░░░░░ 761
+  8 PM  ███████████████░░░░░ 767
   9 PM  ███████████████░░░░░ 763
  10 PM  ████████████████░░░░ 817
  11 PM  █████████████████░░░ 852
@@ -89,9 +89,9 @@ Commit activity across all repositories (KST, UTC+9):
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 4978 | 30% |
-| ☀️ Morning | 6–11 AM | 4758 | 29% |
-| 🌤️ Afternoon | 12–5 PM | 2666 | 16% |
-| 🌆 Evening | 6–11 PM | 4285 | 26% |
+| ☀️ Morning | 6–11 AM | 4762 | 29% |
+| 🌤️ Afternoon | 12–5 PM | 2667 | 16% |
+| 🌆 Evening | 6–11 PM | 4291 | 26% |
 
 > **30%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -99,14 +99,14 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| Swift | 1,952 | 538,210 | 64,300 | 72,104 |
-| TypeScript | 2,622 | 537,963 | 95,582 | 52,886 |
-| Rust | 343 | 282,227 | 23,615 | 21,544 |
-| Python | 170 | 53,354 | 3,247 | 4,515 |
-| Shell | 132 | 19,546 | 2,788 | 2,587 |
-| JavaScript | 121 | 15,077 | 717 | 1,488 |
+| Swift | 1,957 | 540,811 | 64,575 | 72,375 |
+| TypeScript | 2,622 | 537,974 | 95,588 | 52,887 |
+| Rust | 346 | 283,661 | 23,840 | 21,661 |
+| Python | 170 | 53,386 | 3,247 | 4,518 |
+| Shell | 132 | 19,550 | 2,790 | 2,588 |
+| JavaScript | 121 | 15,188 | 727 | 1,496 |
 | Svelte | 29 | 8,091 | 453 | 558 |
-| CSS | 17 | 7,272 | 268 | 1,093 |
+| CSS | 17 | 7,340 | 269 | 1,095 |
 | Autoconf | 723 | 5,520 | 13 | 190 |
 | HTML | 12 | 3,326 | 25 | 235 |
 | Powershell | 8 | 2,460 | 75 | 287 |
@@ -128,21 +128,21 @@ Commit activity across all repositories (KST, UTC+9):
 | Java | 1 | 17 | 0 | 1 |
 | BASH | 2 | 15 | 6 | 6 |
 | JSONC | 1 | 10 | 0 | 0 |
-| **Total** | **6,211** | **1,481,181** | **199,290** | **159,054** |
+| **Total** | **6,219** | **1,485,442** | **199,809** | **159,457** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 36263096
-    "Swift" : 28270918
-    "Rust" : 11879705
-    "Python" : 2442880
-    "Shell" : 874374
-    "JavaScript" : 650704
+    "TypeScript" : 36264261
+    "Swift" : 28401336
+    "Rust" : 11946005
+    "Python" : 2444639
+    "Shell" : 874696
+    "JavaScript" : 656446
     "C++" : 388775
     "Svelte" : 275766
-    "CSS" : 216872
+    "CSS" : 218603
     "C" : 197804
     "HTML" : 101964
     "PowerShell" : 100430
@@ -186,9 +186,9 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 8,393,756 | `████████████████████` |
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,640,285 | `██████░░░░░░░░░░░░░░` |
-| <a href="https://github.com/claude"><img src="https://avatars.githubusercontent.com/u/81847?v=4&s=40" width="40" height="40" alt="claude"></a> | [@claude](https://github.com/claude) | 1,984,080 | `█████░░░░░░░░░░░░░░░` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 8,393,769 | `████████████████████` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,646,176 | `██████░░░░░░░░░░░░░░` |
+| <a href="https://github.com/claude"><img src="https://avatars.githubusercontent.com/u/81847?v=4&s=40" width="40" height="40" alt="claude"></a> | [@claude](https://github.com/claude) | 1,989,984 | `█████░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/circle-oo"><img src="https://avatars.githubusercontent.com/u/9482404?v=4&s=40" width="40" height="40" alt="circle-oo"></a> | [@circle-oo](https://github.com/circle-oo) | 393,590 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 273,082 | `█░░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 235,823 | `█░░░░░░░░░░░░░░░░░░░` |
