@@ -1,0 +1,390 @@
+{
+  "generated_at": "2026-09-12T09:29:59Z",
+  "projects": [
+    {
+      "created_at": "2026-03-17T10:03:19Z",
+      "description": "Turn textbooks, PDFs, and web content into your own interlinked learning wiki powered by LLM",
+      "homepage": "https://open330.github.io/kiwimu/",
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "kiwimu",
+      "pushed_at": "2026-09-07T00:22:56Z",
+      "stars": 30,
+      "topics": [
+        "ai",
+        "bun",
+        "knowledge-base",
+        "learning",
+        "llm",
+        "markdown",
+        "pdf",
+        "textbook",
+        "typescript",
+        "wiki"
+      ],
+      "url": "https://github.com/Open330/kiwimu"
+    },
+    {
+      "created_at": "2026-04-24T07:46:01Z",
+      "description": "Agent CLI observability and orchestration layer for tmux",
+      "homepage": "https://herdr.dev",
+      "language": "Rust",
+      "latest_release": "v0.8.46",
+      "name": "muxa",
+      "pushed_at": "2026-09-11T06:29:49Z",
+      "stars": 27,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "observability",
+        "orchestration",
+        "rust",
+        "terminal",
+        "tmux"
+      ],
+      "url": "https://github.com/Open330/muxa"
+    },
+    {
+      "created_at": "2026-02-21T15:13:52Z",
+      "description": "Animate GPX, KML, and Google Location History into cinematic travel videos.",
+      "homepage": "https://open330.github.io/travelback/",
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "travelback",
+      "pushed_at": "2026-09-12T09:25:17Z",
+      "stars": 9,
+      "topics": [
+        "animation",
+        "google-location-history",
+        "gpx",
+        "kml",
+        "maplibre",
+        "nextjs",
+        "react",
+        "travel",
+        "typescript",
+        "video"
+      ],
+      "url": "https://github.com/Open330/travelback"
+    },
+    {
+      "created_at": "2026-03-02T08:28:50Z",
+      "description": "MCP server and hook toolkit that compresses tool output to save context window tokens.",
+      "homepage": null,
+      "language": "TypeScript",
+      "latest_release": "v2026.7.1",
+      "name": "context-compress",
+      "pushed_at": "2026-09-10T15:42:56Z",
+      "stars": 5,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "context-window",
+        "developer-tools",
+        "hooks",
+        "mcp",
+        "token-optimization",
+        "typescript"
+      ],
+      "url": "https://github.com/Open330/context-compress"
+    },
+    {
+      "created_at": "2026-02-16T18:32:08Z",
+      "description": "Use spare AI agent tokens to automatically contribute to GitHub repositories.",
+      "homepage": null,
+      "language": "TypeScript",
+      "latest_release": "v2026.222.1",
+      "name": "open-agent-contribution",
+      "pushed_at": "2026-03-20T01:32:09Z",
+      "stars": 3,
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "codex-cli",
+        "contributions",
+        "github",
+        "open-source",
+        "typescript"
+      ],
+      "url": "https://github.com/Open330/open-agent-contribution"
+    },
+    {
+      "created_at": "2026-03-01T16:40:50Z",
+      "description": "Quota monitoring server for Claude Code, Codex CLI, and other shared AI subscriptions.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": null,
+      "name": "agent-quotas",
+      "pushed_at": "2026-09-12T09:25:18Z",
+      "stars": 1,
+      "topics": [
+        "claude-code",
+        "codex-cli",
+        "llm-ops",
+        "quota-monitoring",
+        "react",
+        "rust",
+        "sqlite",
+        "team-tools",
+        "token-tracking",
+        "usage-analytics"
+      ],
+      "url": "https://github.com/Open330/agent-quotas"
+    },
+    {
+      "created_at": "2026-02-19T05:00:37Z",
+      "description": "A modular toolkit for extending AI coding agents with skills, personas, and hooks.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v2026.7.23",
+      "name": "agt",
+      "pushed_at": "2026-09-12T09:25:16Z",
+      "stars": 1,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex-cli",
+        "developer-tools",
+        "hooks",
+        "personas",
+        "skills"
+      ],
+      "url": "https://github.com/Open330/agt"
+    },
+    {
+      "created_at": "2026-02-22T16:50:08Z",
+      "description": "Generate Quickstart-for-Agents README sections with styled prompt blocks.",
+      "homepage": "https://quickstart-for-agents.vercel.app",
+      "language": "JavaScript",
+      "latest_release": null,
+      "name": "quickstart-for-agents",
+      "pushed_at": "2026-09-12T09:25:19Z",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "documentation",
+        "markdown",
+        "prompt-engineering",
+        "readme",
+        "templates"
+      ],
+      "url": "https://github.com/Open330/quickstart-for-agents"
+    },
+    {
+      "created_at": "2026-07-06T05:06:32Z",
+      "description": "Agent Account Switcher — single-binary multi-account switcher for LLM coding agents (Rust rewrite of asx)",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v0.1.11",
+      "name": "aas",
+      "pushed_at": "2026-09-10T09:20:46Z",
+      "stars": 0,
+      "topics": [
+        "account-switcher",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "macos",
+        "rust"
+      ],
+      "url": "https://github.com/Open330/aas"
+    },
+    {
+      "created_at": "2026-06-04T07:03:01Z",
+      "description": "arXiv 논문을 학계 사람이 아니어도 읽기 쉬운, 주석·도식·AI챗이 있는 블로그 글로 변환",
+      "homepage": "https://arxiblog.jiun.dev",
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "arxiblog",
+      "pushed_at": "2026-09-04T09:10:02Z",
+      "stars": 0,
+      "topics": [
+        "arxiv",
+        "blog",
+        "bun",
+        "korean",
+        "llm",
+        "papers",
+        "research",
+        "static-site-generator",
+        "typescript"
+      ],
+      "url": "https://github.com/Open330/arxiblog"
+    },
+    {
+      "created_at": "2026-08-27T15:57:42Z",
+      "description": "Let any agent walk users through your project, interactively. A manifest format and session protocol.",
+      "homepage": null,
+      "language": "JavaScript",
+      "latest_release": null,
+      "name": "agent-guide",
+      "pushed_at": "2026-08-31T01:53:38Z",
+      "stars": 0,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "cli",
+        "developer-tools",
+        "documentation",
+        "npx",
+        "onboarding"
+      ],
+      "url": "https://github.com/Open330/agent-guide"
+    },
+    {
+      "created_at": "2026-07-08T02:10:36Z",
+      "description": "macOS menu bar app: OTP codes, LLM usage, recent files, CI status as native widgets in one popover",
+      "homepage": null,
+      "language": "Swift",
+      "latest_release": "v0.1.3",
+      "name": "barshelf",
+      "pushed_at": "2026-08-25T01:28:42Z",
+      "stars": 0,
+      "topics": [
+        "developer-tools",
+        "macos",
+        "menubar",
+        "otp",
+        "productivity",
+        "swift",
+        "swiftui",
+        "widgets"
+      ],
+      "url": "https://github.com/Open330/barshelf"
+    },
+    {
+      "created_at": "2026-07-15T10:03:55Z",
+      "description": "Aggregate ccusage reports across local and SSH-connected machines",
+      "homepage": null,
+      "language": "JavaScript",
+      "latest_release": "v0.4.0",
+      "name": "ccusage-fleet",
+      "pushed_at": "2026-08-10T00:00:12Z",
+      "stars": 0,
+      "topics": [
+        "ccusage",
+        "claude-code",
+        "codex",
+        "ssh",
+        "usage-analytics"
+      ],
+      "url": "https://github.com/Open330/ccusage-fleet"
+    },
+    {
+      "created_at": "2026-07-08T01:05:45Z",
+      "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
+      "homepage": "https://open330.github.io/amux/",
+      "language": "Swift",
+      "latest_release": "v0.2.0",
+      "name": "amux",
+      "pushed_at": "2026-07-20T06:19:32Z",
+      "stars": 0,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "ghostty",
+        "macos",
+        "muxa",
+        "swift",
+        "terminal",
+        "tmux"
+      ],
+      "url": "https://github.com/Open330/amux"
+    },
+    {
+      "created_at": "2026-02-19T01:10:35Z",
+      "description": "Official BurstPick website built with Next.js 16, React 19, and Tailwind CSS.",
+      "homepage": "https://burstpick.app",
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "BurstPick-web",
+      "pushed_at": "2026-07-17T10:25:20Z",
+      "stars": 0,
+      "topics": [
+        "burstpick",
+        "framer-motion",
+        "i18n",
+        "next-intl",
+        "nextjs",
+        "react",
+        "tailwindcss",
+        "typescript",
+        "vercel",
+        "website"
+      ],
+      "url": "https://github.com/Open330/BurstPick-web"
+    },
+    {
+      "created_at": "2026-05-22T07:09:24Z",
+      "description": "Chrome extension that shows latest GitHub PR comments first",
+      "homepage": null,
+      "language": "JavaScript",
+      "latest_release": "v0.2.0",
+      "name": "pr-latest-first",
+      "pushed_at": "2026-05-22T08:00:58Z",
+      "stars": 0,
+      "topics": [
+        "browser-extension",
+        "chrome-extension",
+        "code-review",
+        "github",
+        "pull-requests"
+      ],
+      "url": "https://github.com/Open330/pr-latest-first"
+    },
+    {
+      "created_at": "2026-03-05T10:50:11Z",
+      "description": "Rust CLI that audits GitHub repository READMEs for documentation quality and template consistency.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": null,
+      "name": "docs-sentry",
+      "pushed_at": "2026-03-08T13:18:45Z",
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/Open330/docs-sentry"
+    },
+    {
+      "created_at": "2026-03-05T07:02:34Z",
+      "description": "Rust CLI to scan GitHub org repositories and score maintenance health.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": null,
+      "name": "open330-repo-pulse",
+      "pushed_at": "2026-03-05T12:18:21Z",
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/Open330/open330-repo-pulse"
+    },
+    {
+      "created_at": "2026-03-05T04:46:03Z",
+      "description": "Web-based cron job manager for macOS with local crontab control.",
+      "homepage": null,
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "cron-mini-manager",
+      "pushed_at": "2026-03-05T06:59:15Z",
+      "stars": 0,
+      "topics": [
+        "cron",
+        "dashboard",
+        "macos",
+        "nextjs",
+        "nodejs",
+        "ops-tools",
+        "react",
+        "scheduler",
+        "typescript"
+      ],
+      "url": "https://github.com/Open330/cron-mini-manager"
+    }
+  ]
+}

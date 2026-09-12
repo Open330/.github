@@ -79,109 +79,35 @@ const EXCLUDE_AUTHORS: &[&str] = &[
     "ghostty-vouch[bot]",
 ];
 
-const BURSTPICK_SUB_REPOS: &[(&str, &str)] =
-    &[("web", "BurstPick-web"), ("releases", "BurstPick-releases")];
-
-#[derive(Clone, Copy)]
-struct Project {
-    emoji: &'static str,
-    name: &'static str,
-    main_repo: Option<&'static str>,
-    sub_repos: &'static [(&'static str, &'static str)],
-    stack: &'static str,
-    description: &'static str,
-}
-
-const PROJECTS: &[Project] = &[
-    Project {
-        emoji: "📸",
-        name: "BurstPick",
-        main_repo: None,
-        sub_repos: BURSTPICK_SUB_REPOS,
-        stack: "![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square) ![CoreML](https://img.shields.io/badge/-CoreML-34AADC?style=flat-square) ![Vision](https://img.shields.io/badge/-Vision-5AC8FA?style=flat-square) ![SwiftUI](https://img.shields.io/badge/-SwiftUI-0A84FF?style=flat-square) ![Metal](https://img.shields.io/badge/-Metal-8E8E93?style=flat-square)",
-        description: "AI-powered burst photo culling for photographers",
-    },
-    Project {
-        emoji: "🛡️",
-        name: "docs-sentry",
-        main_repo: Some("docs-sentry"),
-        sub_repos: &[],
-        stack: "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) ![CLI](https://img.shields.io/badge/-CLI-334155?style=flat-square)",
-        description: "Audit README quality and template consistency across organization repositories",
-    },
-    Project {
-        emoji: "📈",
-        name: "open330-repo-pulse",
-        main_repo: Some("open330-repo-pulse"),
-        sub_repos: &[],
-        stack: "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square) ![CLI](https://img.shields.io/badge/-CLI-334155?style=flat-square)",
-        description: "Scan GitHub organization repositories and score maintenance health",
-    },
-    Project {
-        emoji: "🤖",
-        name: "open-agent-contribution",
-        main_repo: Some("open-agent-contribution"),
-        sub_repos: &[],
-        stack: "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square)",
-        description: "Use your leftover AI agent tokens to automatically contribute to GitHub repositories",
-    },
-    Project {
-        emoji: "🗜️",
-        name: "context-compress",
-        main_repo: Some("context-compress"),
-        sub_repos: &[],
-        stack: "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![MCP](https://img.shields.io/badge/-MCP-4A5568?style=flat-square)",
-        description: "MCP server and PreToolUse hook that compresses tool outputs to save context window",
-    },
-    Project {
-        emoji: "🕒",
-        name: "cron-mini-manager",
-        main_repo: Some("cron-mini-manager"),
-        sub_repos: &[],
-        stack: "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square)",
-        description: "Web-based cron job manager for macOS with local crontab control",
-    },
-    Project {
-        emoji: "🧰",
-        name: "agt",
-        main_repo: Some("agt"),
-        sub_repos: &[],
-        stack: "![Rust](https://img.shields.io/badge/-Rust-000?style=flat-square)",
-        description: "A modular toolkit for extending AI coding agents",
-    },
-    Project {
-        emoji: "🗺️",
-        name: "travelback",
-        main_repo: Some("travelback"),
-        sub_repos: &[],
-        stack: "![TS](https://img.shields.io/badge/-TS-3178C6?style=flat-square) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square)",
-        description: "Animate GPX, KML, and Google Location History into travel videos",
-    },
-    Project {
-        emoji: "📁",
-        name: "quickstart-for-agents",
-        main_repo: Some("quickstart-for-agents"),
-        sub_repos: &[],
-        stack: "",
-        description: "",
-    },
-    Project {
-        emoji: "🧠",
-        name: "ConText",
-        main_repo: None,
-        sub_repos: &[],
-        stack: "",
-        description: "AI-powered personal knowledge assistant — chat-style memo service",
-    },
-    Project {
-        emoji: "💡",
-        name: "MaC",
-        main_repo: None,
-        sub_repos: &[],
-        stack: "",
-        description: "Mind as Context",
-    },
+// Public repos that are not projects: the org profile itself, the landing
+// page, forks, and distribution-only repos. Everything else public and
+// non-archived is listed in the Projects table, straight from the API.
+const PROJECT_EXCLUDE: &[&str] = &[
+    ".github",
+    "open330.github.io",
+    "homebrew-tap",
+    "BurstPick-releases",
 ];
+
+// Optional hand-written copy layered over the API description. Only affects
+// how a repo is described, never whether it appears.
+const DESCRIPTION_OVERRIDES: &[(&str, &str)] = &[];
+
+const DESCRIPTION_MAX_CHARS: usize = 90;
+
+#[derive(Clone, Debug)]
+struct ProjectRepo {
+    name: String,
+    description: String,
+    url: String,
+    homepage: Option<String>,
+    language: Option<String>,
+    stars: u64,
+    topics: Vec<String>,
+    pushed_at: String,
+    created_at: String,
+    latest_release: Option<String>,
+}
 
 #[derive(Clone, Debug)]
 struct Repo {
@@ -399,6 +325,207 @@ fn fetch_repos(gh: &GithubClient, repo_type: &str) -> Vec<Repo> {
     }
 
     repos
+}
+
+fn json_str(value: &Value, key: &str) -> Option<String> {
+    value
+        .get(key)
+        .and_then(Value::as_str)
+        .map(str::trim)
+        .filter(|s| !s.is_empty())
+        .map(str::to_string)
+}
+
+// Latest release tag, or None when the repo has no releases (404). Bypasses
+// api_get so a missing release does not print a warning on every run.
+fn fetch_latest_release(gh: &GithubClient, repo: &str) -> Option<String> {
+    let url = format!("{API_BASE}/repos/{ORG}/{repo}/releases/latest");
+    let response = match gh.client.get(&url).send() {
+        Ok(resp) => resp,
+        Err(err) => {
+            eprintln!("  ⚠ request error for {url}: {err}");
+            return None;
+        }
+    };
+    if response.status() == StatusCode::NOT_FOUND {
+        return None;
+    }
+    if !response.status().is_success() {
+        eprintln!("  ⚠ {} for {}", response.status().as_u16(), url);
+        return None;
+    }
+    let body: Value = response.json().ok()?;
+    json_str(&body, "tag_name")
+}
+
+// Public, non-archived, non-fork repos minus PROJECT_EXCLUDE, sorted by stars
+// then most recent push. Returns the projects and the raw public repo count
+// (before any exclusion) for the repos badge.
+fn fetch_project_repos(gh: &GithubClient) -> (Vec<ProjectRepo>, usize) {
+    let excluded: HashSet<String> = PROJECT_EXCLUDE
+        .iter()
+        .map(|name| name.to_ascii_lowercase())
+        .collect();
+    let overrides: HashMap<String, &str> = DESCRIPTION_OVERRIDES
+        .iter()
+        .map(|(name, desc)| (name.to_ascii_lowercase(), *desc))
+        .collect();
+
+    let mut projects = Vec::new();
+    let mut seen = HashSet::new();
+    let mut public_count = 0usize;
+    let mut page = 1usize;
+
+    loop {
+        let path = format!("/orgs/{ORG}/repos?type=public&per_page=100&page={page}");
+        let Some(Value::Array(items)) = gh.api_get(&path, 5, 3, false) else {
+            break;
+        };
+        if items.is_empty() {
+            break;
+        }
+
+        for item in &items {
+            let Some(name) = json_str(item, "name") else {
+                continue;
+            };
+            let key = name.to_ascii_lowercase();
+            if !seen.insert(key.clone()) {
+                continue;
+            }
+            public_count += 1;
+
+            let is_fork = item.get("fork").and_then(Value::as_bool).unwrap_or(false);
+            let is_archived = item
+                .get("archived")
+                .and_then(Value::as_bool)
+                .unwrap_or(false);
+            if is_fork || is_archived || excluded.contains(&key) {
+                println!("  project list: skipping {name}");
+                continue;
+            }
+
+            let description = overrides
+                .get(&key)
+                .map(|d| (*d).to_string())
+                .or_else(|| json_str(item, "description"))
+                .unwrap_or_default();
+            let topics = item
+                .get("topics")
+                .and_then(Value::as_array)
+                .map(|arr| {
+                    arr.iter()
+                        .filter_map(Value::as_str)
+                        .map(str::to_string)
+                        .collect()
+                })
+                .unwrap_or_default();
+
+            projects.push(ProjectRepo {
+                url: json_str(item, "html_url")
+                    .unwrap_or_else(|| format!("https://github.com/{ORG}/{name}")),
+                description,
+                homepage: json_str(item, "homepage"),
+                language: json_str(item, "language"),
+                stars: value_to_u64(item.get("stargazers_count")),
+                topics,
+                pushed_at: json_str(item, "pushed_at").unwrap_or_default(),
+                created_at: json_str(item, "created_at").unwrap_or_default(),
+                latest_release: None,
+                name,
+            });
+        }
+
+        if items.len() < 100 {
+            break;
+        }
+        page += 1;
+    }
+
+    for project in &mut projects {
+        project.latest_release = fetch_latest_release(gh, &project.name);
+    }
+
+    projects.sort_by(|a, b| {
+        b.stars
+            .cmp(&a.stars)
+            .then_with(|| b.pushed_at.cmp(&a.pushed_at))
+            .then_with(|| a.name.cmp(&b.name))
+    });
+    (projects, public_count)
+}
+
+// Truncate on char boundaries so multi-byte (e.g. Korean) descriptions are
+// never cut mid-character, and escape pipes so the Markdown table survives.
+fn table_description(description: &str) -> String {
+    let flat = description.split_whitespace().collect::<Vec<_>>().join(" ");
+    let mut text: String = flat.chars().take(DESCRIPTION_MAX_CHARS).collect();
+    if flat.chars().count() > DESCRIPTION_MAX_CHARS {
+        text = text.trim_end().to_string();
+        text.push('…');
+    }
+    text.replace('|', "\\|")
+}
+
+fn date_only(timestamp: &str) -> &str {
+    timestamp.get(..10).unwrap_or(timestamp)
+}
+
+fn now_iso8601_utc() -> String {
+    let secs = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_secs())
+        .unwrap_or(0);
+    let days = (secs / 86_400) as i64;
+    let rem = secs % 86_400;
+    // Civil-from-days (Howard Hinnant), proleptic Gregorian.
+    let z = days + 719_468;
+    let era = z.div_euclid(146_097);
+    let doe = z.rem_euclid(146_097);
+    let yoe = (doe - doe / 1_460 + doe / 36_524 - doe / 146_096) / 365;
+    let doy = doe - (365 * yoe + yoe / 4 - yoe / 100);
+    let mp = (5 * doy + 2) / 153;
+    let day = doy - (153 * mp + 2) / 5 + 1;
+    let month = if mp < 10 { mp + 3 } else { mp - 9 };
+    let year = yoe + era * 400 + i64::from(month <= 2);
+    format!(
+        "{year:04}-{month:02}-{day:02}T{:02}:{:02}:{:02}Z",
+        rem / 3_600,
+        (rem % 3_600) / 60,
+        rem % 60
+    )
+}
+
+fn projects_json(projects: &[ProjectRepo]) -> Value {
+    let items: Vec<Value> = projects
+        .iter()
+        .map(|p| {
+            serde_json::json!({
+                "name": p.name,
+                "description": p.description,
+                "url": p.url,
+                "homepage": p.homepage,
+                "language": p.language,
+                "stars": p.stars,
+                "topics": p.topics,
+                "pushed_at": p.pushed_at,
+                "created_at": p.created_at,
+                "latest_release": p.latest_release,
+            })
+        })
+        .collect();
+    serde_json::json!({
+        "generated_at": now_iso8601_utc(),
+        "projects": items,
+    })
+}
+
+fn project_links(projects: &[ProjectRepo]) -> String {
+    projects
+        .iter()
+        .map(|p| format!("**[{}]({})**", p.name, p.url))
+        .collect::<Vec<_>>()
+        .join(", ")
 }
 
 fn parse_contributor_stats(
@@ -654,9 +781,7 @@ fn analyze_repo_loc(
         }
     };
 
-    let Some(entries) = payload.as_array() else {
-        return None;
-    };
+    let entries = payload.as_array()?;
 
     let mut repo_loc: HashMap<String, LocStats> = HashMap::new();
     for entry in entries {
@@ -724,7 +849,7 @@ fn fmt(n: u64) -> String {
     for (idx, ch) in digits.chars().enumerate() {
         out.push(ch);
         let remaining = digits.len() - idx - 1;
-        if remaining > 0 && remaining % 3 == 0 {
+        if remaining > 0 && remaining.is_multiple_of(3) {
             out.push(',');
         }
     }
@@ -758,8 +883,10 @@ fn hour_label(hour: usize) -> String {
     format!("{} PM", hour - 12)
 }
 
+#[allow(clippy::too_many_arguments)]
 fn generate_readme(
-    n_all_repos: usize,
+    n_public_repos: usize,
+    projects: &[ProjectRepo],
     contributors: &[(String, u64)],
     punch: &[u64; 24],
     languages: &[(String, u64)],
@@ -803,7 +930,7 @@ fn generate_readme(
         &mut lines,
         format!(
             "  <img src=\"https://img.shields.io/badge/repos-{}-blue?style=flat-square\" alt=\"Repos\">",
-            n_all_repos
+            n_public_repos
         ),
     );
     add(
@@ -850,10 +977,24 @@ fn generate_readme(
         "**open330** creates practical, production-ready tools and services that leverage cutting-edge AI. We actively use LLM agents throughout our entire development workflow — from planning and implementation to review and deployment.",
     );
     add(&mut lines, "");
-    add(
-        &mut lines,
-        "Latest additions: **[docs-sentry](https://github.com/open330/docs-sentry)**, a Rust CLI that audits README quality across organization repositories, and **[open330-repo-pulse](https://github.com/open330/open330-repo-pulse)**, a Rust CLI that scans repos and scores maintenance health.",
-    );
+    let mut newest = projects.to_vec();
+    newest.sort_by(|a, b| b.created_at.cmp(&a.created_at));
+    newest.truncate(3);
+    if !newest.is_empty() {
+        add(
+            &mut lines,
+            format!("Latest additions: {}.", project_links(&newest)),
+        );
+    }
+    let mut active = projects.to_vec();
+    active.sort_by(|a, b| b.pushed_at.cmp(&a.pushed_at));
+    active.truncate(3);
+    if !active.is_empty() {
+        add(
+            &mut lines,
+            format!("Recently active: {}.", project_links(&active)),
+        );
+    }
     add(&mut lines, "");
 
     add(&mut lines, "### 🤖 AI-only code changes");
@@ -1155,9 +1296,11 @@ fn generate_readme(
         .map(|(_, value)| *value)
         .sum::<u64>();
 
-    let linked_projects = PROJECTS.iter().filter(|p| p.main_repo.is_some()).count();
-    let incubating_projects = PROJECTS.len().saturating_sub(linked_projects);
-    let linked_subrepos = PROJECTS.iter().map(|p| p.sub_repos.len()).sum::<usize>();
+    let total_stars = projects.iter().map(|p| p.stars).sum::<u64>();
+    let released_projects = projects
+        .iter()
+        .filter(|p| p.latest_release.is_some())
+        .count();
 
     if total_commits > 0 {
         add(
@@ -1271,8 +1414,10 @@ fn generate_readme(
     add(
         &mut lines,
         format!(
-            "- Portfolio shape: **{} linked repos**, **{} incubating projects**, and **{} related sub-repos**.",
-            linked_projects, incubating_projects, linked_subrepos
+            "- Portfolio shape: **{} public projects**, **{} stars** combined, **{}** with a tagged release.",
+            projects.len(),
+            fmt(total_stars),
+            released_projects
         ),
     );
     add(&mut lines, "");
@@ -1297,35 +1442,31 @@ fn generate_readme(
 
     add(&mut lines, "### 🏗️ Projects");
     add(&mut lines, "");
-    add(&mut lines, "| Project | Stack | Description |");
-    add(&mut lines, "|---------|-------|-------------|");
-    let org = ORG.to_ascii_lowercase();
-    for project in PROJECTS {
-        let mut project_display = if let Some(main_repo) = project.main_repo {
-            format!(
-                "{} [**{}**](https://github.com/{}/{})",
-                project.emoji, project.name, org, main_repo
-            )
-        } else {
-            format!("{} **{}**", project.emoji, project.name)
-        };
-
-        if !project.sub_repos.is_empty() {
-            let links = project
-                .sub_repos
-                .iter()
-                .map(|(label, repo)| format!("[{label}](https://github.com/{org}/{repo})"))
-                .collect::<Vec<_>>()
-                .join(" · ");
-            project_display.push_str(" · ");
-            project_display.push_str(&links);
-        }
-
+    add(
+        &mut lines,
+        "| Project | Description | Stack | Stars | Latest release | Last push |",
+    );
+    add(
+        &mut lines,
+        "|---------|-------------|-------|------:|----------------|-----------|",
+    );
+    for project in projects {
+        let release = project
+            .latest_release
+            .as_ref()
+            .map(|tag| format!("[{tag}]({}/releases/latest)", project.url))
+            .unwrap_or_default();
         add(
             &mut lines,
             format!(
-                "| {} | {} | {} |",
-                project_display, project.stack, project.description
+                "| [**{}**]({}) | {} | {} | {} | {} | {} |",
+                project.name,
+                project.url,
+                table_description(&project.description),
+                project.language.as_deref().unwrap_or(""),
+                project.stars,
+                release,
+                date_only(&project.pushed_at)
             ),
         );
     }
@@ -1391,6 +1532,14 @@ fn main() -> Result<()> {
     println!("  Waiting 15s...");
     sleep(Duration::from_secs(15));
 
+    println!("Fetching public repos for the projects table...");
+    let (projects, public_repo_count) = fetch_project_repos(&gh);
+    println!(
+        "  {} projects listed ({} public repos total)",
+        projects.len(),
+        public_repo_count
+    );
+
     println!("Fetching members...");
     let (members, member_avatars) = fetch_members(&gh);
     let allowed_authors = allowed_author_set(&members);
@@ -1415,7 +1564,8 @@ fn main() -> Result<()> {
 
     println!("Generating README...");
     let readme = generate_readme(
-        all_repos.len(),
+        public_repo_count,
+        &projects,
         &contributors,
         &punch,
         &languages,
@@ -1427,6 +1577,13 @@ fn main() -> Result<()> {
     let output = PathBuf::from("profile").join("README.md");
     fs::write(&output, readme).with_context(|| format!("failed to write {}", output.display()))?;
     println!("  Written to {}", output.display());
+
+    let json_output = PathBuf::from("profile").join("projects.json");
+    let json = serde_json::to_string_pretty(&projects_json(&projects))
+        .context("failed to serialize projects.json")?;
+    fs::write(&json_output, format!("{json}\n"))
+        .with_context(|| format!("failed to write {}", json_output.display()))?;
+    println!("  Written to {}", json_output.display());
 
     Ok(())
 }
