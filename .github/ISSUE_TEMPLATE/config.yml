@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Open330/.github/blob/main/SECURITY.md
+    about: Please do not open a public issue for security problems. Report privately as described in SECURITY.md.
+  - name: Questions and support
+    url: https://github.com/Open330/.github/blob/main/SUPPORT.md
+    about: Use the repository's Discussions for questions and ideas.
