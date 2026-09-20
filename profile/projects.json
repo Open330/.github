@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:16:30Z",
+  "generated_at": "2026-09-20T03:33:50Z",
   "projects": [
     {
       "created_at": "2026-03-17T10:03:19Z",
@@ -113,6 +113,27 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-08T01:05:45Z",
+      "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
+      "homepage": "https://open330.github.io/amux/",
+      "language": "Swift",
+      "latest_release": "v0.2.0",
+      "name": "amux",
+      "pushed_at": "2026-09-12T16:36:03Z",
+      "stars": 1,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "ghostty",
+        "macos",
+        "muxa",
+        "swift",
+        "terminal",
+        "tmux"
+      ],
+      "url": "https://github.com/Open330/amux"
+    },
+    {
       "created_at": "2026-02-19T05:00:37Z",
       "description": "A modular toolkit for extending AI coding agents with skills, personas, and hooks.",
       "homepage": "https://www.npmjs.com/package/@open330/agt",
@@ -157,25 +178,24 @@
       "url": "https://github.com/Open330/agent-quotas"
     },
     {
-      "created_at": "2026-07-08T01:05:45Z",
-      "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
-      "homepage": "https://open330.github.io/amux/",
-      "language": "Swift",
-      "latest_release": "v0.2.0",
-      "name": "amux",
-      "pushed_at": "2026-09-12T16:36:03Z",
+      "created_at": "2026-08-27T15:57:42Z",
+      "description": "Let any agent walk users through your project, interactively. A manifest format and session protocol.",
+      "homepage": "https://www.npmjs.com/package/@open330/agent-guide",
+      "language": "JavaScript",
+      "latest_release": null,
+      "name": "agent-guide",
+      "pushed_at": "2026-09-19T12:58:52Z",
       "stars": 0,
       "topics": [
+        "agent-skills",
         "ai-agents",
+        "cli",
         "developer-tools",
-        "ghostty",
-        "macos",
-        "muxa",
-        "swift",
-        "terminal",
-        "tmux"
+        "documentation",
+        "npx",
+        "onboarding"
       ],
-      "url": "https://github.com/Open330/amux"
+      "url": "https://github.com/Open330/agent-guide"
     },
     {
       "created_at": "2026-02-19T01:10:35Z",
@@ -360,26 +380,6 @@
         "usage-analytics"
       ],
       "url": "https://github.com/Open330/ccusage-fleet"
-    },
-    {
-      "created_at": "2026-08-27T15:57:42Z",
-      "description": "Let any agent walk users through your project, interactively. A manifest format and session protocol.",
-      "homepage": "https://www.npmjs.com/package/@open330/agent-guide",
-      "language": "JavaScript",
-      "latest_release": null,
-      "name": "agent-guide",
-      "pushed_at": "2026-09-12T11:48:31Z",
-      "stars": 0,
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "cli",
-        "developer-tools",
-        "documentation",
-        "npx",
-        "onboarding"
-      ],
-      "url": "https://github.com/Open330/agent-guide"
     },
     {
       "created_at": "2026-07-06T05:06:32Z",
