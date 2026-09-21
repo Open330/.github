@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T03:33:50Z",
+  "generated_at": "2026-09-21T03:28:41Z",
   "projects": [
     {
       "created_at": "2026-03-17T10:03:19Z",
@@ -29,9 +29,9 @@
       "description": "Agent CLI observability and orchestration layer for tmux",
       "homepage": "https://herdr.dev",
       "language": "Rust",
-      "latest_release": "v0.8.47",
+      "latest_release": "v0.8.50",
       "name": "muxa",
-      "pushed_at": "2026-09-13T10:30:01Z",
+      "pushed_at": "2026-09-20T13:48:05Z",
       "stars": 28,
       "topics": [
         "ai-agents",
@@ -178,6 +178,72 @@
       "url": "https://github.com/Open330/agent-quotas"
     },
     {
+      "created_at": "2026-07-06T05:06:32Z",
+      "description": "Agent Account Switcher — single-binary multi-account switcher for LLM coding agents (Rust rewrite of asx)",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v0.1.11",
+      "name": "aas",
+      "pushed_at": "2026-09-12T11:48:27Z",
+      "stars": 1,
+      "topics": [
+        "account-switcher",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "macos",
+        "rust"
+      ],
+      "url": "https://github.com/Open330/aas"
+    },
+    {
+      "created_at": "2026-09-20T09:30:58Z",
+      "description": "소문 — PR for developers who'd rather build than announce. 작업을 지켜보다 글감이 익으면 채널별 초안을 내미는 편집자.",
+      "homepage": null,
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "somun",
+      "pushed_at": "2026-09-21T02:57:31Z",
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/Open330/somun"
+    },
+    {
+      "created_at": "2026-09-20T09:19:43Z",
+      "description": "Everything this machine holds that is yours: what it is, whose it is, and how it gets onto the next machine",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v0.7.0",
+      "name": "kitbag",
+      "pushed_at": "2026-09-21T02:56:57Z",
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/Open330/kitbag"
+    },
+    {
+      "created_at": "2026-07-08T02:10:36Z",
+      "description": "macOS menu bar app: OTP codes, LLM usage, recent files, CI status as native widgets in one popover",
+      "homepage": "https://barshelf.jiun.dev",
+      "language": "Swift",
+      "latest_release": "v0.3.1",
+      "name": "barshelf",
+      "pushed_at": "2026-09-21T02:29:50Z",
+      "stars": 0,
+      "topics": [
+        "developer-tools",
+        "macos",
+        "menubar",
+        "otp",
+        "productivity",
+        "swift",
+        "swiftui",
+        "widgets"
+      ],
+      "url": "https://github.com/Open330/barshelf"
+    },
+    {
       "created_at": "2026-08-27T15:57:42Z",
       "description": "Let any agent walk users through your project, interactively. A manifest format and session protocol.",
       "homepage": "https://www.npmjs.com/package/@open330/agent-guide",
@@ -261,27 +327,6 @@
         "templates"
       ],
       "url": "https://github.com/Open330/quickstart-for-agents"
-    },
-    {
-      "created_at": "2026-07-08T02:10:36Z",
-      "description": "macOS menu bar app: OTP codes, LLM usage, recent files, CI status as native widgets in one popover",
-      "homepage": "https://barshelf.jiun.dev",
-      "language": "Swift",
-      "latest_release": "v0.1.3",
-      "name": "barshelf",
-      "pushed_at": "2026-09-12T11:50:32Z",
-      "stars": 0,
-      "topics": [
-        "developer-tools",
-        "macos",
-        "menubar",
-        "otp",
-        "productivity",
-        "swift",
-        "swiftui",
-        "widgets"
-      ],
-      "url": "https://github.com/Open330/barshelf"
     },
     {
       "created_at": "2026-05-22T07:09:24Z",
@@ -380,27 +425,6 @@
         "usage-analytics"
       ],
       "url": "https://github.com/Open330/ccusage-fleet"
-    },
-    {
-      "created_at": "2026-07-06T05:06:32Z",
-      "description": "Agent Account Switcher — single-binary multi-account switcher for LLM coding agents (Rust rewrite of asx)",
-      "homepage": null,
-      "language": "Rust",
-      "latest_release": "v0.1.11",
-      "name": "aas",
-      "pushed_at": "2026-09-12T11:48:27Z",
-      "stars": 0,
-      "topics": [
-        "account-switcher",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "developer-tools",
-        "macos",
-        "rust"
-      ],
-      "url": "https://github.com/Open330/aas"
     }
   ]
 }
