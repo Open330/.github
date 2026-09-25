@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T03:17:53Z",
+  "generated_at": "2026-09-25T03:35:59Z",
   "projects": [
     {
       "created_at": "2026-03-17T10:03:19Z",
@@ -29,9 +29,9 @@
       "description": "Agent CLI observability and orchestration layer for tmux",
       "homepage": "https://herdr.dev",
       "language": "Rust",
-      "latest_release": "v0.8.51",
+      "latest_release": "v0.8.53",
       "name": "muxa",
-      "pushed_at": "2026-09-23T13:50:17Z",
+      "pushed_at": "2026-09-24T19:02:29Z",
       "stars": 28,
       "topics": [
         "ai-agents",
@@ -46,6 +46,27 @@
         "tmux"
       ],
       "url": "https://github.com/Open330/muxa"
+    },
+    {
+      "created_at": "2026-03-02T08:28:50Z",
+      "description": "MCP server and hook toolkit that compresses tool output to save context window tokens.",
+      "homepage": "https://www.npmjs.com/package/context-compress",
+      "language": "TypeScript",
+      "latest_release": "v2026.8.3",
+      "name": "context-compress",
+      "pushed_at": "2026-09-12T11:49:32Z",
+      "stars": 10,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "context-window",
+        "developer-tools",
+        "hooks",
+        "mcp",
+        "token-optimization",
+        "typescript"
+      ],
+      "url": "https://github.com/Open330/context-compress"
     },
     {
       "created_at": "2026-02-21T15:13:52Z",
@@ -69,27 +90,6 @@
         "video"
       ],
       "url": "https://github.com/Open330/travelback"
-    },
-    {
-      "created_at": "2026-03-02T08:28:50Z",
-      "description": "MCP server and hook toolkit that compresses tool output to save context window tokens.",
-      "homepage": "https://www.npmjs.com/package/context-compress",
-      "language": "TypeScript",
-      "latest_release": "v2026.8.3",
-      "name": "context-compress",
-      "pushed_at": "2026-09-12T11:49:32Z",
-      "stars": 9,
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "context-window",
-        "developer-tools",
-        "hooks",
-        "mcp",
-        "token-optimization",
-        "typescript"
-      ],
-      "url": "https://github.com/Open330/context-compress"
     },
     {
       "created_at": "2026-02-16T18:32:08Z",
@@ -119,7 +119,7 @@
       "language": "Rust",
       "latest_release": "v0.1.13",
       "name": "aas",
-      "pushed_at": "2026-09-22T12:02:26Z",
+      "pushed_at": "2026-09-24T18:35:55Z",
       "stars": 1,
       "topics": [
         "account-switcher",
@@ -199,25 +199,13 @@
       "url": "https://github.com/Open330/agent-quotas"
     },
     {
-      "created_at": "2026-09-20T09:30:58Z",
-      "description": "소문 — PR for developers who'd rather build than announce. 작업을 지켜보다 글감이 익으면 채널별 초안을 내미는 편집자.",
-      "homepage": null,
-      "language": "TypeScript",
-      "latest_release": null,
-      "name": "somun",
-      "pushed_at": "2026-09-23T19:25:42Z",
-      "stars": 0,
-      "topics": [],
-      "url": "https://github.com/Open330/somun"
-    },
-    {
       "created_at": "2026-07-08T02:10:36Z",
       "description": "macOS menu bar app: OTP codes, LLM usage, recent files, CI status as native widgets in one popover",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.3.9",
+      "latest_release": "v0.3.10",
       "name": "barshelf",
-      "pushed_at": "2026-09-23T13:22:15Z",
+      "pushed_at": "2026-09-24T19:36:39Z",
       "stars": 0,
       "topics": [
         "developer-tools",
@@ -230,6 +218,18 @@
         "widgets"
       ],
       "url": "https://github.com/Open330/barshelf"
+    },
+    {
+      "created_at": "2026-09-20T09:30:58Z",
+      "description": "소문 — PR for developers who'd rather build than announce. 작업을 지켜보다 글감이 익으면 채널별 초안을 내미는 편집자.",
+      "homepage": null,
+      "language": "TypeScript",
+      "latest_release": null,
+      "name": "somun",
+      "pushed_at": "2026-09-24T18:52:59Z",
+      "stars": 0,
+      "topics": [],
+      "url": "https://github.com/Open330/somun"
     },
     {
       "created_at": "2026-09-20T09:19:43Z",
