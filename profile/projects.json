@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T04:23:59Z",
+  "generated_at": "2026-09-30T04:08:04Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -8,7 +8,7 @@
       "language": "Rust",
       "latest_release": "v0.8.54",
       "name": "muxa",
-      "pushed_at": "2026-09-29T03:09:01Z",
+      "pushed_at": "2026-09-29T10:29:24Z",
       "stars": 33,
       "topics": [
         "agent-monitoring",
@@ -117,6 +117,32 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-08T02:10:36Z",
+      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
+      "homepage": "https://barshelf.jiun.dev",
+      "language": "Swift",
+      "latest_release": "v0.3.12",
+      "name": "barshelf",
+      "pushed_at": "2026-09-29T09:37:21Z",
+      "stars": 1,
+      "topics": [
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "macos",
+        "macos-app",
+        "menu-bar",
+        "menubar",
+        "otp",
+        "productivity",
+        "swift",
+        "swiftui",
+        "widgets"
+      ],
+      "url": "https://github.com/Open330/barshelf"
+    },
+    {
       "created_at": "2026-07-06T05:06:32Z",
       "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
       "homepage": null,
@@ -213,7 +239,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-09-28T14:33:33Z",
+      "pushed_at": "2026-09-29T12:49:11Z",
       "stars": 0,
       "topics": [
         "build-in-public",
@@ -228,32 +254,6 @@
         "social-media"
       ],
       "url": "https://github.com/Open330/somun"
-    },
-    {
-      "created_at": "2026-07-08T02:10:36Z",
-      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
-      "homepage": "https://barshelf.jiun.dev",
-      "language": "Swift",
-      "latest_release": "v0.3.12",
-      "name": "barshelf",
-      "pushed_at": "2026-09-25T13:50:18Z",
-      "stars": 0,
-      "topics": [
-        "claude-code",
-        "cli",
-        "codex",
-        "developer-tools",
-        "macos",
-        "macos-app",
-        "menu-bar",
-        "menubar",
-        "otp",
-        "productivity",
-        "swift",
-        "swiftui",
-        "widgets"
-      ],
-      "url": "https://github.com/Open330/barshelf"
     },
     {
       "created_at": "2026-09-20T09:19:43Z",
