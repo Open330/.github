@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T04:08:04Z",
+  "generated_at": "2026-10-01T04:20:06Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -117,6 +117,52 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-02-19T05:00:37Z",
+      "description": "A modular toolkit for extending AI coding agents with skills, personas, and hooks.",
+      "homepage": "https://www.npmjs.com/package/@open330/agt",
+      "language": "Rust",
+      "latest_release": "v2026.7.23",
+      "name": "agt",
+      "pushed_at": "2026-10-01T02:12:29Z",
+      "stars": 1,
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex-cli",
+        "developer-tools",
+        "hooks",
+        "personas",
+        "skills"
+      ],
+      "url": "https://github.com/Open330/agt"
+    },
+    {
+      "created_at": "2026-07-06T05:06:32Z",
+      "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v0.1.13",
+      "name": "aas",
+      "pushed_at": "2026-09-30T12:00:30Z",
+      "stars": 1,
+      "topics": [
+        "account-switcher",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "llm",
+        "macos",
+        "multi-account",
+        "rust",
+        "usage-monitor"
+      ],
+      "url": "https://github.com/Open330/aas"
+    },
+    {
       "created_at": "2026-07-08T02:10:36Z",
       "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
       "homepage": "https://barshelf.jiun.dev",
@@ -143,31 +189,6 @@
       "url": "https://github.com/Open330/barshelf"
     },
     {
-      "created_at": "2026-07-06T05:06:32Z",
-      "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
-      "homepage": null,
-      "language": "Rust",
-      "latest_release": "v0.1.13",
-      "name": "aas",
-      "pushed_at": "2026-09-25T12:33:11Z",
-      "stars": 1,
-      "topics": [
-        "account-switcher",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "llm",
-        "macos",
-        "multi-account",
-        "rust",
-        "usage-monitor"
-      ],
-      "url": "https://github.com/Open330/aas"
-    },
-    {
       "created_at": "2026-07-08T01:05:45Z",
       "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
       "homepage": "https://open330.github.io/amux/",
@@ -187,27 +208,6 @@
         "tmux"
       ],
       "url": "https://github.com/Open330/amux"
-    },
-    {
-      "created_at": "2026-02-19T05:00:37Z",
-      "description": "A modular toolkit for extending AI coding agents with skills, personas, and hooks.",
-      "homepage": "https://www.npmjs.com/package/@open330/agt",
-      "language": "Rust",
-      "latest_release": "v2026.7.23",
-      "name": "agt",
-      "pushed_at": "2026-09-12T11:48:49Z",
-      "stars": 1,
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex-cli",
-        "developer-tools",
-        "hooks",
-        "personas",
-        "skills"
-      ],
-      "url": "https://github.com/Open330/agt"
     },
     {
       "created_at": "2026-03-01T16:40:50Z",
@@ -239,7 +239,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-09-29T12:49:11Z",
+      "pushed_at": "2026-10-01T01:20:30Z",
       "stars": 0,
       "topics": [
         "build-in-public",
