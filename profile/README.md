@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/team-9-green?style=flat-square" alt="Team">
   <img src="https://img.shields.io/badge/founded-Feb%202026-purple?style=flat-square" alt="Founded">
   <img src="https://img.shields.io/badge/code%20by-AI%20agents%20only-red?style=flat-square" alt="AI Agents Only">
-  <img src="https://img.shields.io/badge/lines%20of%20code-2%2C548%2C477-orange?style=flat-square" alt="LOC">
+  <img src="https://img.shields.io/badge/lines%20of%20code-2%2C561%2C870-orange?style=flat-square" alt="LOC">
 </p>
 
 ---
@@ -27,7 +27,7 @@ We are a group of engineers who build at 3:30 AM.
 **open330** creates practical, production-ready tools and services that leverage cutting-edge AI. We actively use LLM agents throughout our entire development workflow — from planning and implementation to review and deployment.
 
 Latest additions: **[somun](https://github.com/Open330/somun)**, **[kitbag](https://github.com/Open330/kitbag)**, **[agent-guide](https://github.com/Open330/agent-guide)**.
-Recently active: **[agt](https://github.com/Open330/agt)**, **[somun](https://github.com/Open330/somun)**, **[aas](https://github.com/Open330/aas)**.
+Recently active: **[muxa](https://github.com/Open330/muxa)**, **[agt](https://github.com/Open330/agt)**, **[barshelf](https://github.com/Open330/barshelf)**.
 
 ### 🤖 AI-only code changes
 
@@ -61,38 +61,38 @@ This policy exists to preserve code integrity, eliminate human-induced defects, 
 Commit activity across all repositories (KST, UTC+9):
 
 ```
- 12 AM  █████████████████░░░ 981
-  1 AM  ████████████████████ 1186
-  2 AM  ████████████████░░░░ 972
-  3 AM  ████████████████░░░░ 956  <-- 3:30 AM
-  4 AM  ███████████████████░ 1110
-  5 AM  ███████████████░░░░░ 915
-  6 AM  ██████████████████░░ 1067
-  7 AM  ██████████████████░░ 1041
+ 12 AM  ████████████████░░░░ 981
+  1 AM  ████████████████████ 1190
+  2 AM  ████████████████░░░░ 978
+  3 AM  ████████████████░░░░ 970  <-- 3:30 AM
+  4 AM  ███████████████████░ 1113
+  5 AM  ███████████████░░░░░ 916
+  6 AM  ██████████████████░░ 1080
+  7 AM  █████████████████░░░ 1041
   8 AM  ████████████████░░░░ 978
-  9 AM  ██████████████████░░ 1038
- 10 AM  █████████████░░░░░░░ 785
- 11 AM  ████████████░░░░░░░░ 684
- 12 PM  ██████████████░░░░░░ 855
-  1 PM  █████████░░░░░░░░░░░ 563
+  9 AM  █████████████████░░░ 1039
+ 10 AM  █████████████░░░░░░░ 792
+ 11 AM  ████████████░░░░░░░░ 687
+ 12 PM  ██████████████░░░░░░ 858
+  1 PM  █████████░░░░░░░░░░░ 565
   2 PM  ████████░░░░░░░░░░░░ 498
-  3 PM  ██████░░░░░░░░░░░░░░ 345
-  4 PM  ██████░░░░░░░░░░░░░░ 335
-  5 PM  ███████░░░░░░░░░░░░░ 403
+  3 PM  ██████░░░░░░░░░░░░░░ 346
+  4 PM  ██████░░░░░░░░░░░░░░ 336
+  5 PM  ███████░░░░░░░░░░░░░ 404
   6 PM  █████████░░░░░░░░░░░ 538
   7 PM  █████████████░░░░░░░ 747
   8 PM  ███████████████░░░░░ 916
   9 PM  ███████████████░░░░░ 869
- 10 PM  ████████████████░░░░ 942
+ 10 PM  ████████████████░░░░ 943
  11 PM  ██████████████████░░ 1042
 ```
 
 | Period | Hours | Commits | Share |
 |--------|-------|--------:|------:|
-| 🌙 Night | 12–5 AM | 6120 | 31% |
-| ☀️ Morning | 6–11 AM | 5593 | 28% |
-| 🌤️ Afternoon | 12–5 PM | 2999 | 15% |
-| 🌆 Evening | 6–11 PM | 5054 | 26% |
+| 🌙 Night | 12–5 AM | 6148 | 31% |
+| ☀️ Morning | 6–11 AM | 5617 | 28% |
+| 🌤️ Afternoon | 12–5 PM | 3007 | 15% |
+| 🌆 Evening | 6–11 PM | 5055 | 25% |
 
 > **31%** of all commits land between midnight and 5 AM. The name isn't ironic.
 
@@ -100,12 +100,12 @@ Commit activity across all repositories (KST, UTC+9):
 
 | Language | Files | Code | Comments | Blanks |
 |----------|------:|-----:|---------:|-------:|
-| Rust | 2,003 | 968,785 | 50,211 | 82,424 |
-| Swift | 2,635 | 699,695 | 77,365 | 83,463 |
-| TypeScript | 2,981 | 582,918 | 98,289 | 56,317 |
-| Python | 840 | 194,895 | 12,971 | 19,573 |
-| Shell | 220 | 31,531 | 3,423 | 3,943 |
-| JavaScript | 148 | 20,095 | 1,479 | 1,827 |
+| Rust | 2,018 | 974,601 | 50,477 | 82,839 |
+| Swift | 2,672 | 704,496 | 77,916 | 83,943 |
+| TypeScript | 2,981 | 582,874 | 98,289 | 56,317 |
+| Python | 846 | 197,659 | 13,113 | 19,898 |
+| Shell | 221 | 31,583 | 3,447 | 3,949 |
+| JavaScript | 148 | 20,099 | 1,479 | 1,826 |
 | CSS | 52 | 11,682 | 483 | 1,423 |
 | Svelte | 29 | 8,091 | 453 | 558 |
 | Powershell | 21 | 7,909 | 137 | 597 |
@@ -132,28 +132,28 @@ Commit activity across all repositories (KST, UTC+9):
 | Makefile | 1 | 35 | 11 | 12 |
 | Java | 1 | 17 | 0 | 1 |
 | JSONC | 1 | 10 | 0 | 0 |
-| **Total** | **9,801** | **2,548,473** | **253,144** | **252,197** |
+| **Total** | **9,860** | **2,561,866** | **254,127** | **253,422** |
 
 ### 💻 Tech stack
 
 ```mermaid
 pie title Codebase by language (bytes)
-    "TypeScript" : 39095646
-    "Rust" : 38745706
-    "Swift" : 38152996
-    "Python" : 10124510
-    "Shell" : 1456181
-    "JavaScript" : 986245
+    "TypeScript" : 39094206
+    "Rust" : 38975056
+    "Swift" : 38417823
+    "Python" : 10330349
+    "Shell" : 1459815
+    "JavaScript" : 986583
     "CSS" : 507754
     "C++" : 388775
     "PowerShell" : 333788
     "Svelte" : 275766
     "C" : 197825
-    "HTML" : 168440
+    "HTML" : 168435
     "Lua" : 48814
     "Metal" : 33192
     "Go" : 22811
-    "Ruby" : 8992
+    "Ruby" : 8988
     "HLSL" : 7527
     "Dockerfile" : 7454
     "Batchfile" : 5660
@@ -180,7 +180,7 @@ pie title Codebase by language (bytes)
 
 ### 🔍 Insights
 
-- Busiest commit hour is **1 AM KST** with **1186** commits; **31%** of activity lands between midnight and 5 AM.
+- Busiest commit hour is **1 AM KST** with **1190** commits; **31%** of activity lands between midnight and 5 AM.
 - Language concentration is high: **TypeScript** leads with **30%** of tracked bytes, and the top 3 languages make up **89%**.
 - Product surface is web-forward: TypeScript/JavaScript/CSS/HTML account for **24%** of code LOC.
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **40%** of code LOC.
@@ -192,9 +192,9 @@ pie title Codebase by language (bytes)
 
 | | Contributor | Lines changed | |
 |---|---|---:|---|
-| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,819,997 | `████████████████████` |
-| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 2,297,149 | `████████████████░░░░` |
-| <a href="https://github.com/claude"><img src="https://avatars.githubusercontent.com/u/81847?v=4&s=40" width="40" height="40" alt="claude"></a> | [@claude](https://github.com/claude) | 2,149,641 | `███████████████░░░░░` |
+| <a href="https://github.com/jiunbae"><img src="https://avatars.githubusercontent.com/u/7712538?v=4&s=40" width="40" height="40" alt="jiunbae"></a> | [@jiunbae](https://github.com/jiunbae) | 2,857,344 | `████████████████████` |
+| <a href="https://github.com/hletrd"><img src="https://avatars.githubusercontent.com/u/9067894?v=4&s=40" width="40" height="40" alt="hletrd"></a> | [@hletrd](https://github.com/hletrd) | 2,303,188 | `████████████████░░░░` |
+| <a href="https://github.com/claude"><img src="https://avatars.githubusercontent.com/u/81847?v=4&s=40" width="40" height="40" alt="claude"></a> | [@claude](https://github.com/claude) | 2,185,200 | `███████████████░░░░░` |
 | <a href="https://github.com/circle-oo"><img src="https://avatars.githubusercontent.com/u/9482404?v=4&s=40" width="40" height="40" alt="circle-oo"></a> | [@circle-oo](https://github.com/circle-oo) | 290,020 | `██░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/cheon7886"><img src="https://avatars.githubusercontent.com/u/2089059?v=4&s=40" width="40" height="40" alt="cheon7886"></a> | [@cheon7886](https://github.com/cheon7886) | 272,909 | `██░░░░░░░░░░░░░░░░░░` |
 | <a href="https://github.com/leejseo"><img src="https://avatars.githubusercontent.com/u/29532160?v=4&s=40" width="40" height="40" alt="leejseo"></a> | [@leejseo](https://github.com/leejseo) | 84,069 | `█░░░░░░░░░░░░░░░░░░░` |
@@ -207,14 +207,14 @@ pie title Codebase by language (bytes)
 
 | Project | Description | Stack | Stars | Latest release | Last push |
 |---------|-------------|-------|------:|----------------|-----------|
-| [**muxa**](https://github.com/Open330/muxa) | Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Cod… | Rust | 33 | [v0.8.54](https://github.com/Open330/muxa/releases/latest) | 2026-09-29 |
+| [**muxa**](https://github.com/Open330/muxa) | Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Cod… | Rust | 33 | [v0.8.55](https://github.com/Open330/muxa/releases/latest) | 2026-10-02 |
 | [**kiwimu**](https://github.com/Open330/kiwimu) | Turn textbooks, PDFs, and web content into your own interlinked learning wiki powered by L… | TypeScript | 30 | [v1.2.0](https://github.com/Open330/kiwimu/releases/latest) | 2026-09-14 |
 | [**context-compress**](https://github.com/Open330/context-compress) | MCP server and hook toolkit that compresses tool output to save context window tokens. | TypeScript | 10 | [v2026.8.3](https://github.com/Open330/context-compress/releases/latest) | 2026-09-12 |
 | [**travelback**](https://github.com/Open330/travelback) | Animate GPX, KML, and Google Location History into cinematic travel videos. | TypeScript | 9 |  | 2026-09-12 |
 | [**open-agent-contribution**](https://github.com/Open330/open-agent-contribution) | Use spare AI agent tokens to automatically contribute to GitHub repositories. | TypeScript | 3 | [v2026.222.1](https://github.com/Open330/open-agent-contribution/releases/latest) | 2026-03-20 |
-| [**agt**](https://github.com/Open330/agt) | A modular toolkit for extending AI coding agents with skills, personas, and hooks. | Rust | 1 | [v2026.7.23](https://github.com/Open330/agt/releases/latest) | 2026-10-01 |
+| [**agt**](https://github.com/Open330/agt) | A modular toolkit for extending AI coding agents with skills, personas, and hooks. | Rust | 1 | [v2026.10.1](https://github.com/Open330/agt/releases/latest) | 2026-10-01 |
+| [**barshelf**](https://github.com/Open330/barshelf) | Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex… | Swift | 1 | [v0.4.0](https://github.com/Open330/barshelf/releases/latest) | 2026-10-01 |
 | [**aas**](https://github.com/Open330/aas) | Use several Claude Code, Codex and other coding-agent accounts side by side: switch instan… | Rust | 1 | [v0.1.13](https://github.com/Open330/aas/releases/latest) | 2026-09-30 |
-| [**barshelf**](https://github.com/Open330/barshelf) | Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex… | Swift | 1 | [v0.3.12](https://github.com/Open330/barshelf/releases/latest) | 2026-09-29 |
 | [**amux**](https://github.com/Open330/amux) | amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspace… | Swift | 1 | [v0.2.0](https://github.com/Open330/amux/releases/latest) | 2026-09-12 |
 | [**agent-quotas**](https://github.com/Open330/agent-quotas) | Quota monitoring server for Claude Code, Codex CLI, and other shared AI subscriptions. | Rust | 1 |  | 2026-09-12 |
 | [**somun**](https://github.com/Open330/somun) | 소문 — 홍보가 서툰 개발자를 위해, 릴리스·PR·커밋을 사용자가 이해하는 소개 글 초안으로. Turns what you shipped into posts you… | TypeScript | 0 |  | 2026-10-01 |
