@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-02T04:13:05Z",
+  "generated_at": "2026-10-03T03:55:52Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Gemini CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": null,
       "language": "Rust",
-      "latest_release": "v0.8.55",
+      "latest_release": "v0.8.56",
       "name": "muxa",
-      "pushed_at": "2026-10-02T02:57:28Z",
+      "pushed_at": "2026-10-02T09:32:11Z",
       "stars": 33,
       "topics": [
         "agent-monitoring",
@@ -59,7 +59,7 @@
       "latest_release": "v2026.8.3",
       "name": "context-compress",
       "pushed_at": "2026-09-12T11:49:32Z",
-      "stars": 10,
+      "stars": 11,
       "topics": [
         "ai-agents",
         "claude-code",
@@ -117,6 +117,32 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-08T02:10:36Z",
+      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
+      "homepage": "https://barshelf.jiun.dev",
+      "language": "Swift",
+      "latest_release": "v0.4.0",
+      "name": "barshelf",
+      "pushed_at": "2026-10-02T15:35:57Z",
+      "stars": 1,
+      "topics": [
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "macos",
+        "macos-app",
+        "menu-bar",
+        "menubar",
+        "otp",
+        "productivity",
+        "swift",
+        "swiftui",
+        "widgets"
+      ],
+      "url": "https://github.com/Open330/barshelf"
+    },
+    {
       "created_at": "2026-02-19T05:00:37Z",
       "description": "A modular toolkit for extending AI coding agents with skills, personas, and hooks.",
       "homepage": "https://www.npmjs.com/package/@open330/agt",
@@ -136,32 +162,6 @@
         "skills"
       ],
       "url": "https://github.com/Open330/agt"
-    },
-    {
-      "created_at": "2026-07-08T02:10:36Z",
-      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
-      "homepage": "https://barshelf.jiun.dev",
-      "language": "Swift",
-      "latest_release": "v0.4.0",
-      "name": "barshelf",
-      "pushed_at": "2026-10-01T10:13:04Z",
-      "stars": 1,
-      "topics": [
-        "claude-code",
-        "cli",
-        "codex",
-        "developer-tools",
-        "macos",
-        "macos-app",
-        "menu-bar",
-        "menubar",
-        "otp",
-        "productivity",
-        "swift",
-        "swiftui",
-        "widgets"
-      ],
-      "url": "https://github.com/Open330/barshelf"
     },
     {
       "created_at": "2026-07-06T05:06:32Z",
