@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T04:26:54Z",
+  "generated_at": "2026-10-05T04:13:21Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -8,7 +8,7 @@
       "language": "Rust",
       "latest_release": "v0.8.56",
       "name": "muxa",
-      "pushed_at": "2026-10-02T09:32:11Z",
+      "pushed_at": "2026-10-04T09:59:08Z",
       "stars": 33,
       "topics": [
         "agent-monitoring",
@@ -121,9 +121,9 @@
       "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.4.0",
+      "latest_release": "v0.6.0",
       "name": "barshelf",
-      "pushed_at": "2026-10-03T06:34:58Z",
+      "pushed_at": "2026-10-04T09:26:50Z",
       "stars": 1,
       "topics": [
         "claude-code",
@@ -239,7 +239,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-10-01T01:20:30Z",
+      "pushed_at": "2026-10-04T09:56:28Z",
       "stars": 0,
       "topics": [
         "build-in-public",
