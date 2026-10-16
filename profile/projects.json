@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-15T03:20:54Z",
+  "generated_at": "2026-10-16T03:16:32Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Gemini CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": null,
       "language": "Rust",
-      "latest_release": "v0.8.58",
+      "latest_release": "v0.9.0",
       "name": "muxa",
-      "pushed_at": "2026-10-15T03:14:04Z",
+      "pushed_at": "2026-10-15T11:40:00Z",
       "stars": 34,
       "topics": [
         "agent-monitoring",
@@ -117,6 +117,31 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-06T05:06:32Z",
+      "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
+      "homepage": null,
+      "language": "Rust",
+      "latest_release": "v0.1.13",
+      "name": "aas",
+      "pushed_at": "2026-10-15T07:22:51Z",
+      "stars": 1,
+      "topics": [
+        "account-switcher",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "llm",
+        "macos",
+        "multi-account",
+        "rust",
+        "usage-monitor"
+      ],
+      "url": "https://github.com/Open330/aas"
+    },
+    {
       "created_at": "2026-07-08T01:05:45Z",
       "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
       "homepage": "https://open330.github.io/amux/",
@@ -185,31 +210,6 @@
       "url": "https://github.com/Open330/barshelf"
     },
     {
-      "created_at": "2026-07-06T05:06:32Z",
-      "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
-      "homepage": null,
-      "language": "Rust",
-      "latest_release": "v0.1.13",
-      "name": "aas",
-      "pushed_at": "2026-09-30T12:00:30Z",
-      "stars": 1,
-      "topics": [
-        "account-switcher",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "llm",
-        "macos",
-        "multi-account",
-        "rust",
-        "usage-monitor"
-      ],
-      "url": "https://github.com/Open330/aas"
-    },
-    {
       "created_at": "2026-03-01T16:40:50Z",
       "description": "Quota monitoring server for Claude Code, Codex CLI, and other shared AI subscriptions.",
       "homepage": null,
@@ -239,7 +239,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-10-13T06:28:55Z",
+      "pushed_at": "2026-10-15T17:06:42Z",
       "stars": 0,
       "topics": [
         "build-in-public",
