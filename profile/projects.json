@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:09:40Z",
+  "generated_at": "2026-10-19T03:23:34Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -35,7 +35,7 @@
       "language": "TypeScript",
       "latest_release": "v1.2.0",
       "name": "kiwimu",
-      "pushed_at": "2026-09-14T00:18:41Z",
+      "pushed_at": "2026-10-19T00:22:26Z",
       "stars": 29,
       "topics": [
         "ai",
@@ -117,13 +117,39 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-08T02:10:36Z",
+      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
+      "homepage": "https://barshelf.jiun.dev",
+      "language": "Swift",
+      "latest_release": "v0.7.1",
+      "name": "barshelf",
+      "pushed_at": "2026-10-19T03:19:29Z",
+      "stars": 1,
+      "topics": [
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "macos",
+        "macos-app",
+        "menu-bar",
+        "menubar",
+        "otp",
+        "productivity",
+        "swift",
+        "swiftui",
+        "widgets"
+      ],
+      "url": "https://github.com/Open330/barshelf"
+    },
+    {
       "created_at": "2026-07-06T05:06:32Z",
       "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
       "homepage": null,
       "language": "Rust",
       "latest_release": "v0.1.13",
       "name": "aas",
-      "pushed_at": "2026-10-15T07:22:51Z",
+      "pushed_at": "2026-10-19T01:33:13Z",
       "stars": 1,
       "topics": [
         "account-switcher",
@@ -184,32 +210,6 @@
       "url": "https://github.com/Open330/agt"
     },
     {
-      "created_at": "2026-07-08T02:10:36Z",
-      "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
-      "homepage": "https://barshelf.jiun.dev",
-      "language": "Swift",
-      "latest_release": "v0.6.0",
-      "name": "barshelf",
-      "pushed_at": "2026-10-11T07:57:50Z",
-      "stars": 1,
-      "topics": [
-        "claude-code",
-        "cli",
-        "codex",
-        "developer-tools",
-        "macos",
-        "macos-app",
-        "menu-bar",
-        "menubar",
-        "otp",
-        "productivity",
-        "swift",
-        "swiftui",
-        "widgets"
-      ],
-      "url": "https://github.com/Open330/barshelf"
-    },
-    {
       "created_at": "2026-03-01T16:40:50Z",
       "description": "Quota monitoring server for Claude Code, Codex CLI, and other shared AI subscriptions.",
       "homepage": null,
@@ -239,7 +239,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-10-16T17:12:35Z",
+      "pushed_at": "2026-10-18T13:43:18Z",
       "stars": 0,
       "topics": [
         "build-in-public",
