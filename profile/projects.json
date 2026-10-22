@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T03:26:38Z",
+  "generated_at": "2026-10-22T03:25:39Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -8,7 +8,7 @@
       "language": "Rust",
       "latest_release": "v0.9.1",
       "name": "muxa",
-      "pushed_at": "2026-10-21T02:53:26Z",
+      "pushed_at": "2026-10-21T14:10:56Z",
       "stars": 34,
       "topics": [
         "agent-monitoring",
@@ -117,6 +117,27 @@
       "url": "https://github.com/Open330/open-agent-contribution"
     },
     {
+      "created_at": "2026-07-08T01:05:45Z",
+      "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
+      "homepage": "https://open330.github.io/amux/",
+      "language": "Swift",
+      "latest_release": "v0.2.0",
+      "name": "amux",
+      "pushed_at": "2026-10-21T08:33:46Z",
+      "stars": 1,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "ghostty",
+        "macos",
+        "muxa",
+        "swift",
+        "terminal",
+        "tmux"
+      ],
+      "url": "https://github.com/Open330/amux"
+    },
+    {
       "created_at": "2026-07-08T02:10:36Z",
       "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
       "homepage": "https://barshelf.jiun.dev",
@@ -166,27 +187,6 @@
         "usage-monitor"
       ],
       "url": "https://github.com/Open330/aas"
-    },
-    {
-      "created_at": "2026-07-08T01:05:45Z",
-      "description": "amux (agent mux) - tmux-native, agent-first terminal for persistent coding-agent workspaces.",
-      "homepage": "https://open330.github.io/amux/",
-      "language": "Swift",
-      "latest_release": "v0.2.0",
-      "name": "amux",
-      "pushed_at": "2026-10-12T23:55:26Z",
-      "stars": 1,
-      "topics": [
-        "ai-agents",
-        "developer-tools",
-        "ghostty",
-        "macos",
-        "muxa",
-        "swift",
-        "terminal",
-        "tmux"
-      ],
-      "url": "https://github.com/Open330/amux"
     },
     {
       "created_at": "2026-02-19T05:00:37Z",
