@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T03:20:49Z",
+  "generated_at": "2026-10-26T03:22:09Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -8,7 +8,7 @@
       "language": "Rust",
       "latest_release": "v0.9.1",
       "name": "muxa",
-      "pushed_at": "2026-10-24T18:26:47Z",
+      "pushed_at": "2026-10-26T02:50:54Z",
       "stars": 34,
       "topics": [
         "agent-monitoring",
@@ -35,7 +35,7 @@
       "language": "TypeScript",
       "latest_release": "v1.2.0",
       "name": "kiwimu",
-      "pushed_at": "2026-10-19T00:22:26Z",
+      "pushed_at": "2026-10-26T00:25:12Z",
       "stars": 29,
       "topics": [
         "ai",
@@ -121,9 +121,9 @@
       "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.7.6",
+      "latest_release": "v0.7.9",
       "name": "barshelf",
-      "pushed_at": "2026-10-24T18:58:30Z",
+      "pushed_at": "2026-10-26T03:10:27Z",
       "stars": 1,
       "topics": [
         "claude-code",
@@ -147,9 +147,9 @@
       "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
       "homepage": null,
       "language": "Rust",
-      "latest_release": "v0.1.13",
+      "latest_release": "v0.1.14",
       "name": "aas",
-      "pushed_at": "2026-10-23T09:55:42Z",
+      "pushed_at": "2026-10-25T06:17:33Z",
       "stars": 1,
       "topics": [
         "account-switcher",
@@ -239,7 +239,7 @@
       "language": "Python",
       "latest_release": null,
       "name": "tacto",
-      "pushed_at": "2026-10-24T18:58:38Z",
+      "pushed_at": "2026-10-26T02:48:54Z",
       "stars": 0,
       "topics": [],
       "url": "https://github.com/Open330/tacto"
@@ -251,7 +251,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-10-24T11:42:05Z",
+      "pushed_at": "2026-10-25T10:15:34Z",
       "stars": 0,
       "topics": [
         "build-in-public",
