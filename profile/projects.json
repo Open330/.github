@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-28T04:08:24Z",
+  "generated_at": "2026-10-29T04:31:15Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Gemini CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": null,
       "language": "Rust",
-      "latest_release": "v0.9.1",
+      "latest_release": "v0.9.3",
       "name": "muxa",
-      "pushed_at": "2026-10-28T03:09:08Z",
+      "pushed_at": "2026-10-29T02:32:24Z",
       "stars": 34,
       "topics": [
         "agent-monitoring",
