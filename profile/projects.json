@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:16:15Z",
+  "generated_at": "2026-11-07T04:47:28Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
@@ -8,7 +8,7 @@
       "language": "Rust",
       "latest_release": "v0.9.8",
       "name": "muxa",
-      "pushed_at": "2026-11-06T04:56:11Z",
+      "pushed_at": "2026-11-06T08:32:25Z",
       "stars": 43,
       "topics": [
         "agent-monitoring",
@@ -80,7 +80,7 @@
       "latest_release": null,
       "name": "travelback",
       "pushed_at": "2026-09-12T11:50:34Z",
-      "stars": 10,
+      "stars": 11,
       "topics": [
         "animation",
         "google-location-history",
@@ -123,7 +123,7 @@
       "language": "Swift",
       "latest_release": "v0.7.12",
       "name": "barshelf",
-      "pushed_at": "2026-11-06T03:26:12Z",
+      "pushed_at": "2026-11-06T10:37:53Z",
       "stars": 1,
       "topics": [
         "claude-code",
@@ -239,7 +239,7 @@
       "language": "Python",
       "latest_release": null,
       "name": "tacto",
-      "pushed_at": "2026-11-06T03:15:53Z",
+      "pushed_at": "2026-11-06T07:30:55Z",
       "stars": 0,
       "topics": [],
       "url": "https://github.com/Open330/tacto"
