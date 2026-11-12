@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-11T04:50:53Z",
+  "generated_at": "2026-11-12T05:53:06Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Gemini CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": "https://open330.github.io/tend/",
       "language": "Rust",
-      "latest_release": "v0.10.1",
+      "latest_release": "v0.10.11",
       "name": "tend",
-      "pushed_at": "2026-11-11T04:49:55Z",
+      "pushed_at": "2026-11-12T05:50:33Z",
       "stars": 43,
       "topics": [
         "agent-monitoring",
@@ -121,9 +121,9 @@
       "description": "Turn any CLI into a native macOS menu bar widget — all behind one icon. Claude Code/Codex usage, OTP, GitHub reviews, recent files, your own scripts.",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.7.26",
+      "latest_release": "v0.7.33",
       "name": "barshelf",
-      "pushed_at": "2026-11-11T04:07:52Z",
+      "pushed_at": "2026-11-12T05:20:16Z",
       "stars": 2,
       "topics": [
         "claude-code",
@@ -147,9 +147,9 @@
       "description": "Use several Claude Code, Codex and other coding-agent accounts side by side: switch instantly, run isolated sessions, see every account's usage. Single Rust binary.",
       "homepage": null,
       "language": "Rust",
-      "latest_release": "v0.1.15",
+      "latest_release": "v0.1.16",
       "name": "aas",
-      "pushed_at": "2026-11-10T08:22:07Z",
+      "pushed_at": "2026-11-12T05:40:31Z",
       "stars": 1,
       "topics": [
         "account-switcher",
@@ -239,7 +239,7 @@
       "language": "Python",
       "latest_release": null,
       "name": "haejo",
-      "pushed_at": "2026-11-11T03:23:06Z",
+      "pushed_at": "2026-11-12T05:41:37Z",
       "stars": 0,
       "topics": [],
       "url": "https://github.com/Open330/haejo"
@@ -251,7 +251,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-10-25T10:15:34Z",
+      "pushed_at": "2026-11-11T09:07:45Z",
       "stars": 0,
       "topics": [
         "build-in-public",
