@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-14T05:03:06Z",
+  "generated_at": "2026-11-15T04:56:45Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Gemini CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": "https://open330.github.io/tend/",
       "language": "Rust",
-      "latest_release": "v0.10.17",
+      "latest_release": "v0.10.18",
       "name": "tend",
-      "pushed_at": "2026-11-13T07:46:02Z",
+      "pushed_at": "2026-11-14T19:22:19Z",
       "stars": 43,
       "topics": [
         "agent-monitoring",
@@ -121,9 +121,9 @@
       "description": "One icon for your whole Mac menu bar — and for everything that never had one. Native widgets for weather, calendar, system stats, passwords, usage meters, or any script and CLI.",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.7.36",
+      "latest_release": "v0.7.37",
       "name": "barshelf",
-      "pushed_at": "2026-11-13T05:40:34Z",
+      "pushed_at": "2026-11-14T17:38:56Z",
       "stars": 2,
       "topics": [
         "claude-code",
@@ -237,9 +237,9 @@
       "description": "Let AI agents use your apps. Reusable computer use for Claude and Codex. Make it once. Use it again.",
       "homepage": "https://open330.github.io/haejo/",
       "language": "Python",
-      "latest_release": "v1.0.2",
+      "latest_release": "v1.0.3",
       "name": "haejo",
-      "pushed_at": "2026-11-13T08:15:29Z",
+      "pushed_at": "2026-11-14T18:46:17Z",
       "stars": 0,
       "topics": [],
       "url": "https://github.com/Open330/haejo"
@@ -251,7 +251,7 @@
       "language": "TypeScript",
       "latest_release": null,
       "name": "somun",
-      "pushed_at": "2026-11-12T10:44:10Z",
+      "pushed_at": "2026-11-14T15:07:38Z",
       "stars": 0,
       "topics": [
         "build-in-public",
