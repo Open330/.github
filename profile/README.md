@@ -76,9 +76,9 @@ Commit activity across all repositories (KST, UTC+9):
  12 PM  █████████████░░░░░░░ 909
   1 PM  ████████░░░░░░░░░░░░ 610
   2 PM  ███████░░░░░░░░░░░░░ 539
-  3 PM  █████░░░░░░░░░░░░░░░ 373
+  3 PM  █████░░░░░░░░░░░░░░░ 374
   4 PM  █████░░░░░░░░░░░░░░░ 373
-  5 PM  ██████░░░░░░░░░░░░░░ 426
+  5 PM  ██████░░░░░░░░░░░░░░ 427
   6 PM  ████████░░░░░░░░░░░░ 566
   7 PM  ████████████░░░░░░░░ 888
   8 PM  ███████████████░░░░░ 1095
@@ -91,7 +91,7 @@ Commit activity across all repositories (KST, UTC+9):
 |--------|-------|--------:|------:|
 | 🌙 Night | 12–5 AM | 7507 | 33% |
 | ☀️ Morning | 6–11 AM | 6339 | 28% |
-| 🌤️ Afternoon | 12–5 PM | 3230 | 14% |
+| 🌤️ Afternoon | 12–5 PM | 3232 | 14% |
 | 🌆 Evening | 6–11 PM | 5798 | 25% |
 
 > **33%** of all commits land between midnight and 5 AM. The name isn't ironic.
@@ -149,7 +149,7 @@ pie title Codebase by language (bytes)
     "C++" : 388775
     "PowerShell" : 356074
     "Svelte" : 275766
-    "HTML" : 234252
+    "HTML" : 234257
     "C" : 197825
     "Lua" : 48814
     "Metal" : 33192
@@ -187,7 +187,7 @@ pie title Codebase by language (bytes)
 - Tooling and systems depth is substantial: Rust + shell-focused languages account for **39%** of code LOC.
 - Readability profile is deliberate: roughly **9.7** comment lines and **9.5** blank lines per 100 lines of code.
 - Contributor concentration is strong: [@jiunbae](https://github.com/jiunbae) drives **41%** of tracked line changes, and the top 3 contributors account for **94%**.
-- Portfolio shape: **22 public projects**, **108 stars** combined, **13** with a tagged release.
+- Portfolio shape: **22 public projects**, **109 stars** combined, **13** with a tagged release.
 
 ### 🏆 Top contributors
 
@@ -210,7 +210,7 @@ pie title Codebase by language (bytes)
 |---------|-------------|-------|------:|----------------|-----------|
 | [**tend**](https://github.com/Open330/tend) | Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Cod… | Rust | 44 | [v0.10.22](https://github.com/Open330/tend/releases/latest) | 2026-11-16 |
 | [**kiwimu**](https://github.com/Open330/kiwimu) | Turn textbooks, PDFs, and web content into your own interlinked learning wiki powered by L… | TypeScript | 29 | [v1.2.0](https://github.com/Open330/kiwimu/releases/latest) | 2026-11-13 |
-| [**context-compress**](https://github.com/Open330/context-compress) | MCP server and hook toolkit that compresses tool output to save context window tokens. | TypeScript | 14 | [v2026.8.3](https://github.com/Open330/context-compress/releases/latest) | 2026-09-12 |
+| [**context-compress**](https://github.com/Open330/context-compress) | MCP server and hook toolkit that compresses tool output to save context window tokens. | TypeScript | 15 | [v2026.8.3](https://github.com/Open330/context-compress/releases/latest) | 2026-09-12 |
 | [**travelback**](https://github.com/Open330/travelback) | Animate GPX, KML, and Google Location History into cinematic travel videos. | TypeScript | 11 |  | 2026-09-12 |
 | [**open-agent-contribution**](https://github.com/Open330/open-agent-contribution) | Use spare AI agent tokens to automatically contribute to GitHub repositories. | TypeScript | 4 | [v2026.222.1](https://github.com/Open330/open-agent-contribution/releases/latest) | 2026-03-20 |
 | [**barshelf**](https://github.com/Open330/barshelf) | One icon for your whole Mac menu bar — and for everything that never had one. Native widge… | Swift | 2 | [v0.7.41](https://github.com/Open330/barshelf/releases/latest) | 2026-11-16 |
