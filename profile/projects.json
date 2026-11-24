@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T05:55:09Z",
+  "generated_at": "2026-11-24T08:32:21Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Antigravity CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": "https://open330.github.io/tend/",
       "language": "Rust",
-      "latest_release": "v0.10.34",
+      "latest_release": "v0.10.39",
       "name": "tend",
-      "pushed_at": "2026-11-23T05:26:37Z",
+      "pushed_at": "2026-11-24T08:06:06Z",
       "stars": 45,
       "topics": [
         "agent-monitoring",
@@ -121,9 +121,9 @@
       "description": "One icon for your whole Mac menu bar — and for everything that never had one. Native widgets for weather, calendar, system stats, passwords, usage meters, or any script and CLI.",
       "homepage": "https://barshelf.jiun.dev",
       "language": "Swift",
-      "latest_release": "v0.7.44",
+      "latest_release": "v0.7.45",
       "name": "barshelf",
-      "pushed_at": "2026-11-19T15:23:40Z",
+      "pushed_at": "2026-11-23T08:04:21Z",
       "stars": 2,
       "topics": [
         "claude-code",
@@ -149,7 +149,7 @@
       "language": "Rust",
       "latest_release": "v0.2.5",
       "name": "aas",
-      "pushed_at": "2026-11-23T02:12:27Z",
+      "pushed_at": "2026-11-23T08:49:01Z",
       "stars": 1,
       "topics": [
         "account-switcher",
