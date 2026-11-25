@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T08:32:21Z",
+  "generated_at": "2026-11-25T07:07:03Z",
   "projects": [
     {
       "created_at": "2026-04-24T07:46:01Z",
       "description": "Know which tmux coding agent is waiting on you — and jump to it. Works with the Claude Code, Codex, and Antigravity CLI sessions you already run. No wrapper, no new terminal.",
       "homepage": "https://open330.github.io/tend/",
       "language": "Rust",
-      "latest_release": "v0.10.39",
+      "latest_release": "v0.10.40",
       "name": "tend",
-      "pushed_at": "2026-11-24T08:06:06Z",
-      "stars": 45,
+      "pushed_at": "2026-11-24T11:25:23Z",
+      "stars": 46,
       "topics": [
         "agent-monitoring",
         "ai-agents",
@@ -80,7 +80,7 @@
       "latest_release": null,
       "name": "travelback",
       "pushed_at": "2026-09-12T11:50:34Z",
-      "stars": 11,
+      "stars": 12,
       "topics": [
         "animation",
         "google-location-history",
